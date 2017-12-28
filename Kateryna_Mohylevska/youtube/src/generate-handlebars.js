@@ -4,7 +4,6 @@ const renderData = async (data, name) => {
     if(source!=null){
         let template = Handlebars.compile(source.innerHTML);
         let output = template(data);
-        console.log(data);
         source.insertAdjacentHTML('afterEnd',output);
     }
 };

@@ -1,24 +1,54 @@
 const commentInput = document.querySelector(".comments__typing");
 const commentRight = document.querySelector(".comments_right");
 
-commentInput.addEventListener("click",async (ev) =>{
+commentInput.addEventListener("click", async (ev) => {
     let youtubeConfidence = "<p class='comments__agreement'>Виконуючи цю дію, ви створюєте і приймаєте\n" +
         "                        <a href='#' class='comments__condition'>Умови використання YouTube</a>\n" +
         "                    </p>\n" +
         "                    <input type=\"submit\" value=\"Коментувати\" class=\"comments__submit\">\n" +
         "                    <button type='button' class=\"comments__cancel\">Cancel</button>";
-    commentRight.innerHTML +=  youtubeConfidence;
-})
+    commentRight.innerHTML += youtubeConfidence;
+    document.querySelector(".comments__add")
+        .addEventListener("submit", addComment);
+});
 
 
-const getData = async () => {
-    let response = await fetch("http://localhost:3004/comments");
-    data = await response.json();
-    console.log(data[0]);
-    //render(data);
+function addComment(event) {
+    event.preventDefault();
+
+    let xhr = new XMLHttpRequest();
+    let form = event.target;
+
+
+    xhr.addEventListener('error', transferError);
+
+    let profileImg = "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg";
+    let name = "Kateryna Mohylevska";
+    let commentText = form["comment-text"].value;
+    let time = "2 роки тому";
+    let number = 20;
+
+    let data = {
+        "profile-img": profileImg,
+        "name": name,
+        "comment-text": commentText,
+        "time": time,
+        "number": number
+    };
+
+    xhr.open("POST", "/comments");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(data));
+
+    loadJSON(function (response) {
+        let actual_JSON = JSON.parse(response);
+        renderData({"comments":actual_JSON["comments"]}, "comments");
+    })
 }
 
-getData();
+function transferError() {
+    console.log("Error!! ", this.status);
+}
 
 // commentInput.addEventListener("keyup", (ev) => {
 //     console.log("nksj");
@@ -32,31 +62,7 @@ getData();
 //         }
 //     }
 // })
-console.log(document.querySelector(".comments__add"));
-document.querySelector(".comments__add")
-    .addEventListener("submit", async (ev) => {
-        ev.preventDefault();
 
-        let form = ev.target;
-        let profileImg = "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg";
-        let name = "Kateryna Mohylevska";
-        let commentText = form["comment-text"].value;
-        let time = "2 роки тому";
-        let number = 20;
-
-        const response = await fetch("http://localhost:3004/comments", {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify({profileImg, name, time, commentText,number})
-        })
-
-        const comment =  await response.json();
-
-        data.push(comment);
-        //render(data);
-    });
 
 // if(document.querySelector(".comments__cancel")){
 //     console.log("bla1");
