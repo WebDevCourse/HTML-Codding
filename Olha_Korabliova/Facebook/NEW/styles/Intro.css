@@ -45,13 +45,13 @@
   width: 91px;
 }
 .Intro__icon {
-  width: 16px;
-  height: 16px;
   margin-right: 3px;
   margin-bottom: 3px;
-  display: inline-block;
-  background-image: url("../images/icons-user-page-1.png");
+  width: 16px;
+  height: 16px;
   background-size: 97px 425px;
+  background: url("../images/icons-user-page-1.png");
+  display: inline-block;
   vertical-align: middle;
 }
 .Icon_globe {

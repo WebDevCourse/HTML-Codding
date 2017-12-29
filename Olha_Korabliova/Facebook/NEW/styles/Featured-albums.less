@@ -1,4 +1,5 @@
 @import "vars";
+@import "Sprite";
 @sprite: "../images/icons-user-page-2.png";
 
 .Featured-albums {
@@ -11,14 +12,9 @@
     margin: 10px;
   }
   &__icon {
-    width: 24px;
-    height: 24px;
     margin-right: 10px;
     margin-bottom: 3px;
-    display: inline-block;
-    background-image: url(@sprite);
-    background-size: image-width(@sprite) image-height(@sprite);
-    vertical-align: middle;
+    .sprite-background(@sprite, 24px, 24px);
   }
 }
 

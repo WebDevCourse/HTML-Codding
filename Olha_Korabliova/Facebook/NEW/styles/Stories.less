@@ -1,5 +1,6 @@
 @import "vars";
-@sprite: "../images/icon-sprite.png";
+@import "Sprite";
+@sprite: "../images/icon-sprite3.png";
 
 .Stories {
   background-color: white;
@@ -17,6 +18,12 @@
     border-radius: 50%;
     margin: 3px;
     display: inline-block;
+  }
+  &__icon {
+    float: right;
+    .sprite-background(@sprite, 20px, 20px);
+    background-position: 1px -273px;
+    opacity: 0.2;
   }
   &__story-pic {
     border: #557AD5 solid 2px;

@@ -16,6 +16,17 @@
   margin: 3px;
   display: inline-block;
 }
+.Stories__icon {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-size: 27px 518px;
+  background: url("../images/icon-sprite3.png");
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 1px -273px;
+  opacity: 0.2;
+}
 .Stories__story-pic {
   border: #557AD5 solid 2px;
   border-radius: 50%;

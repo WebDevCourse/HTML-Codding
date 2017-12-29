@@ -57,12 +57,12 @@
   background-color: #DDDFE2;
 }
 .News__icon {
-  height: 18px;
-  width: 18px;
   margin: 3px;
-  display: inline-block;
-  background-image: url("../images/icon-sprite-1.png");
+  width: 18px;
+  height: 18px;
   background-size: 500px 100px;
+  background: url("../images/icon-sprite-1.png");
+  display: inline-block;
   vertical-align: middle;
 }
 .News__control {
