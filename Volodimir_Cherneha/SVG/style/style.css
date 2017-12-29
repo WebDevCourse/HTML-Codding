@@ -1,0 +1,11 @@
+#MyRect {
+    fill: red;
+    stroke: blueviolet;
+    transition: 3s;
+}
+
+#MyRect:hover {
+    transition: 3s;
+    fill: lawngreen;
+    stroke: red;
+}
