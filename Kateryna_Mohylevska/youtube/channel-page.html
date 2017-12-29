@@ -41,19 +41,23 @@
 
 <aside class="guide">
     <nav class="guide__data-model">
-        {{#data-model}}
+        <script id="data-modelTemplate" type="text/x-handlebars-template">
+            {{#each data-model}}
             <a href="/" class="guide__chapter {{class-name}}">
                 {{name}}
             </a>
-        {{/data-model}}
+            {{/each}}
+        </script>
     </nav>
     <section class="best-on-youtube">
         <h4 class="best-on-youtube__title">Найкраще на youtube</h4>
-        {{#best-on-youtube}}
+        <script id="best-on-youtubeTemplate" type="text/x-handlebars-template">
+            {{#each best-on-youtube}}
             <a href="/" class="guide__chapter best-on-youtube__icon {{class-name}}">
                 {{name}}
             </a>
-        {{/best-on-youtube}}
+            {{/each}}
+        </script>
     </section>
     <div class="guide__see-chanel">
         <a href="/" class="guide__chapter icon__see-chanel">
@@ -61,17 +65,21 @@
         </a>
     </div>
     <nav class="guide__settings">
-        {{#settings-model}}
+        <script id="settings-modelTemplate" type="text/x-handlebars-template">
+            {{#each settings-model}}
             <a href="/" class="guide__chapter {{class-name}}">
                 {{name}}
             </a>
-        {{/settings-model}}
+            {{/each}}
+        </script>
     </nav>
 
     <footer class="app-model">
-        {{#application-model}}
+        <script id="application-modelTemplate" type="text/x-handlebars-template">
+            {{#each application-model}}
             <a href="/" class="app-model__link">{{name}}</a>
-        {{/application-model}}
+            {{/each}}
+        </script>
         <br><br>
         <p>© 2017 YouTube, LLC</p>
     </footer>
@@ -124,39 +132,44 @@
         </section>
 
         <aside class="featured-channels">
+            <script id="next-videosTemplate" type="text/x-handlebars-template">
             {{#featured-channels}}
-                <h2 class="featured-channels__title">{{name}}</h2>
-                <div class="featured-channels__info">
-                    {{#data}}
-                        <h3 class="featured-channels__name">{{channel-name}}</h3>
-                        <button class="featured-channels__follow">підписатися</button>
-                    {{/data}}
-                </div>
+            <h2 class="featured-channels__title">{{name}}</h2>
+            <div class="featured-channels__info">
+                {{#data}}
+                <h3 class="featured-channels__name">{{channel-name}}</h3>
+                <button class="featured-channels__follow">підписатися</button>
+                {{/data}}
+            </div>
             {{/featured-channels}}
+            </script>
         </aside>
-        {{#channel-videos}}
-            <section class="channel-videos">
-                <header class="channel-videos__header">
-                    <h2 class="channel-videos__name">{{name}}</h2>
-                    <a href="" class="channel-videos__play-all">Відтворити все</a>
-                </header>
-                <div>
-                    {{#videos}}
-                        <article class="videos">
-                            <img src="{{url}}" alt="video" width="210px">
-                            <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a>
-                            </h3>
-                            <aside class="videos__details">
-                                <span class="videos__views">{{views}} переглядів</span>
-                                <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
-                            </aside>
-                        </article>
-                    {{/videos}}
-                </div>
-            </section>
-        {{/channel-videos}}
+        <script id="channel-videosTemplate" type="text/x-handlebars-template">
+        {{#each channel-videos}}
+        <section class="channel-videos">
+            <header class="channel-videos__header">
+                <h2 class="channel-videos__name">{{name}}</h2>
+                <a href="" class="channel-videos__play-all">Відтворити все</a>
+            </header>
+            <div>
+                {{#each videos}}
+                <article class="videos">
+                    <img src="{{url}}" alt="video" width="210px">
+                    <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a>
+                    </h3>
+                    <aside class="videos__details">
+                        <span class="videos__views">{{views}} переглядів</span>
+                        <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
+                    </aside>
+                </article>
+                {{/each}}
+            </div>
+        </section>
+        {{/each}}
+        </script>
     </section>
 </main>
-
+<script src="src/handlebars-v4.0.11.js"></script>
+<script src="src/generate-handlebars.js"></script>
 </body>
 </html>

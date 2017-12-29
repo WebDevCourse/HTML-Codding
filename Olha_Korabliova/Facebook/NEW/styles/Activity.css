@@ -14,8 +14,9 @@
 .Activity__icon1 {
   width: 20px;
   height: 20px;
+  background-size: 500px 100px;
+  background: url("../images/icon-sprite1.png");
   display: inline-block;
-  background-image: url("../images/icon-sprite1.png");
   vertical-align: middle;
 }
 .Icon1_edit-pencil {

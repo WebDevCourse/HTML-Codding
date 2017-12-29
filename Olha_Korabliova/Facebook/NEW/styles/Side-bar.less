@@ -1,4 +1,5 @@
 @import "vars";
+@import "Sprite";
 
 .Side-bar {
   border-left: @border-settings;
@@ -29,11 +30,10 @@
     color: black;
   }
   &__icon {
-    width: 18px;
-    height: 18px;
     float: right;
     margin: 10px 10px 0 0;
-    background-image: url(../images/icon-sprite3.png);
+    .sprite-background("../images/icon-sprite3.png", 18px, 18px);
+
   }
   &__more-contacts-title {
     margin: 8px;
