@@ -50,12 +50,13 @@
   color: #616770;
 }
 .Article__icon9 {
-  height: 18px;
-  width: 18px;
   margin-top: -3px;
   margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  background-size: 49px 399px;
+  background: url("../images/icon-sprite9.png");
   display: inline-block;
-  background-image: url("../images/icon-sprite9.png");
   vertical-align: middle;
 }
 .Icon9_like {

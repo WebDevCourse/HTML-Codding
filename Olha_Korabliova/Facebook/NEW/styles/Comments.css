@@ -40,19 +40,23 @@
   border: none;
 }
 .Comments__icon1 {
-  width: 16px;
-  height: 16px;
   float: right;
   margin: 2px 10px 0 0;
-  background-image: url("../images/icon-sprite1.png");
+  width: 16px;
+  height: 16px;
+  background-size: 500px 100px;
+  background: url("../images/icon-sprite1.png");
+  display: inline-block;
+  vertical-align: middle;
 }
 .Comments__icon9 {
-  height: 18px;
-  width: 18px;
   margin-top: -3px;
   margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  background-size: 49px 399px;
+  background: url("../images/icon-sprite9.png");
   display: inline-block;
-  background-image: url("../images/icon-sprite9.png");
   vertical-align: middle;
 }
 .Comments__time {
