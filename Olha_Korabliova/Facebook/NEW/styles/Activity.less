@@ -1,14 +1,10 @@
 @import "vars";
+@import "Sprite";
 
 .Activity {
   &__button {
-    //position: relative;
-    //top: -153px;
-    //left: 270px;
     font-size: 12px;
     font-weight: bold;
-    //font-family: inherit;
-    //text-align: center;
     padding: 5px 10px 5px 10px;
     border: @main-border;
     border-radius: 2px;
@@ -21,13 +17,7 @@
   }
 
   &__icon1 {
-    width: 20px;
-    height: 20px;
-    //margin: 3px;
-    display: inline-block;
-    background-image: url("../images/icon-sprite1.png");
-    //background-size: image-width(@sprite) image-height(@sprite);
-    vertical-align: middle;
+    .sprite-background("../images/icon-sprite1.png", 20px, 20px);
   }
 }
 

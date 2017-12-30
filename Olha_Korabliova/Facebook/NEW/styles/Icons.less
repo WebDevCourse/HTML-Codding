@@ -1,13 +1,9 @@
+@import "Sprite";
 @sprite: "../images/my-icons-sprite.png";
 
 .Icon {
-  height: 20px;
-  width: 20px;
   margin: 3px;
-  display: inline-block;
-  background-image: url(@sprite);
-  background-size: image-width(@sprite) image-height(@sprite);
-  vertical-align: middle;
+  .sprite-background(@sprite, 20px, 20px);
 }
 
 .Icon_news {
