@@ -1,11 +1,57 @@
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url('../fonts/AvenirNext-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .Interactive{
     border-bottom:1px solid #ccc;
-   
-    &__image{
+    display: flex;
+    flex-direction: column;
+
+
+
+  &__hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__hover-icon {
+    height: 32px;
+    width: 37px;
+  }
+
+  &__hover-text {
+    font-family: 'AvenirNext-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #089bd9;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+  }
+    &__image{
+      width: 470px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    /*position: relative;
    width: 100%;
    margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 30px;*/
    
     }  
     &__caption{
@@ -24,5 +70,80 @@
             letter-spacing: -0.4px;
             margin-bottom:50px;
         }
+
+  &__point-neck {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    left: 380px;
+    top: 140px;
+  }
+  &__point-neck-description{
+    /*display: flex;
+    flex-direction: column;*/
+    position: absolute;
+    left: 380px;
+    top: 70px;
+    visibility: hidden;
+  }
+
+  &__point-description {
+    font-family: 'AvenirNext-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #505050;
+    margin-left: 40px;
+
+
+  }
+
+  &__point-wing {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    left: 130px;
+    top: 440px;
+  }
+
+  &__point-wing-description{
+    position: absolute;
+    left: -150px;
+    top: 370px;
+    visibility: hidden;
+  }
+
+  &__point-leg {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    left: 390px;
+    top: 670px;
+  }
+
+  &__point-leg-description{
+    position: absolute;
+    left: 390px;
+    top: 610px;
+    visibility: hidden;
+  }
+
+  &__line {
+    width: 226px;
+    height: auto;
+  }
+}
+
+.Interactive__point-neck:hover+.Interactive__point-neck-description  {
+   visibility: visible;
+}
+.Interactive__point-wing:hover+.Interactive__point-wing-description  {
+  visibility: visible;
+}
+.Interactive__point-leg:hover+.Interactive__point-leg-description  {
+  visibility: visible;
 }
 
