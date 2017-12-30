@@ -1,0 +1,30 @@
+@import "vars";
+@import "Sprite";
+@sprite: "../images/icons-user-page-2.png";
+
+.Friends {
+  padding: 5px 5px 5px 10px;
+  border: @main-border;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+  &__title {
+    margin: 10px;
+  }
+  &__photo {
+    border: @main-border;
+    &.bigger {
+      width: 140px;
+    }
+    &.smaller {
+      width: 91px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    .sprite-background(@sprite, 24px, 24px);
+  }
+}
+
+.Icon_friends {background-position: 0 141px;}

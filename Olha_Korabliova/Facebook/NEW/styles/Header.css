@@ -25,47 +25,90 @@
 .Header__search-button {
   position: absolute;
   left: 410px;
-  top: 6px;
+  top: 9px;
   width: 24px;
-  background-image: url(../images/icon-sprite2.png);
+  height: 14px;
   background-size: 24px auto;
-  background-repeat: no-repeat;
-  background-position: 5px -335px;
+  background: url("../images/icon-sprite2.png");
+  display: inline-block;
+  vertical-align: middle;
   border: none;
-  height: 18px;
+  background-position: 3px -336px;
 }
 .Header__nav {
   position: absolute;
-  left: 500px;
+  left: 615px;
   top: 2px;
 }
 .Header__nav-user-pic {
   width: 25px;
   border-radius: 50%;
+  position: relative;
+  top: 7px;
 }
-.Header__nav-user-name {
+.Header__nav-text {
   position: relative;
   top: -7px;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 7px;
 }
-.Header__nav-item {
+.Header__nav-text:hover {
+  background-color: #3B5CA0;
+  border-radius: 3px;
+}
+.Header__nav-icon {
   position: relative;
-  left: 0;
   margin-left: 7px;
   font-size: 15px;
   top: -7px;
-  color: #1A2947;
 }
-.Header__nav-item:hover {
-  color: #0D1524;
-}
-.Header__facebook-logo {
-  height: 20px;
-  width: 20px;
-  margin: 5px 0 0 10px;
+.Header__icon3 {
+  opacity: 0.6;
+  width: 22px;
+  height: 22px;
+  background-size: 27px 518px;
+  background: url("../images/icon-sprite3.png");
   display: inline-block;
   vertical-align: middle;
-  background-size: 24px auto;
-  background: url(../images/icon-sprite3.png) no-repeat -2px -65px;
+}
+.Header__icon3:hover {
+  opacity: 1;
+}
+.Header__icon2 {
+  opacity: 0.6;
+  width: 23px;
+  height: 23px;
+  background-size: 20px 304.8px;
+  background: url("../images/icon-sprite2.png");
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header__icon2:hover {
+  opacity: 1;
+}
+.Icon3_logo {
+  background-position: -2px -65px;
+  margin: 5px 0 0 10px;
+  opacity: 1;
+}
+.Icon3_help {
+  background-position: 1px -273px;
+  margin-left: 20px;
+}
+.Icon3_down {
+  background-position: -3px -374px;
+  width: 10px;
+  height: 10px;
+}
+.Icon3_messages {
+  background-position: -2px -140px;
+}
+.Icon2_globe {
+  background-position: -2px -201px;
+}
+.Icon2_people {
+  background-position: 0 -52px;
 }

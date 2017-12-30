@@ -1,10 +1,10 @@
 .Icon {
-  height: 20px;
-  width: 20px;
   margin: 3px;
-  display: inline-block;
-  background-image: url("../images/my-icons-sprite.png");
+  width: 20px;
+  height: 20px;
   background-size: 35px 1985px;
+  background: url("../images/my-icons-sprite.png");
+  display: inline-block;
   vertical-align: middle;
 }
 .Icon_news {

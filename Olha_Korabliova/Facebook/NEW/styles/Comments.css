@@ -29,30 +29,34 @@
   border-radius: 10px;
   border: #DDDFE2 solid 1px;
   padding: 5px;
-  width: 400px;
+  min-width: 400px;
   position: absolute;
   margin-top: 10px;
   margin-left: 55px;
 }
 .Comments__text-area {
-  width: 200px;
+  width: 290px;
   padding: 0;
   border: none;
 }
 .Comments__icon1 {
-  width: 16px;
-  height: 16px;
   float: right;
   margin: 2px 10px 0 0;
-  background-image: url("../images/icon-sprite1.png");
+  width: 16px;
+  height: 16px;
+  background-size: 500px 100px;
+  background: url("../images/icon-sprite1.png");
+  display: inline-block;
+  vertical-align: middle;
 }
 .Comments__icon9 {
-  height: 18px;
-  width: 18px;
   margin-top: -3px;
   margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  background-size: 49px 399px;
+  background: url("../images/icon-sprite9.png");
   display: inline-block;
-  background-image: url("../images/icon-sprite9.png");
   vertical-align: middle;
 }
 .Comments__time {
