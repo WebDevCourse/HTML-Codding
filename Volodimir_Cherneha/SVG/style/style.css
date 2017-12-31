@@ -1,11 +1,36 @@
-#MyRect {
-    fill: red;
-    stroke: blueviolet;
-    transition: 3s;
+svg {
+    background: rgb(5, 5, 43);
 }
 
-#MyRect:hover {
-    transition: 3s;
-    fill: lawngreen;
-    stroke: red;
+#star {
+    animation: bounce 5s linear;
+    animation-iteration-count: infinite;
+}
+
+#star:hover {
+    animation: spin 1s linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(100px, 300px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(200px, 600px);
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
