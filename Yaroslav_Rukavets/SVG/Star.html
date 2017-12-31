@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .Star {
+            stroke-width: 10px;
+            transition: all 0.5s;
+            transform-origin: center;
+        }
+        .Star {
+           animation: anim 3.5s infinite;
+        }
+        @keyframes anim {
+            10% {
+                fill: green
+            }
+            20% {
+                fill: yellow;
+                transform: rotate(40deg);
+            }
+            30% {
+                fill: red;
+                transform: rotate(80deg);
+            }
+            40% {
+                fill: green;
+                transform: rotate(120deg);
+            }
+            50% {
+                fill: yellow;
+                transform: rotate(160deg);
+            }
+            60% {
+                fill: red;
+                transform: rotate(200deg);
+            }
+            70% {fill: green;
+                transform: rotate(240deg);
+            }
+            80% {fill: yellow;
+                transform: rotate(280deg);
+            }
+            90% {fill: red;
+                transform: rotate(320deg);
+            }
+            100% {fill: yellow;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+        <svg class="Star" version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
+        preserveAspectRatio="xMidYMid meet">
+       <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
+       <path Stark d="M1082 2178 c-11 -13 -86 -156 -167 -319 l-146 -296 -197 -28 c-453
+       -65 -482 -70 -504 -93 -15 -14 -22 -34 -22 -59 0 -35 12 -48 248 -278 l249
+       -242 -17 -94 c-81 -470 -96 -563 -96 -580 0 -28 53 -79 81 -79 12 0 159 72
+       325 159 l302 159 304 -159 c167 -87 313 -159 326 -159 26 0 82 50 82 74 0 8
+       -18 120 -40 248 -22 128 -48 278 -57 332 l-17 100 248 240 c238 232 247 242
+       246 279 0 75 -4 77 -384 132 l-340 49 -144 296 c-79 162 -153 305 -165 318
+       -14 15 -32 22 -57 22 -25 0 -43 -7 -58 -22z"/>
+       </g>
+       </svg>
+</body>
+</html>
