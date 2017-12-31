@@ -18,13 +18,13 @@
   width: 91px;
 }
 .Photos__icon {
-  width: 24px;
-  height: 24px;
   margin-right: 10px;
   margin-bottom: 3px;
-  display: inline-block;
-  background-image: url("../images/icons-user-page-2.png");
+  width: 24px;
+  height: 24px;
   background-size: 26px 242px;
+  background: url("../images/icons-user-page-2.png");
+  display: inline-block;
   vertical-align: middle;
 }
 .Icon_photos {

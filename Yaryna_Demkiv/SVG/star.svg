@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g id="star">
+        <path d="M 10 30 L 90 30 L 85 30 L 20 80 L 45 5 L 75 80 Z " />
+    </g>
+
+    <use x="100" y="100" href="#star" />
+    <use x="10" y="200" href="#star" />
+    <use x="200" y="10" href="#star" />
+    <use x="200" y="200" href="#star" />
+</svg>

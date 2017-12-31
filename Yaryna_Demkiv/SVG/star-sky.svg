@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <use x="10" y="10" href="#star" />
+    <use x="10" y="50" href="#star" />
+    <use x="50" y="10" href="#star" />
+</svg>

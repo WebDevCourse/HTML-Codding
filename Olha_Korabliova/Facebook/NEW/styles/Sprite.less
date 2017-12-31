@@ -1,0 +1,10 @@
+.sprite-background(@sprite, @w, @h, @koef: 1,
+   @back-size: @koef * image-width(@sprite) @koef * image-height(@sprite),
+   @v-align: middle) {
+  width: @w;
+  height: @h;
+  background-size: @back-size;
+  background: url(@sprite);// no-repeat;
+  display: inline-block;
+  vertical-align: @v-align;
+}

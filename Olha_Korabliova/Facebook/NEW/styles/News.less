@@ -1,4 +1,5 @@
 @import "vars";
+@import "Sprite";
 @sprite: "../images/icon-sprite-1.png";
 
 .News {
@@ -55,13 +56,8 @@
     &:hover {background-color: @border-grey;}
   }
   &__icon {
-    height: 18px;
-    width: 18px;
     margin: 3px;
-    display: inline-block;
-    background-image: url(@sprite);
-    background-size: image-width(@sprite) image-height(@sprite);
-    vertical-align: middle;
+    .sprite-background(@sprite, 18px, 18px);
   }
   &__control {
     padding-top: 10px;
@@ -97,6 +93,5 @@
 .Icon_photo-camera {background-position: 485px -69px;}
 .Icon_video-camera {background-position: -419px 251px;}
 .Icon_life-event {background-position: -419px 251px;}
-
 .Icon_friends {background-position: -350px 151px;}
 .Icon_down {background-position: -300px 151px;}

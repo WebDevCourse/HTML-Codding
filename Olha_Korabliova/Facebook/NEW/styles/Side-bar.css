@@ -28,11 +28,14 @@
   color: black;
 }
 .Side-bar__icon {
-  width: 18px;
-  height: 18px;
   float: right;
   margin: 10px 10px 0 0;
-  background-image: url(../images/icon-sprite3.png);
+  width: 18px;
+  height: 18px;
+  background-size: 27px 518px;
+  background: url("../images/icon-sprite3.png");
+  display: inline-block;
+  vertical-align: middle;
 }
 .Side-bar__more-contacts-title {
   margin: 8px;
