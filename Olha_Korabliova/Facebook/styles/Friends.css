@@ -30,8 +30,8 @@
   margin-bottom: 3px;
   width: 24px;
   height: 24px;
-  background-size: 26px 242px;
   background: url("../images/icons-user-page-2.png");
+  background-size: 26px 242px;
   display: inline-block;
   vertical-align: middle;
 }

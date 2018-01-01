@@ -57,8 +57,8 @@
 .Friend-suggest__icon {
   width: 14px;
   height: 14px;
-  background-size: 37px 534px;
   background: url("../images/icon-sprite4.png");
+  background-size: 37px 534px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;

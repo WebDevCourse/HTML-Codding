@@ -17,8 +17,8 @@
 .Activity__icon1 {
   width: 20px;
   height: 20px;
-  background-size: 500px 100px;
   background: url("../images/icon-sprite1.png");
+  background-size: 500px 100px;
   display: inline-block;
   vertical-align: middle;
 }

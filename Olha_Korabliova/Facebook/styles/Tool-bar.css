@@ -69,8 +69,8 @@
   left: 143px;
   width: 24px;
   height: 14px;
-  background-size: 24px auto;
   background: url("../images/icon-sprite2.png");
+  background-size: 24px auto;
   display: inline-block;
   vertical-align: middle;
   border: none;

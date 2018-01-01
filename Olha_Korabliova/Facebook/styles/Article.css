@@ -66,8 +66,8 @@
   margin-right: 3px;
   width: 18px;
   height: 18px;
-  background-size: 49px 399px;
   background: url("../images/icon-sprite9.png");
+  background-size: 49px 399px;
   display: inline-block;
   vertical-align: middle;
 }

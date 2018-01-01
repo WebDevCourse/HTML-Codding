@@ -5,24 +5,28 @@
   border: @main-border;
   border-radius: 0 0 3px 3px;
   background-color: @milk;
+  &__reactions {
+    padding: 5px 10px 5px 10px;
+  }
+  &__action {
+    color: @main-blue;
+    font-size: 12px;
+    &:nth-child(2) {
+      float: right;
+      margin-top: 2px;
+    }
+  }
+  &__comments {
+    border-top: @main-border;
+    padding: 10px 0 0 10px;
+    height: 55px;
+  }
   &__user-pic {
     border-radius: 50%;
     width: 45px;
     height: 45px;
     margin-right: 5px;
     float: left;
-  }
-  &__user-reactions {
-    padding: 5px 10px 5px 10px;
-  }
-  &__user-action {
-    padding-right: 20px;
-    color: @main-blue;
-  }
-  &__user-comments {
-    border-top: @main-border;
-    padding: 10px 0 0 10px;
-    height: 55px;
   }
   &__add-item {
     height: 20px;
@@ -47,9 +51,11 @@
   &__icon9 {
     margin-top: -3px;
     margin-right: 3px;
-    .sprite-background("../images/icon-sprite9.png", 18px, 18px);
+    .sprite-background("../images/icon-sprite9.png", 18px, 18px, 0.8);
   }
-  &__time {color: @title-grey;}
+  &__time {
+    color: @title-grey;
+  }
   &__item {
     border: black solid 1px;
     padding: 5px 5px 5px 10px;
@@ -95,5 +101,7 @@
 }
 
 .Icon9_like-blue {
-  background-position: -19px 223px;
+  width: 16px;
+  height: 16px;
+  background-position: -14px 179px;
 }

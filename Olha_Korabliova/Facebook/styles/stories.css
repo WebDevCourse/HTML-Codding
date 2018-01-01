@@ -28,8 +28,8 @@
   float: right;
   width: 20px;
   height: 20px;
-  background-size: 27px 518px;
   background: url("../images/icon-sprite3.png");
+  background-size: 27px 518px;
   display: inline-block;
   vertical-align: middle;
   background-position: 1px -273px;
