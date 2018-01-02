@@ -19,43 +19,43 @@
     <a class="main-navigation__icon main-navigation__quick" href="#">Швидкий доступ</a>
 </header>
 <section class="main-container">
-    <section class="main-container__nav">
+    <section class="page-navigation">
         <nav>
-            <section class="main-container__nav__block">
+            <section class="page-block">
 
                 <a class="main-container__link" href="#">
                     <img class="main-container__img" src="../images/home-team-3.jpg" alt="Profile picture">
-                    <p class="main-container__nav__paragraph"> Наталя Параняк</p></a>
+                    <p class="page-navigation__paragraph"> Наталя Параняк</p></a>
 
                 <section>
                     {{#news-messenger}}
                         <a class="main-container__link" href="{{src}}">
-                            <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
-                            <p class="main-container__nav__paragraph">{{text}}</p></a>
+                            <img class="page-navigation__img" src="{{img-src}}" style="{{img-options}}">
+                            <p class="page-navigation__paragraph">{{text}}</p></a>
                     {{/news-messenger}}
                 </section>
                 <h2 class="main-container__header">Швидкий доступ</h2>
                 {{#menu-items}}
                     <a class="main-container__link" href="{{menu-src}}">
                         <img src="{{img-src}}" alt="Page 1" class="main-container__img">
-                        <p class="main-container__nav__paragraph">{{name-item}}</p></a>
+                        <p class="page-navigation__paragraph">{{name-item}}</p></a>
                 {{/menu-items}}
                 <h2 class="main-container__header">Огляд</h2>
                 <section>
                     {{#interesting-things}}
                         <a class="main-container__link" href="{{src}}">
-                            <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
-                            <p class="main-container__nav__paragraph">{{text}}</p></a>
+                            <img class="page-navigation__img" src="{{img-src}}" style="{{img-options}}">
+                            <p class="page-navigation__paragraph">{{text}}</p></a>
                     {{/interesting-things}}
                 </section>
             </section>
 
-            <aside class="main-container__creation">
+            <aside class="creation">
                 <h2 class="main-container__header">Створити</h2>
-                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
-                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Сторінки</p></a>
-                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Група</p></a>
-                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Подія</p></a>
+                <a class="creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
+                <a class="creation__link" href="https://www.facebook.com/"><p>Сторінки</p></a>
+                <a class="creation__link" href="https://www.facebook.com/"><p>Група</p></a>
+                <a class="creation__link" href="https://www.facebook.com/"><p>Подія</p></a>
             </aside>
         </nav>
     </section>

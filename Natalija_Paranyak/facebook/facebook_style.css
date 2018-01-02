@@ -58,7 +58,7 @@ body {
 }
 
 
-.main-container__nav {
+.page-navigation {
     position: fixed;
     top: 50px;
     width: 184px;
@@ -106,7 +106,7 @@ body {
     align-items: center;
 }
 
-.main-container__nav ul, .main-container__nav aside, .quick ul {
+.page-navigation ul, .page-navigation aside, .quick ul {
     padding-left: 20px;
     overflow: hidden;
     font-weight: 100;
@@ -119,11 +119,11 @@ a {
     text-decoration: none;
 }
 
-.main-container__nav li:hover {
+.page-navigation li:hover {
     background-color: #e9ebee;
 }
 
-.main-container__nav aside a {
+.page-navigation aside a {
     display: inline-block;
     color: darkblue;
     text-decoration: none;
