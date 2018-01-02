@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/Recent-photos.css"/>
+    <title>Recent Photos</title>
+</head>
+<body>
+<div class="Recent-photos">
+    <h5 class="Recent-photos__title">RECENT GROUP PHOTOS
+        <a href="#" class="Recent-photos__title-more">See All</a>
+    </h5>
+    {{#Group.Recent-photos}}
+        <a href="{{link}}">
+            <img class="Recent-photos__photo" src="{{img-src}}"/>
+        </a>
+    {{/Group.Recent-photos}}
+</div>
+</body>
+</html>
