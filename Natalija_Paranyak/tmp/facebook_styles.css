@@ -65,7 +65,7 @@ body {
     margin-right: 10px;
 }
 
-.main-container__feeds {
+.feeds {
     margin-right: 10px;
     position: absolute;
     left: 194px;
@@ -73,7 +73,7 @@ body {
     width: 500px;
 }
 
-.main-container__quick {
+.quick {
     position: absolute;
     left: 704px;
     top: 0;
@@ -106,7 +106,7 @@ body {
     align-items: center;
 }
 
-.main-container__nav ul, .main-container__nav aside, .main-container__quick ul {
+.main-container__nav ul, .main-container__nav aside, .quick ul {
     padding-left: 20px;
     overflow: hidden;
     font-weight: 100;
