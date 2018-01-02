@@ -1,64 +1,119 @@
-header {
+.Header {
   position: fixed;
-  height: 45px;
   left: 0;
-  right: 0;
-  z-index: 1;
+  background: #4267b2;
+  width: 100%;
+  height: 35px;
   top: 0;
-  background-color: #4267B2;
+  z-index: 50;
   border-bottom: #29487d solid 1px;
 }
-header * {
+.Header__wrapper {
+  width: 961px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: calc(-220px / 2);
+  top: 2px;
+}
+.Header__search-field {
   position: absolute;
-  width: 1200px;
-  left: calc(25% - 300px);
-  right: calc(75% - 900px);
+  left: 35px;
+  top: 5px;
+  height: 22px;
+  width: 400px;
+  border-radius: 3px;
+  border: #DDDFE2;
+  padding: 5px;
+  font-size: 12px;
 }
-header input {
-  left: 45px;
-  margin-top: 10px;
-  width: 500px;
-  height: 24px;
+.Header__search-button {
+  position: absolute;
+  left: 410px;
+  top: 9px;
+  width: 24px;
+  height: 14px;
+  background: url("../images/icon-sprite2.png");
+  background-size: 24px auto;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background-position: 3px -336px;
 }
-header i.fa.fa-search {
-  left: 550px;
-  margin: 10px 5px 5px 1px;
-  background-color: #F6F7F9;
-  font-size: 15px;
-  padding: 5px 15px 5px 10px;
-  border-radius: 2px;
-  width: 10px;
+.Header__nav {
+  position: absolute;
+  left: 615px;
+  top: 2px;
 }
-header i.fa.fa-search:hover {
-  background-color: #D6D6D6;
-}
-a.header-nav__h-icon {
-  text-decoration: none;
-}
-a.header-nav__h-icon i {
-  color: #1A2947;
-  margin: 10px;
-  font-size: 25px;
-}
-a.header-nav__h-icon:hover i {
-  color: #0D1524;
-}
-#logo {
-  margin: 10px 0 0 10px;
+.Header__nav-user-pic {
   width: 25px;
-}
-.header-nav .user-profile__user-pic {
-  left: 650px;
-  width: 30px;
-  margin-top: 5px;
   border-radius: 50%;
+  position: relative;
+  top: 7px;
 }
-#user-name,
-#home {
-  padding: 2px 10px 2px 10px;
-  margin-top: 10px;
-  font-size: 18px;
-  font-family: Gill Sans, sans-serif;
-  font-weight: 500;
+.Header__nav-text {
+  position: relative;
+  top: -7px;
   color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 7px;
+}
+.Header__nav-text:hover {
+  background-color: #3B5CA0;
+  border-radius: 3px;
+}
+.Header__nav-icon {
+  position: relative;
+  margin-left: 7px;
+  font-size: 15px;
+  top: -7px;
+}
+.Header__icon3 {
+  opacity: 0.6;
+  width: 22px;
+  height: 22px;
+  background: url("../images/icon-sprite3.png");
+  background-size: 27px 518px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header__icon3:hover {
+  opacity: 1;
+}
+.Header__icon2 {
+  opacity: 0.6;
+  width: 23px;
+  height: 23px;
+  background: url("../images/icon-sprite2.png");
+  background-size: 25px 381px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header__icon2:hover {
+  opacity: 1;
+}
+.Icon3_logo {
+  background-position: -2px -65px;
+  margin: 5px 0 0 10px;
+  opacity: 1;
+}
+.Icon3_help {
+  background-position: 1px -273px;
+  margin-left: 20px;
+}
+.Icon3_down {
+  background-position: -3px -374px;
+  width: 10px;
+  height: 10px;
+}
+.Icon3_messages {
+  background-position: -2px -139px;
+}
+.Icon2_globe {
+  background-position: -2px -201px;
+}
+.Icon2_people {
+  background-position: 0 -52px;
 }

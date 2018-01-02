@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/events.css"/>
-    <link rel="stylesheet" href="../styles/common.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../styles/Events.css"/>
+    <link rel="stylesheet" href="../styles/Icons.css"/>
     <title>Events</title>
 </head>
 <body>
-<div class="ad-feed__block">
-    {{#events}}
-        <div class="ad-feed__block-event">
-            <a href="{{link}}">
-                <i class="{{icon-class}}" style="{{icon-style}}"></i>
-                {{event}}
+<div class="Events">
+    {{#Index.Events}}
+        <div class="Events__item">
+            <a class="Events__item-link" href="{{link}}">
+                <span class="{{icon-class}}"></span>{{event}}
             </a>
-            <time datatype="#">{{event-time}}</time>
+            <time class="Events__item-time" datatype="#">{{event-time}}</time>
         </div>
-    {{/events}}
+    {{/Index.Events}}
 </div>
 </body>
 </html>

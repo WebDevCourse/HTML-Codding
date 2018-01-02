@@ -1,0 +1,37 @@
+@day_size: 80px;
+@day_margin: 3px;
+@day_round_corners: 5px;
+@day_font-size: 20px;
+@calendar_padding: 20px;
+@calendar-header_height: @day_size * 3;
+@calendar_width: ( ( 2 * @day_margin ) + @day_size) * 7;
+
+@body_bgcolor: white ;
+
+@col1_indend: 20px;
+@col2_indend: 220px;
+@col3_indend: 420px;
+@col4_indend: 620px;
+@col5_indend: 820px;
+@col6_indend: 1020px;
+@col7_indend: 1200px;
+
+@layout_width:1200px;
+@header_height:300px;
+@nav_heigth:200px;
+
+@main_width: @layout_width * 0.6;
+
+@aside__width: @layout_width - @main_width;
+
+@imgbox__img-height: 525px;
+@imgbox__height: @imgbox__img-height * (2 - @imgbox_vert-pic-overlap);
+@imgbox__img-width: 710px;
+@imgbox_vert-pic-overlap: 0.7;
+//@imgbox_horis-pic-overlap: (2 * @imgbox__img-width - @layout_width) / @imgbox__img-width ;
+
+@main_tasting_room_corection:30px;
+
+@info_cols_number: 3;
+@info_size: @layout_width - (@aside__width - @main_tasting_room_corection) ;
+@info_col_width: @info_size / @info_cols_number;

@@ -1,7 +1,15 @@
-.ad-feed__block-event {
-  margin-left: 5px;
-  & a {
-    color: black;
-    font-size: 13px;
+@import "vars";
+@import "Appearance";
+
+.Events {
+  .appearance;
+  font-size: 12px;
+  &__item {
+    &-link {
+      color: black;
+    }
+    &-time {
+      color: @title-grey;
+    }
   }
 }
