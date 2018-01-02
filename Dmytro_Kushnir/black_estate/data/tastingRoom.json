@@ -1,0 +1,14 @@
+{
+  "header": "Tasting Room\n& Restaurant",
+  "contacts":{
+    "address":{
+      "residence":"614 Omihi Road",
+      "location":"Waipara Valley",
+      "country":"New Zealand"
+    },
+    "phone_number":" +64 3 314 6085",
+    "email": "#"
+  },
+  "work-time" : "Closed 24-26 Dec \n10am - 5pm 7 days",
+  "map-href" : "#"
+}

@@ -1,0 +1,47 @@
+@import "_variables";
+.layout {
+  margin-top: 0;
+  width: @layout_width;
+  margin-left: auto;
+  margin-right: auto;
+
+  //TODO BUG -- horisontal scroll present
+
+  &__header{
+  }
+
+  &__aside-feed{
+    display: inline-block;
+    float: left;
+    width: @aside__width;
+    //height: 100%;
+    //margin-bottom: -99999px;
+    //padding-bottom: 99999px;
+  }
+
+  &__main-feed{
+    display: inline-block;
+    width: @main_width;
+    float: left;
+  }
+
+  &__main_2cols{
+    display: inline-block;
+    float: left;
+    width: (@imgbox__img-width - 100px) / 2;
+  }
+  &__main_3cols{
+
+  }
+
+  &__footer{
+    clear: both;
+  }
+
+  &.debug{background-color: deepskyblue;}
+  &__header, .debug{background-color: #cc3333;}
+  &__aside-feed, .debug {background-color: mediumpurple;}
+  &__main-feed, .debug{background-color: cornflowerblue;}
+  &__footer, .debug{background-color: greenyellow;}
+
+}
