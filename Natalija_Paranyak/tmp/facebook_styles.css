@@ -80,7 +80,7 @@ body {
     width: 308px;
 }
 
-.main-container__actions {
+.actions {
    position: fixed;
     overflow-y: scroll;
     height: 100%;    top:50px;
@@ -90,7 +90,7 @@ body {
 }
 
 @media screen and (max-width: 1220px){
-    .main-container__actions{display: none}
+    .actions{display: none}
 }
 
 @media screen and (max-width: 1220px) {
@@ -168,7 +168,7 @@ a {
 }
 
 
-.main-container__actions__item--close {
+.actions__dialog_close {
     color: dimgrey;
     font-size: 15px;
     position: absolute;
@@ -178,17 +178,17 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-.main-container__actions__item--close:after {
+.actions__dialog_close:after {
     content: 'X'; }
 
 
 
-.main-container__actions__item__dialog {
+.actions__dialog {
     float: left;
     position: relative;
 }
 
-.main-container__actions__item {
+.actions__item {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
