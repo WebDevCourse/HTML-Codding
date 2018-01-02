@@ -11,11 +11,12 @@ document.body.innerHTML += resultHTML;
 
 //TODO use AJAX and promise, fetch etc...
 //TODO make this thing work
-// function getHTML(templateURL, dataURL) {
-//     const template = require(templateURL);
-//     const data = require("./data/headerData.json");
-//     return template(data);
-// }
+function getHTML(templateURL, dataURL) {
+    console.log(typeof(templateURL));
+    const template = require(templateURL);
+    const data = require("./data/headerData.json");
+    return template(data);
+}
 
 // 2nd stage: blocks rendering
 
@@ -38,7 +39,7 @@ let tastingRoomHTML = tastingRoomTemplate(tastingRoomData);
 // console.log(tastingRoomHTML);
 
 pageHeaderPlace.innerHTML += require("./templates/be_header.handlebars")(require("./data/headerData.json"));
-// pageHeaderPlace.innerHTML += getHTML("./templates/be_header.handlebars", "./data/headerData.json");
+pageHeaderPlace.innerHTML += getHTML("../templates/be_header.handlebars", "../data/headerData.json");
 pageHeaderPlace.innerHTML += tastingRoomHTML;
 pageHeaderPlace.innerHTML += navHTML;
 //2.1 ===============================================================
@@ -77,8 +78,10 @@ pageMainFeedPlace.innerHTML += require("./templates/wines.handlebars")(require("
 pageMainFeedPlace.innerHTML += require("./templates/reviews.handlebars")(require("./data/reviews.json"));
 pageMainFeedPlace.innerHTML += require("./templates/shop_nav.handlebars")(require("./data/shop_nav.json"));
 
-// 2.3Gallery ================
+// 2.3Gallery ===========================
 
-// 2.3 =======================
+// 2.3 ===================================
+
+
 // 2.4 vineShop======================
 // 2.4 ================================

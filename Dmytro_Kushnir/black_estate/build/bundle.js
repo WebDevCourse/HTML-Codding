@@ -60,11 +60,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Create a simple path alias to allow browserify to resolve
+// the runtime on a supported path.
+module.exports = __webpack_require__(13)['default'];
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -195,15 +204,6 @@ function appendContextPath(contextPath, id) {
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Create a simple path alias to allow browserify to resolve
-// the runtime on a supported path.
-module.exports = __webpack_require__(15)['default'];
-
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -266,6 +266,12 @@ module.exports = exports['default'];
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = {"main-title":"Black \nEstate is a\nremarkable\nplace\nfor wine.","secondary-title":"3 organic hillside \n vineyards on clay limestone soils in\nthe Waipara, N. Canterbury."}
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -277,17 +283,17 @@ exports.HandlebarsEnvironment = HandlebarsEnvironment;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 var _exception = __webpack_require__(2);
 
 var _exception2 = _interopRequireDefault(_exception);
 
-var _helpers = __webpack_require__(16);
+var _helpers = __webpack_require__(14);
 
-var _decorators = __webpack_require__(24);
+var _decorators = __webpack_require__(22);
 
-var _logger = __webpack_require__(26);
+var _logger = __webpack_require__(24);
 
 var _logger2 = _interopRequireDefault(_logger);
 
@@ -376,10 +382,10 @@ exports.logger = _logger2['default'];
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -392,67 +398,19 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 },"useData":true});
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-module.exports = {"main-title":"Black \nEstate is a\nremarkable\nplace\nfor wine.","secondary-title":"3 organic hillside \n vineyards on clay limestone soils in\nthe Waipara, N. Canterbury."}
-
-/***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(1);
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "        <img src=\""
-    + alias4(((helper = (helper = helpers.img_url || (depth0 != null ? depth0.img_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_url","hash":{},"data":data}) : helper)))
-    + "\" alt=\""
-    + alias4(((helper = (helper = helpers.img_alt || (depth0 != null ? depth0.img_alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_alt","hash":{},"data":data}) : helper)))
-    + "\"\n             class=\"img-box__img\n             img-box__img_at_left\n             img-box__img_at_top\n             img-box__img_layaer_front\n             \">\n";
-},"3":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "        <img src=\""
-    + alias4(((helper = (helper = helpers.img_url || (depth0 != null ? depth0.img_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_url","hash":{},"data":data}) : helper)))
-    + "\" alt=\""
-    + alias4(((helper = (helper = helpers.img_alt || (depth0 != null ? depth0.img_alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_alt","hash":{},"data":data}) : helper)))
-    + "\"\n             class=\"img-box__img\n             img-box__img_at_right\n             img-box__img_at_bottom\n             img-box__img_layaer_front\n             \">\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, options, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=helpers.blockHelperMissing, buffer = 
-  "<section class=\"img-box gallery\">\n";
-  stack1 = ((helper = (helper = helpers.first_img || (depth0 != null ? depth0.first_img : depth0)) != null ? helper : alias2),(options={"name":"first_img","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data}),(typeof helper === alias3 ? helper.call(alias1,options) : helper));
-  if (!helpers.first_img) { stack1 = alias4.call(depth0,stack1,options)}
-  if (stack1 != null) { buffer += stack1; }
-  buffer += "    <a href=\"#\" class=\"gallery__more-imgs\">View more images --> </a>\n";
-  stack1 = ((helper = (helper = helpers.second_img || (depth0 != null ? depth0.second_img : depth0)) != null ? helper : alias2),(options={"name":"second_img","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data}),(typeof helper === alias3 ? helper.call(alias1,options) : helper));
-  if (!helpers.second_img) { stack1 = alias4.call(depth0,stack1,options)}
-  if (stack1 != null) { buffer += stack1; }
-  return buffer + "</section>"
-    + container.escapeExpression(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"alt","hash":{},"data":data}) : helper)));
-},"useData":true});
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = {"first_img":{"img_alt":"bottle","img_url":"../imgs/img7.jpg"},"second_img":{"img_alt":"","img_url":"../imgs/img8.jpg"}}
-
-/***/ }),
-/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_float_stylesheet_black_estate_less__ = __webpack_require__(10);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_float_stylesheet_black_estate_less__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_float_stylesheet_black_estate_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_float_stylesheet_black_estate_less__);
 
 
 //1st stage: layout pre-rendering
-const layoutTemplate = __webpack_require__(14);
+const layoutTemplate = __webpack_require__(12);
 
-const layoutData = __webpack_require__(31);
+const layoutData = __webpack_require__(29);
 
 let resultHTML = layoutTemplate(layoutData);
 document.body.innerHTML += resultHTML;
@@ -460,24 +418,25 @@ document.body.innerHTML += resultHTML;
 
 //TODO use AJAX and promise, fetch etc...
 //TODO make this thing work
-// function getHTML(templateURL, dataURL) {
-//     const template = require(templateURL);
-//     const data = require("./data/headerData.json");
-//     return template(data);
-// }
+function getHTML(templateURL, dataURL) {
+    console.log(typeof(templateURL));
+    const template = !(function webpackMissingModule() { var e = new Error("Cannot find module \".\""); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+    const data = __webpack_require__(3);
+    return template(data);
+}
 
 // 2nd stage: blocks rendering
 
 // 2.1 --> header loading
 //STATIC TEMPLATE LOADING
-const headerTemplate = __webpack_require__(4);
-const navTemplate = __webpack_require__(32);
-const tastingRoomTemplate = __webpack_require__(33);
+const headerTemplate = __webpack_require__(5);
+const navTemplate = __webpack_require__(31);
+const tastingRoomTemplate = __webpack_require__(32);
 
 //STATIC DATA LOADING
-const headerData = __webpack_require__(5);
-const navData = __webpack_require__(34);
-const tastingRoomData = __webpack_require__(35);
+const headerData = __webpack_require__(3);
+const navData = __webpack_require__(33);
+const tastingRoomData = __webpack_require__(34);
 
 let pageHeaderPlace = document.body.querySelector('.layout__header');
 
@@ -486,7 +445,8 @@ let navHTML = navTemplate(navData);
 let tastingRoomHTML = tastingRoomTemplate(tastingRoomData);
 // console.log(tastingRoomHTML);
 
-pageHeaderPlace.innerHTML += __webpack_require__(4)(__webpack_require__(5));
+pageHeaderPlace.innerHTML += __webpack_require__(5)(__webpack_require__(3));
+pageHeaderPlace.innerHTML += getHTML("../templates/be_header.handlebars", "../data/headerData.json");
 pageHeaderPlace.innerHTML += tastingRoomHTML;
 pageHeaderPlace.innerHTML += navHTML;
 //2.1 ===============================================================
@@ -494,22 +454,22 @@ pageHeaderPlace.innerHTML += navHTML;
 // 2.2 --> main-feed rendering
 let pageMainFeedPlace = document.body.querySelector('.layout__main-feed');
 
-const imgBoxTemplate = __webpack_require__(36);
-const imgBoxData = __webpack_require__(37);
+const imgBoxTemplate = __webpack_require__(35);
+const imgBoxData = __webpack_require__(36);
 let imgBoxHTML = imgBoxTemplate(imgBoxData);
 
 pageMainFeedPlace.innerHTML += imgBoxHTML;
 
-const mainTastingRoomTemplate = __webpack_require__(38);
-const mainTastingRoomData = __webpack_require__(39);
+const mainTastingRoomTemplate = __webpack_require__(37);
+const mainTastingRoomData = __webpack_require__(38);
 let mainTastingRoomHTML = mainTastingRoomTemplate(mainTastingRoomData);
 pageMainFeedPlace.innerHTML += mainTastingRoomHTML;
 
 //filling info block with data
 let mainTastigDataInfo = document.body.querySelector('.main-tasting-room__info_container');
 mainTastigDataInfo.classList.add("different_info");
-const InfoTemplate = __webpack_require__(40);
-const InfoData = __webpack_require__(41);
+const InfoTemplate = __webpack_require__(39);
+const InfoData = __webpack_require__(40);
 
 $.extend(InfoData, tastingRoomData);
 console.log(InfoData);
@@ -519,21 +479,23 @@ mainTastigDataInfo.innerHTML += InfoHTML;
 
 
 // 2.2===============================================================
-pageMainFeedPlace.innerHTML += __webpack_require__(6)(__webpack_require__(7));
-pageMainFeedPlace.innerHTML += __webpack_require__(42)(__webpack_require__(43));
-pageMainFeedPlace.innerHTML += __webpack_require__(44)(__webpack_require__(45));
-pageMainFeedPlace.innerHTML += __webpack_require__(47)(__webpack_require__(46));
-pageMainFeedPlace.innerHTML += __webpack_require__(48)(__webpack_require__(49));
+pageMainFeedPlace.innerHTML += __webpack_require__(41)(__webpack_require__(42));
+pageMainFeedPlace.innerHTML += __webpack_require__(43)(__webpack_require__(44));
+pageMainFeedPlace.innerHTML += __webpack_require__(45)(__webpack_require__(46));
+pageMainFeedPlace.innerHTML += __webpack_require__(47)(__webpack_require__(48));
+pageMainFeedPlace.innerHTML += __webpack_require__(49)(__webpack_require__(50));
 
-// 2.3Gallery ================
+// 2.3Gallery ===========================
 
-// 2.3 =======================
+// 2.3 ===================================
+
+
 // 2.4 vineShop======================
 // 2.4 ================================
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(9)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)))
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10793,16 +10755,16 @@ return jQuery;
 
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(11);
+var content = __webpack_require__(9);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(13)(content, {});
+var update = __webpack_require__(11)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10819,10 +10781,10 @@ if(false) {
 }
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(12)();
+exports = module.exports = __webpack_require__(10)();
 // imports
 
 
@@ -10833,7 +10795,7 @@ exports.push([module.i, ".header {\n  height: 300px;\n  width: 580px;\n  display
 
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports) {
 
 /*
@@ -10889,7 +10851,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports) {
 
 /*
@@ -11141,10 +11103,10 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -11159,7 +11121,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 },"useData":true});
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11174,14 +11136,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 
-var _handlebarsBase = __webpack_require__(3);
+var _handlebarsBase = __webpack_require__(4);
 
 var base = _interopRequireWildcard(_handlebarsBase);
 
 // Each of these augment the Handlebars object. No need to setup here.
 // (This is done to easily share code between commonjs and browse envs)
 
-var _handlebarsSafeString = __webpack_require__(27);
+var _handlebarsSafeString = __webpack_require__(25);
 
 var _handlebarsSafeString2 = _interopRequireDefault(_handlebarsSafeString);
 
@@ -11189,15 +11151,15 @@ var _handlebarsException = __webpack_require__(2);
 
 var _handlebarsException2 = _interopRequireDefault(_handlebarsException);
 
-var _handlebarsUtils = __webpack_require__(0);
+var _handlebarsUtils = __webpack_require__(1);
 
 var Utils = _interopRequireWildcard(_handlebarsUtils);
 
-var _handlebarsRuntime = __webpack_require__(28);
+var _handlebarsRuntime = __webpack_require__(26);
 
 var runtime = _interopRequireWildcard(_handlebarsRuntime);
 
-var _handlebarsNoConflict = __webpack_require__(29);
+var _handlebarsNoConflict = __webpack_require__(27);
 
 var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 
@@ -11232,7 +11194,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11244,31 +11206,31 @@ exports.registerDefaultHelpers = registerDefaultHelpers;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _helpersBlockHelperMissing = __webpack_require__(17);
+var _helpersBlockHelperMissing = __webpack_require__(15);
 
 var _helpersBlockHelperMissing2 = _interopRequireDefault(_helpersBlockHelperMissing);
 
-var _helpersEach = __webpack_require__(18);
+var _helpersEach = __webpack_require__(16);
 
 var _helpersEach2 = _interopRequireDefault(_helpersEach);
 
-var _helpersHelperMissing = __webpack_require__(19);
+var _helpersHelperMissing = __webpack_require__(17);
 
 var _helpersHelperMissing2 = _interopRequireDefault(_helpersHelperMissing);
 
-var _helpersIf = __webpack_require__(20);
+var _helpersIf = __webpack_require__(18);
 
 var _helpersIf2 = _interopRequireDefault(_helpersIf);
 
-var _helpersLog = __webpack_require__(21);
+var _helpersLog = __webpack_require__(19);
 
 var _helpersLog2 = _interopRequireDefault(_helpersLog);
 
-var _helpersLookup = __webpack_require__(22);
+var _helpersLookup = __webpack_require__(20);
 
 var _helpersLookup2 = _interopRequireDefault(_helpersLookup);
 
-var _helpersWith = __webpack_require__(23);
+var _helpersWith = __webpack_require__(21);
 
 var _helpersWith2 = _interopRequireDefault(_helpersWith);
 
@@ -11285,7 +11247,7 @@ function registerDefaultHelpers(instance) {
 
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11293,7 +11255,7 @@ function registerDefaultHelpers(instance) {
 
 exports.__esModule = true;
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 exports['default'] = function (instance) {
   instance.registerHelper('blockHelperMissing', function (context, options) {
@@ -11331,7 +11293,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11342,7 +11304,7 @@ exports.__esModule = true;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 var _exception = __webpack_require__(2);
 
@@ -11432,7 +11394,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11464,7 +11426,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11472,7 +11434,7 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 exports['default'] = function (instance) {
   instance.registerHelper('if', function (conditional, options) {
@@ -11500,7 +11462,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11533,7 +11495,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11552,7 +11514,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11560,7 +11522,7 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 exports['default'] = function (instance) {
   instance.registerHelper('with', function (context, options) {
@@ -11592,7 +11554,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11604,7 +11566,7 @@ exports.registerDefaultDecorators = registerDefaultDecorators;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _decoratorsInline = __webpack_require__(25);
+var _decoratorsInline = __webpack_require__(23);
 
 var _decoratorsInline2 = _interopRequireDefault(_decoratorsInline);
 
@@ -11615,7 +11577,7 @@ function registerDefaultDecorators(instance) {
 
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11623,7 +11585,7 @@ function registerDefaultDecorators(instance) {
 
 exports.__esModule = true;
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 exports['default'] = function (instance) {
   instance.registerDecorator('inline', function (fn, props, container, options) {
@@ -11651,7 +11613,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11659,7 +11621,7 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 var logger = {
   methodMap: ['debug', 'info', 'warn', 'error'],
@@ -11705,7 +11667,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11727,7 +11689,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 28 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11748,7 +11710,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 
-var _utils = __webpack_require__(0);
+var _utils = __webpack_require__(1);
 
 var Utils = _interopRequireWildcard(_utils);
 
@@ -11756,7 +11718,7 @@ var _exception = __webpack_require__(2);
 
 var _exception2 = _interopRequireDefault(_exception);
 
-var _base = __webpack_require__(3);
+var _base = __webpack_require__(4);
 
 function checkRevision(compilerInfo) {
   var compilerRevision = compilerInfo && compilerInfo[0] || 1,
@@ -12041,7 +12003,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 
 
 /***/ }),
-/* 29 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12066,10 +12028,10 @@ exports['default'] = function (Handlebars) {
 module.exports = exports['default'];
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9oYW5kbGViYXJzL25vLWNvbmZsaWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O3FCQUNlLFVBQVMsVUFBVSxFQUFFOztBQUVsQyxNQUFJLElBQUksR0FBRyxPQUFPLE1BQU0sS0FBSyxXQUFXLEdBQUcsTUFBTSxHQUFHLE1BQU07TUFDdEQsV0FBVyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7O0FBRWxDLFlBQVUsQ0FBQyxVQUFVLEdBQUcsWUFBVztBQUNqQyxRQUFJLElBQUksQ0FBQyxVQUFVLEtBQUssVUFBVSxFQUFFO0FBQ2xDLFVBQUksQ0FBQyxVQUFVLEdBQUcsV0FBVyxDQUFDO0tBQy9CO0FBQ0QsV0FBTyxVQUFVLENBQUM7R0FDbkIsQ0FBQztDQUNIIiwiZmlsZSI6Im5vLWNvbmZsaWN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZ2xvYmFsIHdpbmRvdyAqL1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oSGFuZGxlYmFycykge1xuICAvKiBpc3RhbmJ1bCBpZ25vcmUgbmV4dCAqL1xuICBsZXQgcm9vdCA9IHR5cGVvZiBnbG9iYWwgIT09ICd1bmRlZmluZWQnID8gZ2xvYmFsIDogd2luZG93LFxuICAgICAgJEhhbmRsZWJhcnMgPSByb290LkhhbmRsZWJhcnM7XG4gIC8qIGlzdGFuYnVsIGlnbm9yZSBuZXh0ICovXG4gIEhhbmRsZWJhcnMubm9Db25mbGljdCA9IGZ1bmN0aW9uKCkge1xuICAgIGlmIChyb290LkhhbmRsZWJhcnMgPT09IEhhbmRsZWJhcnMpIHtcbiAgICAgIHJvb3QuSGFuZGxlYmFycyA9ICRIYW5kbGViYXJzO1xuICAgIH1cbiAgICByZXR1cm4gSGFuZGxlYmFycztcbiAgfTtcbn1cbiJdfQ==
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
-/* 30 */
+/* 28 */
 /***/ (function(module, exports) {
 
 var g;
@@ -12096,16 +12058,28 @@ module.exports = g;
 
 
 /***/ }),
-/* 31 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = {"phone-number":"+64 3 314 6085","licence-number":"047/OFF/90/2011","expiry-date":"02/09/2015"}
 
 /***/ }),
-/* 32 */
+/* 30 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 30;
+
+/***/ }),
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
@@ -12148,10 +12122,10 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"useData":true});
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, options, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", buffer = "";
@@ -12190,22 +12164,22 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"useData":true});
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = {"columns":[{"colID":"navCol0","elements":[{"class_list":"","text":"the club","href":"#","role":"href"},{"class_list":"","text":"accommodation","href":"#","role":"href"}]},{"colID":"navCol1","elements":[{"class_list":"","text":"shop and wine\narchive","href":"#","role":""},{"class_list":"","text":"we ship\n internationally","role":""}]},{"colID":"navCol2","elements":[{"class_list":"","text":"our\nvineyards","href":"#","role":"button"},{"class_list":"","text":"home","href":"#","role":"button"},{"class_list":"","text":"damsteep","href":"#","role":"button"},{"class_list":"","text":"netherwood","href":"#","role":"button"}]},{"colID":"navCol3","elements":[{"class_list":"","text":"book a table","href":"#","role":"button"}]},{"colID":"navCol4","elements":[{"class_list":"","text":"distributors","href":"#","role":"href"}]}]}
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = {"header":"Tasting Room\n& Restaurant","contacts":{"address":{"residence":"614 Omihi Road","location":"Waipara Valley","country":"New Zealand"},"phone_number":" +64 3 314 6085","email":"#"},"work-time":"Closed 24-26 Dec \n10am - 5pm 7 days","map-href":"#"}
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -12238,16 +12212,16 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"useData":true});
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = {"first_img":{"img_alt":"bottle","img_url":"../imgs/img7.jpg"},"second_img":{"img_alt":"","img_url":"../imgs/img8.jpg"}}
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -12273,16 +12247,16 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"useData":true});
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = {"main-tasting-room":{"epigraph-text":"There's Nicholas, he's the winemaker and married to Penelope,who looks after the business & restaurant. With Pen's parents Rod and Stacey, the family owns Black Estate. Together they grow wine, talk too much about the weather, and fight the good fight.","side-note-text":"We’re set on making our wines true to the place they grow. The winemaking is simple - good estate grown fruit, organic & biodynamic, handpicked, vineyard derived yeasts, no additives or fining, minimal sulphur at bottling and where possible, no filtration. Then we have character.","tasty-img-url":"../imgs/img_plate2.jpg","emblem-src":"../imgs/bs_logo.png","info-header":"Tasting Room & Restaurant"}}
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -12320,16 +12294,58 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"useData":true});
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = {"info-header":"Tasting Room & Restaurant","menu-info":"<a href='#'> Lunch Menu </a>","menu-msg":"We're Winery Restaurant of the Year and now have two hats with <a href='#'>Cuisine Good Food Awards</a>.","points":[{"content":"<a href='#'>For Hire</a>"},{"content":"Throw your party in our tasting room"},{"content":"<a href='#'>email</a>"},{"content":"<a href='#'>Gift Vouchers</a> \nEasy."}]}
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
+function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "        <img src=\""
+    + alias4(((helper = (helper = helpers.img_url || (depth0 != null ? depth0.img_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_url","hash":{},"data":data}) : helper)))
+    + "\" alt=\""
+    + alias4(((helper = (helper = helpers.img_alt || (depth0 != null ? depth0.img_alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_alt","hash":{},"data":data}) : helper)))
+    + "\"\n             class=\"img-box__img\n             img-box__img_at_left\n             img-box__img_at_top\n             img-box__img_layaer_front\n             \">\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "        <img src=\""
+    + alias4(((helper = (helper = helpers.img_url || (depth0 != null ? depth0.img_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_url","hash":{},"data":data}) : helper)))
+    + "\" alt=\""
+    + alias4(((helper = (helper = helpers.img_alt || (depth0 != null ? depth0.img_alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img_alt","hash":{},"data":data}) : helper)))
+    + "\"\n             class=\"img-box__img\n             img-box__img_at_right\n             img-box__img_at_bottom\n             img-box__img_layaer_front\n             \">\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, options, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=helpers.blockHelperMissing, buffer = 
+  "<section class=\"img-box gallery\">\n";
+  stack1 = ((helper = (helper = helpers.first_img || (depth0 != null ? depth0.first_img : depth0)) != null ? helper : alias2),(options={"name":"first_img","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data}),(typeof helper === alias3 ? helper.call(alias1,options) : helper));
+  if (!helpers.first_img) { stack1 = alias4.call(depth0,stack1,options)}
+  if (stack1 != null) { buffer += stack1; }
+  buffer += "    <a href=\"#\" class=\"gallery__more-imgs\">View more images --> </a>\n";
+  stack1 = ((helper = (helper = helpers.second_img || (depth0 != null ? depth0.second_img : depth0)) != null ? helper : alias2),(options={"name":"second_img","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data}),(typeof helper === alias3 ? helper.call(alias1,options) : helper));
+  if (!helpers.second_img) { stack1 = alias4.call(depth0,stack1,options)}
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "</section>"
+    + container.escapeExpression(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"alt","hash":{},"data":data}) : helper)));
+},"useData":true});
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+module.exports = {"first_img":{"img_alt":"bottle","img_url":"../imgs/img7.jpg"},"second_img":{"img_alt":"","img_url":"../imgs/img8.jpg"}}
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -12346,22 +12362,16 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 },"useData":true});
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = {"side-pic":"#"}
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-module.exports = function(){return "";};
-
-/***/ }),
 /* 45 */
 /***/ (function(module, exports) {
 
-module.exports = {}
+module.exports = function(){return "";};
 
 /***/ }),
 /* 46 */
@@ -12379,10 +12389,16 @@ module.exports = function(){return "";};
 /* 48 */
 /***/ (function(module, exports) {
 
-module.exports = function(){return "";};
+module.exports = {}
 
 /***/ }),
 /* 49 */
+/***/ (function(module, exports) {
+
+module.exports = function(){return "";};
+
+/***/ }),
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = {}
