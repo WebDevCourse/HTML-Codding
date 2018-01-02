@@ -1,0 +1,23 @@
+
+<section class="tasting-room">
+    <h1 class="tasting-room__h1">{{header}}</h1>
+
+    <section class="tasting-room__contacts">
+        {{#contacts}}
+            {{#address}}
+                {{residence}}
+                {{location}}
+                {{country}}
+            {{/address}}
+        {{phone_number}}
+        {{/contacts}}
+        or <a href="{{contacts.email}}">email</a>
+    </section>
+
+    <section class="tasting-room__workinfo">
+        {{work-time}}
+    </section>
+
+    <a href="{{map-href}}" class="tasting-room__ride-map"> map </a>
+
+</section>

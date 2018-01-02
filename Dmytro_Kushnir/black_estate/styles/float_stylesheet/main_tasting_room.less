@@ -1,0 +1,51 @@
+@import "_variables";
+.main-tasting-room{
+  display: block;
+  position: relative;
+  overflow: visible;
+
+  right: @aside__width;
+  width: @layout_width;
+  // 2 is number of elements
+  //height: @imgbox__img-height * (2 - @imgbox_vert-pic-overlap);
+
+  //this damn block ruines all alignment of the page, it has other colomns
+  &__header{
+    padding: 50px;
+    overflow: hidden;
+    background-color: silver;
+  }
+  &__epigraph{
+    padding-top: 50px;
+    display: inline-block;
+    float: left;
+    width: 200px;
+    margin-left: 200px;
+    margin-right: auto;
+    background-color: yellow;
+  }
+  &__emblem{
+    display: inline-block;
+    float: right
+  }
+  &__side-note{
+    width: 200px;
+    float: left;
+    background-color: #cc3333;
+  }
+  &__tasty-img{
+    clear-after: both;
+    float: right;
+  }
+
+  &__info_container{
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+    background-color: yellow;
+    float: left;
+    margin-left: @aside__width - @main_tasting_room_corection; // because of unusual coorinates of img
+  }
+
+  [class~="debug"] &{background-color: red;}
+}

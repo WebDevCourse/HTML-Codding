@@ -1,0 +1,21 @@
+<section class="main-tasting-room">
+    {{#main-tasting-room}}
+<header class="main-tasting-room__header" >
+        <div class="main-tasting-room__epigraph">{{epigraph-text}}</div>
+        <img class="main-tasting-room__emblem" src={{emblem-src}} alt="BLACK_ESTATE">
+</header>
+        <p class="main-tasting-room__side-note">
+            Side note <br><br>
+            {{side-note-text}}</p>
+        <img class="main-tasting-room__tasty-img" src={{tasty-img-url}} alt="tasty_img">
+    <div class="main-tasting-room__info_container"></div>
+
+        <script name="hv">
+            const hv = 'Hello';
+            console.log(hv);
+        </script>
+
+        {{hv}}
+
+    {{/main-tasting-room}}
+</section>
