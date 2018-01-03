@@ -13,9 +13,10 @@
   padding: 5px;
   font-size: 12px;
 }
-.Events__item-link {
+.Events__link {
   color: black;
+  display: inline-block;
 }
-.Events__item-time {
+.Events__time {
   color: #90949C;
 }

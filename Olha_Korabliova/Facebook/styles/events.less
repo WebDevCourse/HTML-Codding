@@ -1,15 +1,14 @@
 @import "vars";
-@import "Appearance";
+@import "Mixins";
 
 .Events {
   .appearance;
   font-size: 12px;
-  &__item {
-    &-link {
-      color: black;
-    }
-    &-time {
-      color: @title-grey;
-    }
+  &__link {
+    color: black;
+    display: inline-block;
+  }
+  &__time {
+    color: @title-grey;
   }
 }
