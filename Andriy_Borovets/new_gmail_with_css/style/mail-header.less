@@ -1,7 +1,15 @@
+@margin: 30px;
+@default-margin: 1%;
+@background-color: #f0f0f0;
+#my-default-button{
+    background-color: @background-color;
+    border: solid lightgray 1px;
+    border-radius: 2px;
+}
 .mail-header{
     display: flex;
     align-items: center;
-    margin-top: 1%;
+    margin-top: @default-margin;
 }
 .mail-header__main-selector{
     margin-left: 2%;
@@ -13,10 +21,8 @@
 }
 .mail-header__mail-selector{
     width: 5%;
-    height: 30px;
-    background-color: #f0f0f0;
-    border: solid lightgray 1px;
-    border-radius: 2px;
+    height: @margin;
+    #my-default-button
 }
 .mail-header__mail-selector__choice{
     color: gray;
@@ -26,23 +32,18 @@
 }
 .mail-header__refresh-button{
     width: 5%;
-    height: 30px;
-    margin-left: 1%;
-    background-color: #f0f0f0;
-    border: solid lightgray 1px;
+    height: @margin;
+    margin-left: @default-margin;
     color: gray;
-    border-radius: 2px;
+    #my-default-button
 }
 .mail-header__num-of-mails{
     margin-left: auto;
 }
 [class^="mail-header__nav-button"]{
-    background-color: #f0f0f0;
-    border: solid lightgray 1px;
-    margin-left: 1%;
-    border-radius: 2px;
+    margin-left: @default-margin;
+    #my-default-button
 }
-
 .mail-header__nav-button4{
     margin-right: 2%;
 }
