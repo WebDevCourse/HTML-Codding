@@ -1,0 +1,25 @@
+@import "_variables";
+
+//TODO better width notation
+
+.header{
+  height: @header_height;
+  width: @layout_width - @col4_indend;
+  display: inline-block;
+  float: left;
+
+  [class~="debug"] & {background: silver;}
+
+  &__h1{
+    display: inline-block;
+    float: left;
+    width: @col2_indend - @col1_indend;
+    margin-left: @col1_indend;
+  }
+
+  &__h2{
+    display: inline-block;
+    float: left;
+    width: @col3_indend - @col2_indend;
+  }
+}
