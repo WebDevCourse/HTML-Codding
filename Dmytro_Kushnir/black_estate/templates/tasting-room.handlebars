@@ -1,23 +1,21 @@
+<h3 class="tasting-room__h1 grid_2 prefix_4">{{header}}</h3>
 
-<section class="tasting-room">
-    <h1 class="tasting-room__h1">{{header}}</h1>
-
-    <section class="tasting-room__contacts">
+<section class="tasting-room grid_3 omega">
+    <p class="tasting-room__contacts">
         {{#contacts}}
             {{#address}}
-                {{residence}}
-                {{location}}
-                {{country}}
+                {{residence}}<br>
+                {{location}}<br>
+                {{country}}<br>
             {{/address}}
-        {{phone_number}}
+        {{phone_number}}<br>
         {{/contacts}}
         or <a href="{{contacts.email}}">email</a>
-    </section>
+    </p>
 
-    <section class="tasting-room__workinfo">
+    <p class="tasting-room__workinfo">
         {{work-time}}
-    </section>
-
+    </p>
     <a href="{{map-href}}" class="tasting-room__ride-map"> map </a>
 
 </section>

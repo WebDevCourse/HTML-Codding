@@ -1,10 +1,28 @@
 @import "_variables";
 
 .vintage{
-  width: @layout_width;
 
-  &__side-pic{};
-  &__header{};
+  margin-top: 60px;
+  position: relative;
+
+  &__side-pic{
+    position: absolute;
+    height: 800px;
+    margin-top: -180px;
+    z-index: 2;
+  };
+
+  &__header{
+    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    font-weight: normal;
+    [class~="debug"] &{outline: yellow 1px solid}
+  };
   &__commercial-report{};
-
+  &__content{
+    margin-top: 40px;
+  };
+  [class~="debug"] &{background-color: aquamarine;}
 }

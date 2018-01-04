@@ -1,26 +1,26 @@
 
 <nav class="page-navigation">
-    <section class="page-navigation__columns">
+    <div class="clearfix"></div>
         {{#each columns}}
-        <div class="page-navigation__column"
-            id={{colID}}
-        >
-
+        <div class="page-navigation__column {{gridColomnStyle @index}} ">
             {{#each elements}}
-
                 {{#if href}}
-                <a href = "{{href}}"
-                   role="{{role}}"
-                   class="{{class_list}}">
-                    {{text}}
-                </a>
+                    {{#if small}}
+                        <a href = "{{href}}"  role="{{role}}"  class="page-navigation__note layout__note_small"> {{{text}}} </a>
+                    {{else}}
+                        <a href = "{{href}}"  role="{{role}}"  class="page-navigation__note  layout__note"> {{{text}}} </a>
+                    {{/if}}
 
                 {{else}}
-                    <span> {{text}} </span>
+                    {{#if small}}
+                        <span class="layout__note_small page-navigation__note "> {{text}} </span>
+                    {{else}}
+                        <span class="layout__note page-navigation__note "> {{text}} </span>
+                    {{/if}}
+
                 {{/if}}
                 <br>
             {{/each}}
         </div>
         {{/each}}
-    </section>
 </nav>

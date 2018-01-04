@@ -1,43 +1,23 @@
 {
   "columns":[
-
-    {
-      "colID":"navCol0",
-      "elements":[
+    {"elements":[
         {"class_list":"", "text":"the club", "href":"#", "role":"href"},
-        {"class_list":"", "text":"accommodation", "href":"#", "role":"href"}
-        ]
+        {"class_list":"", "text":"accommodation", "href":"#", "role":"href"}]
     },
-
-    {
-      "colID":"navCol1",
-      "elements":[
-        {"class_list":"", "text":"shop and wine\narchive", "href":"#", "role":""},
-        {"class_list":"", "text":"we ship\n internationally",  "role":""}
-      ]
+    {"elements":[
+        {"text":"shop and wine\narchive", "href":"#", "role":""},
+        {"text":"we ship\n internationally",  "role":"", "small":true}]
     },
-
-    {
-      "colID":"navCol2",
-      "elements":[
-        {"class_list":"", "text":"our\nvineyards", "href":"#", "role":"button"},
-        {"class_list":"", "text":"home", "href":"#", "role":"button"},
-        {"class_list":"", "text":"damsteep", "href":"#", "role":"button"},
-        {"class_list":"", "text":"netherwood","href":"#",  "role":"button"}
-      ]
+    {"elements":[
+        {"text":"our vineyards", "href":"#", "role":"button"},
+        {"text":"home", "href":"#", "role":"button", "small":true},
+        {"text":"damsteep", "href":"#", "role":"button", "small":true},
+        {"text":"netherwood","href":"#",  "role":"button", "small":true}]
     },
-    {
-      "colID":"navCol3",
-      "elements":[
-        {"class_list":"", "text":"book a table", "href":"#", "role":"button"}
-      ]
+    {"elements":[
+        {"text":"book a table", "href":"#", "role":"button"}]
     },
-    {
-      "colID":"navCol4",
-      "elements":[
-        {"class_list":"", "text":"distributors", "href":"#", "role":"href"}
-      ]
-    }
-
-    ]
+    {"elements":[
+        {"text":"distributors", "href":"#", "role":"href"}]
+    }]
 }
