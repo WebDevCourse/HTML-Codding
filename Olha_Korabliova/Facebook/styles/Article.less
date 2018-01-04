@@ -1,6 +1,5 @@
 @import "vars";
-@import "Sprite";
-@import "Appearance";
+@import "Mixins";
 
 .Article {
   .appearance;
@@ -23,6 +22,7 @@
     margin: 0;
     font-weight: bold;
     color: @text-blue;
+    display: block;
     &:hover {
       text-decoration: underline;
     }

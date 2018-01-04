@@ -55,8 +55,8 @@ body {
 
 .word__letter {
     display: inline-block;
-    animation: move 2s ease-in-out infinite;
-    animation-delay: 0.5s;
+    animation: move 1s ease-in-out infinite;
+    animation-delay: 0.1s;
 }
 
 @keyframes move {
@@ -65,7 +65,7 @@ body {
         color: rgba(231, 76, 60, 1.0);
     }
     50% {
-        text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
     }
     100% {
         transform: translate(43%, 0);

@@ -1,4 +1,4 @@
-// TODO: fix bug when clicking reset button, reduces array 2x times, not completely deleting it
+
 
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
@@ -35,7 +35,8 @@ const resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", () => {
     const wordsToDelete = document.getElementsByClassName("page__word");
     console.log("before ", wordsToDelete, wordsToDelete.length);
-    Array.prototype.map.call(wordsToDelete, (el) => {
+    const nodeList = Array.prototype.slice.call(wordsToDelete);
+    nodeList.map((el) => {
         el.remove();
     });
     console.log("after ", wordsToDelete, wordsToDelete.length);
