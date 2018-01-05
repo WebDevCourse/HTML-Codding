@@ -9,7 +9,7 @@
         margin-top: 10px;
         margin-bottom: 5px;
         color: #f0f0f0;
-        width: 100px;
+        width: 120px;
         height: 30px;
         padding: -10px;
         border: transparent;
@@ -24,6 +24,28 @@
         text-align: left;
         &:hover{
             background-color: fadeout(#c0c0c0, 50%)
+        }
+    }
+    .side-menu__user-detail{
+        padding: 5px;
+        display: flex;
+        align-self: center;
+        width: 84%;
+        margin-top: 30%;
+        border-top: darkgrey 1px solid;
+        border-bottom: darkgrey 1px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .user-detail__username{
+            margin-left: 5%;
+            margin-right: 24%;
+            text-align: center;
+        }
+        .user-header__add-image{
+            background-color: #DCDCDC;
+            border: #708090 1px solid;
+            border-radius: 3%;
         }
     }
 }
