@@ -1,39 +1,11 @@
 @import "_variables";
 
-//TODO make propper alignment of blocks
-
 
 .page-navigation{
-  display: inline-block;
-  width: 100%;
 
-  &__columns{
-    width: 100%;
-    height: @nav_heigth;
-    display: inline-block;
-    clear: both;
+  &__note{}
+  &__column{}
 
-    [class~="debug"] &{background-color: yellow;}
-  }
-
-
-  &__column{
-    float: left;
-    display: inline-block;
-    //TODO make precalculated precise indent
-    // TODO (we'll see it after whole page content will be here)
-    &:nth-child(1){width: @col2_indend - @col1_indend;}
-    &:nth-child(2){width: @col3_indend - @col2_indend;}
-    &:nth-child(3){width: @col4_indend - @col3_indend;}
-    &:nth-child(4){width: @col5_indend - @col4_indend;}
-    &:nth-child(5){width: @col6_indend - @col5_indend;}
-    &:nth-child(6){width: @col7_indend - @col6_indend;}
-    height: @nav_heigth;
-    //position: absolute;
-
-
-    [class~="debug"] &{background-color: violet;border: solid blue 2px;}
-  }
 
   [class~="debug"] &{background-color: green;}
 }
