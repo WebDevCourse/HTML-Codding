@@ -1,0 +1,51 @@
+.side-menu{
+    margin-left: 2%;
+    float: left;
+    width: 13%;
+    .side-menu__buttons-section{
+        margin-top: 2%;
+    }
+    .side-menu__send-button{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #f0f0f0;
+        width: 120px;
+        height: 30px;
+        padding: -10px;
+        border: transparent;
+        border-radius: 2px;
+        background-color: #d14836;
+    }
+    .side-menu__buttons{
+        background-color: transparent;
+        border: transparent;
+        margin-left: -5px;
+        width: 90%;
+        text-align: left;
+        &:hover{
+            background-color: fadeout(#c0c0c0, 50%)
+        }
+    }
+    .side-menu__user-detail{
+        padding: 5px;
+        display: flex;
+        align-self: center;
+        width: 84%;
+        margin-top: 30%;
+        border-top: darkgrey 1px solid;
+        border-bottom: darkgrey 1px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .user-detail__username{
+            margin-left: 5%;
+            margin-right: 24%;
+            text-align: center;
+        }
+        .user-header__add-image{
+            background-color: #DCDCDC;
+            border: #708090 1px solid;
+            border-radius: 3%;
+        }
+    }
+}

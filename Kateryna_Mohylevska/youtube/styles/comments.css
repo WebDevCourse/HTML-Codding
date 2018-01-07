@@ -13,14 +13,43 @@
   align-items: center; }
 .comments__add {
   margin-top: 24px;
-  display: flex;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  display: flex; }
+.comments_right {
+  width: 100%; }
 .comments__typing {
   color: rgba(17, 17, 17, 0.6);
   width: 100%;
   border: none;
   font-size: 14px;
   border-bottom: 1px solid #efedef;
-  height: 21px; }
+  height: 21px;
+  margin-bottom: 4px; }
+.comments__agreement {
+  font-size: 13px;
+  color: rgba(17, 17, 17, 0.6);
+  float: left; }
+.comments__condition {
+  color: rgba(17, 17, 17, 0.6); }
+.comments__cancel {
+  color: rgba(17, 17, 17, 0.6);
+  text-transform: uppercase;
+  margin: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  float: right; }
+  .comments__cancel:hover {
+    color: rgba(17, 17, 17, 0.9); }
+.comments__submit {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  float: right;
+  background-color: rgba(39, 147, 230, 0.9);
+  cursor: pointer; }
 
 /*# sourceMappingURL=comments.css.map */
