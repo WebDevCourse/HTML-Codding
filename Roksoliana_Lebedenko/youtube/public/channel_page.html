@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/header-layout.css">
-    <link rel="stylesheet" href="styles/header-layout__google-options.css">
-    <link rel="stylesheet" href="styles/header-layout__logo.css">
-    <link rel="stylesheet" href="styles/header-layout__search.css">
-    <link rel="stylesheet" href="styles/aside-guide-content__block.css">
-    <link rel="stylesheet" href="styles/aside__block.css">
-    <link rel="stylesheet" href="styles/aside__footer.css">
-    <link rel="stylesheet" href="styles/channel-page/channel_navigation.css">
-    <link rel="stylesheet" href="styles/video-block__main-content.css">
-    <link rel="stylesheet" href="styles/channel-page/main-layout-channel.css">
-    <link rel="stylesheet" href="styles/channel-page/main__header.css">
-    <link rel="stylesheet" href="styles/channel-page/channel-header.css">
-    <link rel="stylesheet" href="styles/channel-page/channel-video-block.css">
-    <link rel="stylesheet" href="styles/channel-page/featured-channels.css">
+    <link type="text/css" rel="stylesheet/less" href="styles/header-layout.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/header-layout__google-options.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/header-layout__logo.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/header-layout__search.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/aside-guide-content__block.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/aside__block.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/aside__footer.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/channel-page/channel_navigation.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/video-block__main-content.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/channel-page/main-layout-channel.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/channel-page/channel-header.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/channel-page/channel-video-block.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/channel-page/featured-channels.less">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,9 +26,9 @@
 
     <div class="header-layout__logo">
         <button class="hamburger-menu"></button>
-        <a class="header-layout__logo header-layout__logo_img" href="index"><img src="images/youtube_icon.png"
+        <a class="header-layout__logo header-layout__logo_img" href="index.html"><img src="images/youtube_icon.png"
                                                                                  alt=""></a>
-        <a class="header-layout__logo_text" href="index">YouTube<sup
+        <a class="header-layout__logo_text" href="index.html">YouTube<sup
                 class="header-layout__logo_country-code">UA</sup></a>
 
     </div>
@@ -48,6 +46,7 @@
     </div>
 </header>
 <main class="main-layout-channel">
+    <script id="videoTemplate" type="text/x-handlebars-template">
     <img class="main-layout-channel__cover-img"
          src="https://yt3.ggpht.com/Gab059EY_ZdA-qldmZ7wnDn0YXsNtn5TGBLfnBQZPmRUJLDNEB0i5360ymAnXH5maFU4PSiDvA=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no"
          alt="">
@@ -99,99 +98,106 @@
                     </div>
                 </section>
                 {{#video-block}}
-                    <section class="channel-video-block__video-row">
-                        <article class="video-block">
-                            <div class="video-block__main-content">
-                                {{#video-list}}
-                                    <div class="video-block__video">
-                                        <img class="video-block__cover-img" src="{{cover-image-url}}" alt="">
-                                        <div class="video-block__description">
-                                            <h3><a href="video_page">{{title}}</a></h3>
-                                            <a href="">
-                                                <span>{{subtitle}}</span>
-                                                <span class="video-block__view-count">{{view-count}}
+                <section class="channel-video-block__video-row">
+                    <article class="video-block">
+                        <div class="video-block__main-content">
+                            {{#video-list}}
+                            <div class="video-block__video">
+                                <img class="video-block__cover-img" src="{{cover-image-url}}" alt="">
+                                <div class="video-block__description">
+                                    <h3><a href="video_page.html">{{title}}</a></h3>
+                                    <a href="">
+                                        <span>{{subtitle}}</span>
+                                        <span class="video-block__view-count">{{view-count}}
                                                     млн перегляди</span>
-                                                <span>{{publication-date}}</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                {{/video-list}}
+                                        <span>{{publication-date}}</span>
+                                    </a>
+                                </div>
                             </div>
-                        </article>
-                    </section>
+                            {{/video-list}}
+                        </div>
+                    </article>
+                </section>
                 {{/video-block}}
             </div>
             <aside class="featured-channels">
                 {{#aside-channel-content}}
-                    <h4>Featured channels</h4>
-                    {{#channels-block}}
-                        <a class="featured-channels__title" href="">{{title}}</a>
-                        <button>Підписатися</button>
-                    {{/channels-block}}
+                <h4>Featured channels</h4>
+                {{#channels-block}}
+                <a class="featured-channels__title" href="">{{title}}</a>
+                <button>Підписатися</button>
+                {{/channels-block}}
                 {{/aside-channel-content}}
             </aside>
         </div>
     </div>
+    </script>
 </main>
+
 <aside class="aside-guide-content">
-    {{#aside-content}}
+    <script id="asideTemplate" type="text/x-handlebars-template">
+        {{#aside-content}}
         <div class="aside-guide-content__block aside-guide-content__block_home">
             {{#home-block}}
-                <a class="menu-block" href="">
-                    <span class="menu-block__icon"></span>
-                    <span class="menu-block__text menu-block__text_home">{{title}}</span>
-                </a>
+            <a class="menu-block" href="index.html">
+                <span class="menu-block__icon"></span>
+                <span class="menu-block__text menu-block__text_home">{{title}}</span>
+            </a>
             {{/home-block}}
         </div>
         <div class="aside-guide-content__block">
             <h3 class="aside-guide-content__block_title">Бібліотека</h3>
             {{#library-block}}
-                <a class="menu-block" href="">
-                    <span class="menu-block__icon"></span>
-                    <span class="menu-block__text_hidden">{{title}}</span>
-                </a>
+            <a class="menu-block" href="">
+                <span class="menu-block__icon"></span>
+                <span class="menu-block__text_hidden">{{title}}</span>
+            </a>
             {{/library-block}}
         </div>
         <div class="aside-guide-content__block">
             <h3 class="aside-guide-content__block_title">Підписки</h3>
             {{#subscribe-block}}
-                <a class="menu-block" href="">
-                    <img class="menu-block__img" src="{{cover-img}}" alt="" height="24"
-                         width="24">
-                    <span class="menu-block__text menu-block__text_hidden">{{title}}</span>
-                </a>
+            <a class="menu-block" href="">
+                <img class="menu-block__img" src="{{cover-img}}" alt="" height="24"
+                     width="24">
+                <span class="menu-block__text menu-block__text_hidden">{{title}}</span>
+            </a>
             {{/subscribe-block}}
         </div>
         {{#films-block}}
-            <div class="aside-guide-content__block">
-                <a class="menu-block" href="">
-                    <img class="menu-block__img" src="{{cover-img}}"
-                         alt="">
-                    <span class="menu-block__text_hidden">{{title}}</span>
-                </a>
-            </div>
+        <div class="aside-guide-content__block">
+            <a class="menu-block" href="">
+                <img class="menu-block__img" src="{{cover-img}}"
+                     alt="">
+                <span class="menu-block__text_hidden">{{title}}</span>
+            </a>
+        </div>
         {{/films-block}}
         <div class="aside-guide-content__block">
             {{#settings-block}}
-                <a class="menu-block" href="">
-                    <img class="menu-block__img" src="{{cover-img}}"
-                         alt="">
-                    <span class="menu-block__text">{{title}}</span>
-                </a>
+            <a class="menu-block" href="">
+                <img class="menu-block__img" src="{{cover-img}}"
+                     alt="">
+                <span class="menu-block__text">{{title}}</span>
+            </a>
             {{/settings-block}}
         </div>
         <div class="aside-guide-content__footer">
             {{#footer-block}}
-                <a href="">{{title}}</a>
+            <a href="">{{title}}</a>
             {{/footer-block}}
         </div>
         <div class="aside-guide-content__footer aside-guide-content__footer_conditions">
             {{#conditions-block}}
-                <a href="">{{title}}</a>
+            <a href="">{{title}}</a>
             {{/conditions-block}}
         </div>
         <div class="aside-guide-content__footer aside-guide-content__footer_ownership">© 2017 YouTube, LLC</div>
-    {{/aside-content}}
+        {{/aside-content}}
+    </script>
 </aside>
+<script src="js/less.min.js" type="text/javascript"></script>
+<script src="js/handlebars.js"></script>
+<script src="js/channelTemplate.js"></script>
 </body>
 </html>
