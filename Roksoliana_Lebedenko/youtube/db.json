@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "message": "Hello!",
+      "id": 1
+    },
+    {
+      "message": "the best song!!!!!",
+      "id": 2
+    },
+    {
+      "message": "likeeee",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
