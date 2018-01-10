@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css"> <!-- body style -->
+    <link rel="stylesheet" type="text/css" href="style/user-header.css"> <!-- first header style -->
+    <link rel="stylesheet" type="text/css" href="style/mail-header.css"> <!-- second header style -->
+    <link rel="stylesheet" type="text/css" href="style/side-menu.css"> <!-- side menu style -->
+    <link rel="stylesheet" type="text/css" href="style/mails-section.css"> <!-- all mails style -->
+    <link rel="stylesheet" type="text/css" href="style/footer-info.css"> <!-- footer style -->
+</head>
+<body>
+<header class="user-header">
+    <img class="user-header__ucu-logo" src="https://www.google.com/a/ucu.edu.ua/images/logo.gif">
+    <input class="user-header__search-field">
+    <button class="user-header__search-button">
+        <img class="user-header__search-image" src="style/images/search.svg">
+    </button>
+    <button class="user-header__opt-button1">
+        <img class="user-header__search-image" src="style/images/apps.svg">
+    </button>
+    <button class="user-header__opt-button2">
+        <img class="user-header__search-image" src="style/images/bell.svg">
+    </button>
+    <button class="user-header__opt-button3">
+        <img class="user-header__search-image" src="style/images/user-logo.svg">
+    </button>
+</header>
+<nav class="mail-header">
+    <select class="mail-header__main-selector">
+        <option value="Пошта">Пошта</option>
+    </select>
+    <button class="mail-header__mail-selector">
+        <input id="checkBox" type="checkbox">
+        <select class="mail-selector__choice">
+            <option value="Пошта"></option>
+        </select>
+    </button>
+    <button class="mail-header__refresh-button">
+        <img src="style/images/refresh.svg">
+    </button>
+    <select class="mail-header__refresh-button">
+        <option value="Більше">Більше</option>
+    </select>
+    <b class="mail-header__num-of-mails">1-50</b>
+    &nbspз&nbsp
+    <b>1260</b>
+    <button class="mail-header__nav-button1">
+        <img src="style/images/left-pointer.svg">
+    </button>
+    <button class="mail-header__nav-button2">
+        <img src="style/images/right-pointer.svg">
+    </button>
+    <button class="mail-header__nav-button3">
+        <img src="style/images/more-options.svg">
+    </button>
+    <button class="mail-header__nav-button4">
+        <img src="style/images/settings.svg">
+    </button>
+</nav>
+<hr>
+<aside class="side-menu">
+    <button class="side-menu__send-button">
+        Надіслати
+    </button>
+    <div class="side-menu__buttons-section">
+        <a href="#" style="color: #d14836"><b>Вхідні</b></a>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side-menu__buttons">Із зірочкою</button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side-menu__buttons">
+            Надіслані
+        </button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side-menu__buttons">
+            <b>Чернетки (6)</b>
+        </button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side-menu__buttons">
+            Більше
+        </button>
+    </div>
+    <div class="side-menu__user-detail">
+        <img class="user-header__user-image" src="style/images/user-logo.svg">
+        <text class="user-detail__username">Andriy</text>
+        <img class="user-header__add-image" src="style/images/add.svg">
+    </div>
+</aside>
+<main class="mails-section">
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">12:45</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Soft Serve</a>
+        <a class="mail__subject">Job Offer</a>
+        <a class="mail__text">-hello you have an nice webdev skills, nice job!! We want to offer
+            you the head of the department! </a>
+        <a class="mail__time">4 січ.</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </a>
+        <a class="mail__time">2 січ.</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Lorem</a>
+        <a class="mail__subject"> Lorem Ipsum text</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">1 січ.</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">1 січ.</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">31.12.17</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Lorem Ipsum text</a>
+        <a class="mail__subject">Why do we use it?</a>
+        <a class="mail__text">-It is a long established fact that a reader will be distracted
+            by the readable content of a page when looking at its layout. The point of using
+            Lorem Ipsum is that it has a more-or-less </a>
+        <a class="mail__time">31.12.17</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">30.12.16</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">30.12.14</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Interesting facts</a>
+        <a class="mail__subject">fact of the day</a>
+        <a class="mail__text">-Banging your head against the wall burns down 150 calories an hour. </a>
+        <a class="mail__time">29.12.10</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Уряд студентів</a>
+        <a class="mail__subject">Пропозиції від СО</a>
+        <a class="mail__text">-Давно мрієш поїхати мандрувати за кордон? Не знаєш,
+            що може там на тебе очікувати?що може там на тебе очікувати?що може там на тебе очікувати?.. </a>
+        <a class="mail__time">28.12.09</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <section class="mails-section__mail">
+        <input class="mail__check-box" id="checkBox" type="checkbox">
+        <img class="mail__star-img" src="style/images/star.svg">
+        <a class="mail__sender">Elvis Presley</a>
+        <a class="mail__subject">Important!!!</a>
+        <a class="mail__text">-Pss... hello! Don't tell anyone about me. I am still alive. Want to meat you
+            some day and talk. Best wishes, Elvis.</a>
+        <a class="mail__time">23.11.95</a>
+    </section>
+    <footer class="mails-section__bottom-info">
+        <div class="bottom-info__mails-info">
+            <a><b>Використано 1,46 ГБ</b></a>
+            <a class="mails-info__config">керувати</a>
+        </div>
+        <div class="bottom-info__google-info">
+            <a class="google-info__config">Політики програми</a>
+            <a>За технологією</a>
+            <img class="google-info__google-logo" src="style/images/google-logo.png">
+        </div>
+    </footer>
+</main>
+</body>
+</html>

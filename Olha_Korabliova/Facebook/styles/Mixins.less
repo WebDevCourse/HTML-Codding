@@ -1,0 +1,27 @@
+@import "vars";
+
+.sprite-background(@sprite, @w, @h, @k: 1,
+   @back-size: @k * image-width(@sprite) @k * image-height(@sprite),
+   @v-align: middle) {
+  width: @w;
+  height: @h;
+  background: url(@sprite);
+  background-size: @back-size;
+  display: inline-block;
+  vertical-align: @v-align;
+}
+
+.cover-photo(@src, @h, @w: auto) {
+  background-image: url(@src);
+  background-size: cover;
+  width: @w;
+  height: @h;
+}
+
+.appearance {
+  margin-top: 10px;
+  background-color: white;
+  border: @main-border;
+  border-radius: 3px;
+  padding: 5px;
+}

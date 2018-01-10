@@ -1,0 +1,22 @@
+@import "vars";
+@import "Mixins";
+
+.Profile-bar {
+  .appearance;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0 0 2px 2px;
+  &__item {
+    position: relative;
+    left: 160px;
+    padding: 11px 25px 11px 25px;
+    border-left: @active-grey solid 1px;
+    border-right: @active-grey solid 1px;
+    color: @text-blue;
+    font-weight: bold;
+    &.active {color: @dark-grey;}
+    &:hover {
+      background-color: @main-grey;
+    }
+  }
+}

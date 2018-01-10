@@ -1,0 +1,113 @@
+.appearance {
+  margin-top: 10px;
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.Side-bar {
+  border-left: #CCCCCC solid 1px;
+  height: calc(100% - 70px);
+  padding-top: 45px;
+  overflow: auto;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.Side-bar__user-pic {
+  height: 34px;
+  width: 34px;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin: auto 8px 5px 8px;
+}
+.Side-bar__search {
+  width: 203px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.Side-bar__item {
+  display: block;
+  font-size: 12px;
+  color: black;
+}
+.Side-bar__icon {
+  float: right;
+  margin: 10px 10px 0 0;
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon-sprite3.png");
+  background-size: 27px 518px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Side-bar__more-contacts-title {
+  margin: 8px;
+}
+.Search {
+  height: 30px;
+  background-color: #F6F7F9;
+  width: 220px;
+  margin-left: -18px;
+  border-left: #CCCCCC solid 1px;
+}
+.Search__input {
+  width: 135px;
+  height: 30px;
+  background-color: #F6F7F9;
+  border: none;
+  float: left;
+}
+.Search__icon {
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon-sprite4.png");
+  background-size: 37px 534px;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  margin-top: 7px;
+}
+.Icon2_find {
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon-sprite2.png");
+  background-size: 25px 381px;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 3px 32px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.Icon4_settings {
+  background-position: -2px 288px;
+  opacity: 0.2;
+}
+.Icon4_settings:hover {
+  opacity: 0.4;
+}
+.Icon4_new-message {
+  background-position: 4px 44px;
+  opacity: 0.3;
+}
+.Icon4_new-message:hover {
+  opacity: 0.5;
+}
+.Icon4_create-group {
+  background-position: 4px 92px;
+  opacity: 0.6;
+}
+.Icon4_create-group:hover {
+  opacity: 1;
+}
+.Icon3_green-dot {
+  background-position: 0px -190px;
+}
+@media (max-width: 1260px) {
+  .Side-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+.appearance {
+  margin-top: 10px;
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.Tool-bar {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.Tool-bar__h1 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #000;
+  margin: 5px;
+}
+.Tool-bar__user-pic {
+  width: 30px;
+  border-radius: 50%;
+}
+.Tool-bar__user-name {
+  position: relative;
+  top: -8px;
+}
+.Tool-bar__nav {
+  padding: 5px;
+}
+.Tool-bar__nav-title {
+  color: #4B4F56;
+  margin: 0;
+}
+.Tool-bar__item {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: black;
+  padding-left: 5px;
+}
+.Tool-bar__item.active {
+  font-weight: bold;
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
+.Tool-bar__item:hover {
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
+.Tool-bar__item:active {
+  background-color: #DDDFE2;
+}
+.Tool-bar__more {
+  font-size: 11px;
+  padding-left: 5px;
+  color: #365899;
+}
+.Tool-bar__more:hover {
+  text-decoration: underline;
+}
+.Tool-bar__search-field {
+  width: 158px;
+  border-radius: 3px;
+  border: #DDDFE2 solid 1px;
+  padding: 5px;
+  color: #A1A6BA;
+  margin-top: 10px;
+}
+.Tool-bar__search-button {
+  position: relative;
+  top: -23px;
+  left: 143px;
+  width: 24px;
+  height: 14px;
+  background: url("../images/icon-sprite2.png");
+  background-size: 24px auto;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background-position: 3px -336px;
+}
