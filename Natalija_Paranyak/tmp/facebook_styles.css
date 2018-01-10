@@ -58,14 +58,14 @@ body {
 }
 
 
-.main-container__nav {
+.page-navigation {
     position: fixed;
     top: 50px;
     width: 184px;
     margin-right: 10px;
 }
 
-.main-container__feeds {
+.feeds {
     margin-right: 10px;
     position: absolute;
     left: 194px;
@@ -73,14 +73,14 @@ body {
     width: 500px;
 }
 
-.main-container__quick {
+.quick {
     position: absolute;
     left: 704px;
     top: 0;
     width: 308px;
 }
 
-.main-container__actions {
+.actions {
    position: fixed;
     overflow-y: scroll;
     height: 100%;    top:50px;
@@ -90,7 +90,7 @@ body {
 }
 
 @media screen and (max-width: 1220px){
-    .main-container__actions{display: none}
+    .actions{display: none}
 }
 
 @media screen and (max-width: 1220px) {
@@ -106,7 +106,7 @@ body {
     align-items: center;
 }
 
-.main-container__nav ul, .main-container__nav aside, .main-container__quick ul {
+.page-navigation ul, .page-navigation aside, .quick ul {
     padding-left: 20px;
     overflow: hidden;
     font-weight: 100;
@@ -119,11 +119,11 @@ a {
     text-decoration: none;
 }
 
-.main-container__nav li:hover {
+.page-navigation li:hover {
     background-color: #e9ebee;
 }
 
-.main-container__nav aside a {
+.page-navigation aside a {
     display: inline-block;
     color: darkblue;
     text-decoration: none;
@@ -168,7 +168,7 @@ a {
 }
 
 
-.main-container__actions__item--close {
+.actions__dialog_close {
     color: dimgrey;
     font-size: 15px;
     position: absolute;
@@ -178,17 +178,17 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-.main-container__actions__item--close:after {
+.actions__dialog_close:after {
     content: 'X'; }
 
 
 
-.main-container__actions__item__dialog {
+.actions__dialog {
     float: left;
     position: relative;
 }
 
-.main-container__actions__item {
+.actions__item {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;

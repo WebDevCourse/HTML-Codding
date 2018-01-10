@@ -1,7 +1,14 @@
-.ad-feed__block-event {
-  margin-left: 5px;
-  & a {
+@import "vars";
+@import "Mixins";
+
+.Events {
+  .appearance;
+  font-size: 12px;
+  &__link {
     color: black;
-    font-size: 13px;
+    display: inline-block;
+  }
+  &__time {
+    color: @title-grey;
   }
 }

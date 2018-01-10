@@ -1,0 +1,27 @@
+@import "vars.less";
+@import "Mixins";
+@sprite: "../images/icons-user-page-2.png";
+
+.Photos {
+  .appearance;
+  padding-left: 10px;
+  &__title {
+    margin: 10px;
+  }
+  &__photo {
+    border: @main-border;
+    &.bigger {
+      width: 140px;
+    }
+    &.smaller {
+      width: 91px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    .sprite-background(@sprite, 24px, 24px);
+  }
+}
+
+.Icon_photos {background-position: 0 91px;}
