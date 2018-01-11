@@ -1,1 +1,40 @@
-{}
+{
+  "wines":[
+    {
+      "wine-page-url":"#",
+      "wine-name":"Treble Rose 2017",
+      "wine-description": "SOLD OUT (too soon!)",
+      "wine-price":45.00
+    },
+    {
+      "wine-page-url":"#",
+      "wine-name":"Damsteep Riesling 2016",
+      "wine-description": "From our Damsteep Vineyard. Dry, rich with natural balance and comforting weight. Salivating minerality persists. ",
+      "wine-price":27.00
+    },
+    {
+      "wine-page-url":"#",
+      "wine-name":"Home Chardonnay 2016",
+      "wine-description": "\"Peach, apricot, ginger, toast, hazelnut and spicy oak flavours. An intense wine, with layers of flavour and a suede-like texture. Tangy, vibrant chardonnay with character and class.\"  Bob Campbell. Unfiltered - use your decanter.",
+      "wine-price":45.00
+    },
+    {
+      "wine-page-url":"#",
+      "wine-name":"Damsteep Pinot Noir 2015",
+      "wine-description": "Crushed raspberry, red currant jelly, sandstone and white rock on the nose. Silken, rich and expansive across the palate with savory underlying tannin giving tension and power.  Drink now until 2026.",
+      "wine-price":45.00
+    },
+    {
+      "wine-page-url":"#",
+      "wine-name":"Home Pinot Noir 2015",
+      "wine-description": "Red and black forest fruit, with black current and raspberry, wild rose and subtle fresh spice. Berry fruits are rich and broad, sensual and luscious with underlying savoury earth and gentle but persistent minerality.",
+      "wine-price":45.01
+    },
+    {
+      "wine-page-url":"#",
+      "wine-name":"Netherwood Pinot Noir 2014",
+      "wine-description": "Earth, cherries, tamarillo, spice, licorice, ash and red roses on the nose. The wine is dense with  rich forest fruits, red cherries, roses and damson plum. Supple and billowing with a vibrant sandstone line. Salivating. Drink until 2026.",
+      "wine-price":65.00
+    }
+  ]
+}

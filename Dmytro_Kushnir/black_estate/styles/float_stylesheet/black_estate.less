@@ -1,4 +1,5 @@
 @import "_variables";
+@import "../normalize.css";
 @import "header";
 @import "footer";
 @import "layout";
@@ -12,28 +13,41 @@
 @import "wines";
 @import "shop_nav";
 @import "reviews";
-//TODO remaster a_href and on-hower behaviour
-
-a:hover {
-  text-decoration: none;
-
-}
+@import "utils";
+@import "footer_nav1";
+@import "communication";
+@import "license";
+@import "1200_grid_generated.css";
 a{
   color: black;
-  text-decoration: underline;
+  border-bottom: 2px solid black;
+  text-decoration: none;
 }
+
+a:hover {
+  border-bottom: 2px solid transparent;
+}
+
+h1{  font-weight: normal;}
+
+h2{  font-weight: normal;}
+
+h3{  font-weight: normal;}
 
 html{
   margin: 0;
   font-size: 0;
-  //background-color: magenta;
+}
+
+*::selection{
+  background: @selection_color
 }
 
 body {
-  //font-size: 0;
   margin: 0;
-  background: magenta;
-  font-size: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #1b1b1b;
+  line-height: @line-height-general;
+  font-size: @font-size-general;
+  font-family: @font-general;
+
+  [class~='debug'] &{background: magenta}
 }

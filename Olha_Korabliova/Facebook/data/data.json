@@ -1210,23 +1210,5 @@
         "online": "Side-bar__icon Icon3_green-dot"
       }
     ]
-  },
-
-
-
-
-  "group-user-settings": [
-    {
-      "option": "Joined"
-    },
-    {
-      "option": "Notifications"
-    },
-    {
-      "option": "Share"
-    },
-    {
-      "option": "..."
-    }
-  ]
+  }
 }

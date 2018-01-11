@@ -34,6 +34,7 @@
   margin: 0;
   font-weight: bold;
   color: #365899;
+  display: block;
 }
 .Article__link:hover,
 .Article__user-name:hover {

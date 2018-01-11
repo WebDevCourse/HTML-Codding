@@ -126,9 +126,8 @@
                             {{#additional-info}}
                                 <span>{{preposition}}
                                     <a class="Article__link" href="{{info-link}}">{{info}}</a>
-                                    </span>
+                                </span>
                             {{/additional-info}}
-                            <br>
                             <a href="#">
                                 <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
                             </a>
@@ -210,12 +209,10 @@
         </div>
         <div class="Events">
             {{#Index.Events}}
-                <div class="Events__item">
-                    <a class="Events__item-link" href="{{link}}">
-                        <span class="{{icon-class}}"></span>{{event}}
-                    </a>
-                    <time class="Events__item-time" datatype="#">{{event-time}}</time>
-                </div>
+                <a class="Events__link" href="{{link}}">
+                    <span class="{{icon-class}}"></span>{{event}}
+                </a>
+                <time class="Events__time" datatype="#">{{event-time}}</time>
             {{/Index.Events}}
         </div>
         <div class="Friend-suggest">
