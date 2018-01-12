@@ -1,0 +1,30 @@
+svg { width: 500px; height: 500px; }
+circle { stroke: red; fill: transparent; }
+
+@keyframes orbit {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(-360deg);}
+  }
+
+  .sol > g { transform-origin: center; }.
+  .sol { transform-origin: center; animation: zoom 20s ease-out 0ms infinite; }
+  .mercury { animation: orbit 2.4s linear 0ms infinite; }
+  .venus { animation: orbit 6.2s linear 0ms infinite; }
+  .earth { animation: orbit 10s linear 0ms infinite; }
+  .mars { animation: orbit 18s linear 0ms infinite; }
+  .asteroid-belt {}
+  .jupiter {}
+  .uranus {}
+  .saturn {}
+  .neptune {}
+
+  .solar {fill: #f1c40f;}
+  .mercury-circle {fill: #7f8c8d;}
+  .venus-circle {fill: #ecf0f1;}
+  .earth-circle  {fill: #2980b9 }
+  .mars-circle {fill: #e74c3c;}
+  .asteroid-belt-circle {}
+  .jupiter-circle {fill: #e67e22;}
+  .uranus-circle {fill: #3498db;}
+  .saturn-circle {fill: #ecf0f1;}
+  .neptune-circle {fill: #2980b9;}
