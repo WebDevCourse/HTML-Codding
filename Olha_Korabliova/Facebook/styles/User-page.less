@@ -1,0 +1,50 @@
+@import "vars";
+@import "Mixins";
+
+.Facebook {
+  margin-right: 266px;
+  &__profile {
+    margin-top: @main-top;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}
+
+.User {
+  position: relative;
+  top: -178px;
+  left: 42px;
+}
+
+.Profile-bar {
+  position: absolute;
+  top: 349px;
+  width: 878px;
+}
+
+.Cover__photo {
+  border-left: @cover-photo-border;
+  border-right: @cover-photo-border;
+  .cover-photo("../images/cover_photo.jpg", 350px);
+}
+
+.Activity {
+  position: relative;
+  top: -205px;
+  left: 590px;
+}
+
+.Left-bar {
+  position: absolute;
+  top: 387px;
+  width: 310px;
+}
+
+.News-feed {
+  position: relative;
+  left: 320px;
+  top: -159px;
+  width: 580px;
+}

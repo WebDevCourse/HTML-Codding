@@ -1,0 +1,43 @@
+.Roundabout{
+    height: 480px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ &__image{
+    position: absolute;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+    &_center{
+        margin-left: 10%;
+        &::after{
+            content:' ';
+            background-image: url(../img/arrow-r.svg);
+            position: absolute;
+            width: 40px;
+            height:40px;
+            z-index: 100;
+        }
+        &::before{
+            content:' ';
+            background-image: url(../img/arrow-l.svg);
+            
+            position: absolute;
+            width: 40px;
+            height:40px;
+            z-index: 100;
+        }
+    }       
+
+  
+    &_second{
+        
+        &_left{
+            margin-top: 30px;
+            left: 50%;
+        }
+        &_right{
+            margin-top: 30px;
+            right: 50%;
+        }
+    }
+    
+ }
+}

@@ -1,0 +1,15 @@
+<h1 class="different_info__header"> {{info-header}} </h1>
+<div class="different_info__colomn">
+    <p>{{{menu-info}}}</p>
+    <p>{{work-time}}</p>
+    {{#contacts}}
+        <p>{{phone_number}} <br> or <a href={{email}}> email </a> </p>
+    {{/contacts}}
+    <a href="{{map-href}}">map</a>
+</div>
+<div class="different_info__colomn">  {{{menu-msg}}} </div>
+<div class="different_info__colomn">
+    {{#each points}}
+        <p>{{{content}}}</p>
+    {{/each}}
+</div>

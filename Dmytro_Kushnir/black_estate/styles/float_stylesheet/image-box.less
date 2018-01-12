@@ -1,0 +1,32 @@
+@import "_variables";
+
+.img-box{
+  display: block;
+  position: relative;
+  right: @aside__width;
+  // 2 is number of elements
+  height: @imgbox__img-height * (2 - @imgbox_vert-pic-overlap);
+  width: @layout_width;
+  overflow: hidden;
+
+  &__img{
+    height: @imgbox__img-height;
+    width: @imgbox__img-width;
+    position: relative;
+    margin: 0;
+    &:hover{z-index: 4;}
+
+    &_at_left{float: left}
+    &_at_right{float: right}
+    &_at_top{float: top} //yea, it is useless
+    &_at_bottom{
+      position: relative;
+      bottom: @imgbox__img-height * @imgbox_vert-pic-overlap;
+    }
+    &_layaer_front{z-index: 2}
+    &_layer_back{z-index: 3}
+    
+  }
+
+  [class~="debug"] &{background-color: khaki;}
+}
