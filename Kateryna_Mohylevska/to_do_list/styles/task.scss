@@ -1,0 +1,26 @@
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  &__check{
+    margin-right: 10px;
+  }
+  &__text{
+    margin-right: 50px;
+  }
+  &__edit{
+    color: #8e44ad;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__delete{
+    background-color: transparent;
+    border: none;
+    color: #8c001a;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

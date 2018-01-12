@@ -1,0 +1,21 @@
+.task-form{
+  display: flex;
+  justify-content: center;
+  &__write{
+    background-color: grey;
+    color: antiquewhite;
+    border: none;
+    height:30px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  &__create{
+    height:40px;
+    width: 40px;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
