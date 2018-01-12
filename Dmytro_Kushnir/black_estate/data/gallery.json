@@ -1,0 +1,10 @@
+{
+  "first_img":
+  {"img_alt":"bottle",
+    "img_url":"../imgs/img7.jpg"
+  },
+
+  "second_img":{
+    "img_alt":"",
+    "img_url":"../imgs/img8.jpg"}
+}

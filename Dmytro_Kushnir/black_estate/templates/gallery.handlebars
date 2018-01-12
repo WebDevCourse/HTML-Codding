@@ -1,0 +1,19 @@
+<section class="img-box gallery">
+    {{#first_img}}
+        <img src="{{img_url}}" alt="{{img_alt}}"
+             class="img-box__img
+             img-box__img_at_left
+             img-box__img_at_top
+             img-box__img_layaer_front
+             ">
+    {{/first_img}}
+    <a href="#" class="gallery__more-imgs">View more images --> </a>
+    {{#second_img}}
+        <img src="{{img_url}}" alt="{{img_alt}}"
+             class="img-box__img
+             img-box__img_at_right
+             img-box__img_at_bottom
+             img-box__img_layaer_front
+             ">
+    {{/second_img}}
+</section>{{alt}}

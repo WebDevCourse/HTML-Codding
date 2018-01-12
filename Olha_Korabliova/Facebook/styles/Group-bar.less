@@ -1,0 +1,35 @@
+@import "vars";
+@import "Mixins";
+
+.Group-bar {
+  background-color: white;
+  border: @main-border;
+  margin: 0;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  padding: 15px 10px 15px 10px;
+  &__item {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: @main-border;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color: @milk;
+    color: @dark-grey;
+  }
+  &__icon1 {
+    .sprite-background("../images/icons-group-page-1.png", 16px, 15px, 1.2);
+    margin-right: 5px;
+  }
+  &__icon2 {
+    .sprite-background("../images/icons-group-page-2.png", 16px, 16px);
+    margin-right: 5px;
+  }
+}
+
+.Icon1_notif {background-position: 0 27px;}
+.Icon1_share {background-position: -15px 28px;}
+.Icon2_down {background-position: -18px 120px;}
+.Icon2_more {background-position: -2px 279px;}

@@ -12,7 +12,7 @@ class myCalendar {
         let monthYear = this.allMonths[this.curMonth] + " " + this.curYear;
         let curWeekDay = this.allDays[this.curDay - 1];
         document.body.innerHTML = `<h1 class="cal-header">${monthYear}</h1>`;
-        document.body.
+        // document.body.
     }
 
     calendarBody(day, startDay) {

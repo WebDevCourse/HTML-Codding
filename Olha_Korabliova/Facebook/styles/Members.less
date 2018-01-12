@@ -1,0 +1,35 @@
+@import "vars";
+@import "Mixins";
+
+.Members {
+  .appearance;
+  padding: 0 10px 10px;
+  &__title {
+    margin: 10px 0 5px 0;
+    color: @title-grey;
+    &-more {
+      float: right;
+      font-weight: lighter;
+      color: @main-blue;
+    }
+  }
+  &__search {
+    width: 100%;
+    border-radius: 3px;
+    border: @main-border;
+  }
+  &__user{
+    padding-bottom: 5px;
+    border-bottom: @main-border;
+    &-pic {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: @main-border;
+    }
+  }
+  &__text {
+    margin: 3px 3px 3px 0;
+    font-size: 13px;
+  }
+}

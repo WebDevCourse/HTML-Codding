@@ -1,0 +1,22 @@
+@import "_variables";
+.main-tasting-room{
+
+  //this damn block ruines all alignment of the page, it has other colomns
+  &__header{    padding-bottom: 200px;}
+  &__epigraph{    padding-top: 50px;}
+  &__emblem{    float: right;}
+  &__side-note{
+    [class~="debug"] &{background-color: #cc3333;}
+  }
+  &__tasty-img{
+    clear-after: both;
+    float: right;
+  }
+
+  &__info_container{
+    margin-left: -10px;
+    [class~="debug"] &{  background-color: yellow;}
+  }
+
+  [class~="debug"] &{background-color: red;}
+}

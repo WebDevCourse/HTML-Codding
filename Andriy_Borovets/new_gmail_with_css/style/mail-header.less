@@ -1,0 +1,49 @@
+@margin: 30px;
+@default-margin: 1%;
+@background-color: #f0f0f0;
+#my-default-button{
+    background-color: @background-color;
+    border: solid lightgray 1px;
+    border-radius: 2px;
+}
+.mail-header{
+    display: flex;
+    align-items: center;
+    margin-top: @default-margin;
+    .mail-header__main-selector{
+        margin-left: 2%;
+        margin-right: 7%;
+        font-size: 20px;
+        color: #d14836;
+        vertical-align:top;
+        border: transparent;
+    }
+    .mail-header__mail-selector{
+        width: 5%;
+        height: @margin;
+        #my-default-button;
+        .mail-selector__choice{
+            color: gray;
+            margin-left:-10% ;
+            border: transparent;
+            background-color: transparent;
+        }
+    }
+    .mail-header__refresh-button{
+        width: 5%;
+        height: @margin;
+        margin-left: @default-margin;
+        color: gray;
+        #my-default-button
+    }
+    .mail-header__num-of-mails{
+        margin-left: auto;
+    }
+    .mail-header__nav-button4{
+        margin-right: 1%;
+    }
+}
+[class^="mail-header__nav-button"]{
+    margin-left: @default-margin;
+    #my-default-button
+}
