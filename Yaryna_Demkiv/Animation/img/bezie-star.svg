@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <g id="star">
+        <path stroke="black" fill="transparent" d="M 0 50 L 15 25,98 L 43,3 25"/>
+    </g>
+</svg>
