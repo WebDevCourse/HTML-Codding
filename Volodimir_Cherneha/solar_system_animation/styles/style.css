@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.svg");
+    background-size: 100%;
+}
+
+@keyframes orb {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+.Sun {
+    position: absolute;
+    background-image: url('../img/sun.svg');
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 617px;
+    margin-top: 267px;
+    box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.4), 0 0 22px 11px rgba(255, 203, 0, 0.13);
+}
+
+.Mercury {
+    position: absolute;
+    margin-left: 606px;
+    margin-top: 256px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: orb 20s linear infinite;
+}
+
+.Mercury:before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Mercury.svg');
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: 32px;
+}
+
+.Venus {
+    position: absolute;
+    margin-left: 587px;
+    margin-top: 234px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: orb 30s linear infinite;
+}
+
+.Venus:before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Venus.svg');
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    margin-left: 60px;
+}
+
+.Earth {
+    position: absolute;
+    margin-left: 567px;
+    margin-top: 214px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: orb 30s linear infinite;
+}
+
+.Earth:before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Earth.svg');
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: 60px;
+}
+
+.Earth:after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 50%;
+    top: 0px;
+    margin-left: -12px;
+    margin-top: -9px;
+    border-radius: 120px;
+    box-shadow: 0 -10px 0 -8px grey;
+    animation: orb 5s linear infinite;
+}
+
+.Mars {
+    position: absolute;
+    margin-left: 554px;
+    margin-top: 200px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: orb 25s linear infinite;
+}
+
+.Mars:before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Mars.svg');
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
+    border-radius: 50%;
+    margin-left: 60px;
+}
