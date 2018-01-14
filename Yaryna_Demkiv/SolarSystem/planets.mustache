@@ -63,6 +63,7 @@
         position: absolute;
         left:202px;
         top:157px;
+        /*transform: rotate(45deg);*/
     }
 
     #saturn-image {
@@ -239,6 +240,21 @@
         background-size: 10%;
         /*animation-name: shadow-mercury;*/ }
 
+    #earth:after {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 50%;
+        top: -2px;
+        margin-left: -1px;
+        margin-top: -5px;
+        border-radius: 85px;
+        box-sizing: border-box;
+        border-image-outset: 10px;
+        box-shadow: 0px 15px 0px -5px #f4e5e5;
+        animation: orbit 2.2s linear infinite;
+    }
     #mars .planet {
         background-image: url("img/Mars.png");
         background-size: 12%;
@@ -256,35 +272,6 @@
 
 
 
-    @keyframes shadow-mercury {
-        0% {
-            box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-            /* TOP */ }
-
-        25% {
-            box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
-            /* LEFT */ }
-
-        50% {
-            box-shadow: inset 13px -5px 4px rgba(0, 0, 0, 0.5);
-            /* BOTTOM */ }
-
-        50.01% {
-            box-shadow: inset -13px -5px 4px rgba(0, 0, 0, 0.5);
-            /* BOTTOM */ }
-
-        75% {
-            box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
-            /* RIGHT */ }
-
-        100% {
-            box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-            /* TOP */ } }
-
-    .scaled.view-2D #mercury .planet,
-    .scaled.view-3D #mercury .planet {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
-        /* RIGHT */ }
 
 
     @keyframes orbit {
@@ -294,15 +281,132 @@
         100% {
             transform: rotateZ(-360deg); } }
 
-    @keyframes roll {
-        0% {
-            transform: rotate(0);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+    @keyframes mercury-info {
+        from { transform: rotate(0deg) translateX(46px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(46px) rotate(360deg);}
+    }
+    @keyframes venus-info {
+        from { transform: rotate(0deg) translateX(62px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(62px) rotate(360deg);}
+    }
+    @keyframes earth-info {
+        from { transform: rotate(0deg) translateX(84px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(84px) rotate(360deg);}
+    }
+    @keyframes mars-info {
+        from { transform: rotate(0deg) translateX(112px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(112px) rotate(360deg);}
+    }
+    @keyframes jupiter-info {
+        from { transform: rotate(0deg) translateX(152px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(152px) rotate(360deg);}
+    }
+    @keyframes saturn-info {
+        from { transform: rotate(0deg) translateX(228px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(228px) rotate(360deg);}
+    }
+    @keyframes uranus-info {
+        from { transform: rotate(0deg) translateX(278px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(278px) rotate(360deg);}
+    }
+    @keyframes saturn-info {
+        from { transform: rotate(0deg) translateX(312px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(312px) rotate(360deg);}
     }
 
+    label {
+        font-size: 16px;
+        color: #dcdcdc;
+        font-family: PT Sans, sans-serif;
+        font-weight: bold;
+    }
+
+    .infos {
+        color: black;
+        background-color: rgba(220, 220, 200, .4);
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        text-align: center;
+        /*text-shadow: 0.5px 0.5px white;*/
+        font-size: 14px;
+        font-weight: bold;
+        font-family: PT Sans, sans-serif;
+        border-radius: 50%;
+    }
+
+    .switcher:checked ~ .infos {
+        display: block;
+    }
+
+    .switcher ~ .infos {
+       display: none;
+    }
+
+    .infos#about_mercury {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 427px;
+        top: 376px;
+        animation: mercury-info 2.89016s infinite linear;
+    }
+    .infos#about_venus {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 377px;
+        animation: venus-info 7.38237s infinite linear;
+    }
+    .infos#about_earth {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: earth-info 12.00021s infinite linear;
+    }
+    .infos#about_mars {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: mars-info 22.57017s infinite linear;
+    }
+    .infos#about_jupiter {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: jupiter-info 142.35138s infinite linear;
+    }
+    .infos#about_saturn {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: saturn-info 353.36998s infinite linear;
+    }
+    .infos#about_uranus {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: uranus-info 1008.20215s infinite linear;
+    }
+    .infos#about_saturn {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: saturn-info 1908.20215s infinite linear;
+    }
 </style>
 <body>
 <div class="galaxy">
@@ -363,8 +467,64 @@
             </div>
         </div>
     </div>
-  <!--  <input type="checkbox" class="switcher">-->
-
+    <form action="#">
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_mercury">
+                <p>Mercury<br>170,503km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mercury">Mercury</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_venus">
+                <p>Venus<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_venus">Venus</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_earth">
+                <p>Earth<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_venus">Earth</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_mars">
+                <p>Mars<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Mars</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_jupiter">
+                <p>Jupiter<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Jupiter</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_saturn">
+                <p>Saturn<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Saturn</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_uranus">
+                <p>Uranus<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_uranus">Uranus</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_saturn">
+                <p>Saturn<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_saturn">Saturn</label>
+        </div>
+    </form>
 </div>
 </body>
 </html>
