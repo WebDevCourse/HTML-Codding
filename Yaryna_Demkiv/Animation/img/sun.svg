@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <g>
+        <circle class="sun" cx="600" cy="320" r="60" fill="#F2EF88"/>
+    </g>
+</svg>
