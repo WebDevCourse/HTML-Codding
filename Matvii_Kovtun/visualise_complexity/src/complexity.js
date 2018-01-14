@@ -15,6 +15,13 @@ class Complexity {
             .fill()
             .map((el, i) =>
                 new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
+        this.clearArea();
+    }
+
+
+    clearArea() {
+        document.querySelector(".result__good").innerHTML = "";
+        document.querySelector(".result__bad").innerHTML = "";
     }
 
     generatePoints() {
@@ -33,21 +40,33 @@ class Complexity {
         return nd;
     }
 
-    action() {
-        this.bad.perform(this.numbers).then(value => {
+    async action() {
+        this.good.perform(this.numbers).then(value => {
+            let elem = document.querySelector(".result__good");
+            // console.log(value);
+            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")));
+        });
+
+        await this.bad.perform(this.numbers).then(value => {
             let elem = document.querySelector(".result__bad");
             // console.log(value);
             value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_bad")));
         });
 
 
-        this.good.perform(this.numbers).then(value => {
-            let elem = document.querySelector(".result__good");
-            // console.log(value);
-            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")));
-
-        });
     }
 }
 
-new Complexity(document, ".content__algo_good", ".content__algo_bad").generatePoints().action();
+
+const gameOrder = () => {
+    let resetButton = document.querySelector(".start-button");
+    resetButton.addEventListener("click", () => {
+        resetButton.classList.add("start-button_disabled");
+        new Complexity(document, ".content__algo_good", ".content__algo_bad")
+            .generatePoints()
+            .action().then(() => resetButton.classList.remove("start-button_disabled"));
+    }, false);
+
+};
+
+gameOrder();
