@@ -7,24 +7,34 @@ import {K, MARGINFROMSIDES, NUMBEROFNUMBERS} from './consts';
 import BadAlgo from "./BadAlgo";
 
 
-const good = new GoodAlgo(document,".content__algo_good");
-const bad = new BadAlgo(document, ".content__algo_bad");
+class Complexity {
+    constructor(document, goodSelector, badSelector) {
+        this.good = new GoodAlgo(document, goodSelector);
+        this.bad = new BadAlgo(document, badSelector);
+        this.numbers = new Array(NUMBEROFNUMBERS)
+            .fill()
+            .map((el, i) =>
+                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS)));
+    }
 
-const numbers = new Array(NUMBEROFNUMBERS - 1)
-    .fill()
-    .map((el, i) =>
-        new MyNumber(getRandom(MARGINFROMSIDES, good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, good.height - MARGINFROMSIDES), i + 1));
+    generatePoints() {
+        this.numbers.map((el) => {
+            el.draw(this.good.context);
+            el.draw(this.bad.context);
+        });
+        return this;
+    };
 
+    action() {
+        this.good.perform(this.numbers).then(value => {
+            console.log(value);
+        });
 
-const generatePoints = () => {
-    numbers.map((el) => {
-        el.draw(good.context);
-        el.draw(bad.context);
-    });
+        this.bad.perform(this.numbers).then(value => {
+            console.log(value);
+        });
 
-};
+    }
+}
 
-
-generatePoints();
-good.perform(numbers);
-bad.perform(numbers);
+new Complexity(document, ".content__algo_good", ".content__algo_bad").generatePoints().action();

@@ -2,25 +2,28 @@ import {sleepFor} from "./utils";
 import {K, NUMBEROFNUMBERS} from './consts';
 import Algo from './Algo';
 
-class BadAlgo extends Algo{
+class BadAlgo extends Algo {
     constructor(document, selector) {
         super(document, selector);
     }
 
-    async perform(numbers){
-        let exist = false;
+    async perform(numbers) {
+        let missingNumbers = [];
         for (let i = 1; i <= NUMBEROFNUMBERS; ++i) {
-            for (let j = 0; j < NUMBEROFNUMBERS - 1; ++j) {
+            let exist = false;
+            for (let j = 0; j < NUMBEROFNUMBERS; ++j) {
                 await sleepFor(K);
-                if (i == numbers[j].number) {
+                if (i === numbers[j].number) {
                     numbers[j].undraw(this.context);
                     exist = true;
                 }
             }
             if (!exist) {
-                console.log(i);
+                missingNumbers.push(i);
+                // console.log(i);
             }
         }
+        return missingNumbers;
     };
 
 }

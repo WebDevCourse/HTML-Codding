@@ -7,22 +7,27 @@ class GoodAlgo extends Algo {
         super(document, selector);
     }
 
-    async perform(numbers){
-        const countNumbers = new Array(NUMBEROFNUMBERS).fill(0);
+    async perform(numbers) {
+        let missingNumbers = [];
+        const countNumbers = new Array(NUMBEROFNUMBERS + 1).fill(0);
+        const indexNumbers = new Array(NUMBEROFNUMBERS + 1).fill().map(() => new Array(NUMBEROFNUMBERS + 1));
         for (let i = 0; i < numbers.length; ++i) {
             await sleepFor(K);
-            countNumbers[numbers[i].number - 1]++;
+            countNumbers[numbers[i].number]++;
+            indexNumbers[numbers[i].number].push(i);
         }
-        // console.log(countNumbers);
-        for (let i = 0; i < countNumbers.length; ++i) {
+        for (let i = 1; i < countNumbers.length; ++i) {
             await sleepFor(K);
             if (countNumbers[i] === 0) {
-                console.log(i + 1)
+                missingNumbers.push(i);
             }
             else {
-                numbers[i].undraw(this.context);
+                indexNumbers[i].map((el) => {
+                    numbers[el].undraw(this.context);
+                });
             }
         }
+        return missingNumbers;
     };
 
 }
