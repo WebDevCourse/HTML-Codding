@@ -1,0 +1,69 @@
+.space {
+  margin-left: 20%;
+  margin-right: 20%;}
+
+body { background-image: url("stars.jpg")}
+svg { width: 500px; height: 500px; }
+circle { stroke: none; fill: transparent; }
+.orbit {stroke :red}
+
+@keyframes orbit {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(-360deg);}
+  }
+
+  .sol > g { transform-origin: center; }
+  .mercury { animation: orbit 2.4s linear 0ms infinite; }
+  .venus { animation: orbit 6.2s linear 0ms infinite; }
+  .earth { animation: orbit 10s linear 0ms infinite; }
+  .mars { animation: orbit 18s linear 0ms infinite; }
+  .jupiter {animation: orbit 26s linear 0ms infinite;}
+  .uranus {animation: orbit 34s linear 0ms infinite;}
+  .saturn {animation: orbit 42s linear 0ms infinite;}
+  .neptune {animation: orbit 48s linear 0ms infinite;}
+
+.asteroid {animation: orbit 5s linear 0s infinite;}
+.asteroid1 {animation: orbit 6s linear 2s infinite;}
+.asteroid2 {animation: orbit 7s linear 3s infinite;}
+.asteroid3 {animation: orbit 8s linear 4s infinite;}
+.asteroid4 {animation: orbit 9s linear 5s infinite;}
+.asteroid5 {animation: orbit 7s linear 2s infinite;}
+.asteroid6 {animation: orbit 5s linear 3s infinite;}
+.asteroid7 {animation: orbit 6s linear 4s infinite;}
+.asteroid8 {animation: orbit 7s linear 5s infinite;}
+.asteroid9 {animation: orbit 8s linear 2s infinite;}
+.asteroid10 {animation: orbit 6s linear 3s infinite;}
+.asteroid11 {animation: orbit 5s linear 4s infinite;}
+.asteroid12 {animation: orbit 6s linear 5s infinite;}
+.asteroid13 {animation: orbit 7s linear 2s infinite;}
+.asteroid14 {animation: orbit 8s linear 3s infinite;}
+.asteroid15 {animation: orbit 9s linear 4s infinite;}
+.asteroid16 {animation: orbit 10s linear 5s infinite;}
+.asteroid17 {animation: orbit 9s linear 2s infinite;}
+.asteroid18 {animation: orbit 6s linear 3s infinite;}
+.asteroid19 {animation: orbit 7s linear 4s infinite;}
+.asteroid20 {animation: orbit 8s linear 5s infinite;}
+.asteroid21 {animation: orbit 9s linear 2s infinite;}
+.asteroid22 {animation: orbit 10s linear 3s infinite;}
+.asteroid23 {animation: orbit 5s linear 4s infinite;}
+.asteroid24 {animation: orbit 6s linear 5s infinite;}
+.asteroid25 {animation: orbit 7s linear 2s infinite;}
+.asteroid26 {animation: orbit 8s linear 3s infinite;}
+.asteroid27 {animation: orbit 9s linear 4s infinite;}
+.asteroid28 {animation: orbit 11s linear 5s infinite;}
+.asteroid29 {animation: orbit 5s linear 2s infinite;}
+.asteroid30 {animation: orbit 6s linear 3s infinite;}
+.asteroid31 {animation: orbit 7s linear 4ms infinite;}
+
+
+  .solar {fill: #f1c40f;}
+  .mercury-circle {fill: #7f8c8d;}
+  .venus-circle {fill: #ecf0f1;}
+  .earth-circle  {fill: #2980b9}
+  .mars-circle {fill: #e74c3c;}
+  .jupiter-circle {fill: #e67e22;}
+  .uranus-circle {fill: #3498db;}
+  .saturn-circle {fill: #ecf0f1;}
+  .neptune-circle {fill: #2980b9;}
+  .asteroid-circle {fill: #8b9cac; }
+

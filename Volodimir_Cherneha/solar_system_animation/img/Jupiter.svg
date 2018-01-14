@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="10%" stop-color="rgb(47, 50, 55)"/>
+    <stop offset="40%" stop-color="rgb(160, 67, 37)" />
+    <stop offset="100%" stop-color="rgb(208, 126, 98)"/>
+ </linearGradient>
+     <circle cx="14.3" cy="14.3" r="14.3" fill="url(#Gradient)"/>
+</svg>
