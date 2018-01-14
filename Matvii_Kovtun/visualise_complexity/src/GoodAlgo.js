@@ -1,18 +1,13 @@
 import {sleepFor} from "./utils";
-import {K, NUMBEROFNUMBERS, MARGINFROMSIDES} from './consts';
+import {K, NUMBEROFNUMBERS} from './consts';
+import Algo from "./Algo";
 
-class GoodAlgo {
-    constructor(document) {
-        this.rect = document.querySelector(".content__algo_good");
-        this.context = this.rect.getContext('2d');
-        this.height = this.rect.getBoundingClientRect().height;
-        this.width = this.rect.getBoundingClientRect().width;
-        this.rect.height = this.height;
-        this.rect.width = this.width;
+class GoodAlgo extends Algo {
+    constructor(document, selector) {
+        super(document, selector);
     }
 
-
-    async goodAlgorithm(numbers){
+    async perform(numbers){
         const countNumbers = new Array(NUMBEROFNUMBERS).fill(0);
         for (let i = 0; i < numbers.length; ++i) {
             await sleepFor(K);

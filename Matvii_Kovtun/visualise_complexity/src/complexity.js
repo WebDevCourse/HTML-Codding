@@ -7,8 +7,8 @@ import {K, MARGINFROMSIDES, NUMBEROFNUMBERS} from './consts';
 import BadAlgo from "./BadAlgo";
 
 
-const good = new GoodAlgo(document);
-const bad = new BadAlgo(document);
+const good = new GoodAlgo(document,".content__algo_good");
+const bad = new BadAlgo(document, ".content__algo_bad");
 
 const numbers = new Array(NUMBEROFNUMBERS - 1)
     .fill()
@@ -25,7 +25,6 @@ const generatePoints = () => {
 };
 
 
-
 generatePoints();
-good.goodAlgorithm(numbers);
-bad.badAlgorithm(numbers);
+good.perform(numbers);
+bad.perform(numbers);

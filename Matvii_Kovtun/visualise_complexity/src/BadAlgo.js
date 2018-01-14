@@ -1,18 +1,13 @@
 import {sleepFor} from "./utils";
-import {K, NUMBEROFNUMBERS, MARGINFROMSIDES} from './consts';
+import {K, NUMBEROFNUMBERS} from './consts';
+import Algo from './Algo';
 
-class BadAlgo {
-    constructor(document) {
-        this.rect = document.querySelector(".content__algo_bad");
-        this.context = this.rect.getContext('2d');
-        this.height = this.rect.getBoundingClientRect().height;
-        this.width = this.rect.getBoundingClientRect().width;
-        this.rect.height = this.height;
-        this.rect.width = this.width;
+class BadAlgo extends Algo{
+    constructor(document, selector) {
+        super(document, selector);
     }
 
-
-    async badAlgorithm(numbers){
+    async perform(numbers){
         let exist = false;
         for (let i = 1; i <= NUMBEROFNUMBERS; ++i) {
             for (let j = 0; j < NUMBEROFNUMBERS - 1; ++j) {
