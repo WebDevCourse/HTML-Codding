@@ -14,7 +14,7 @@ class Complexity {
         this.numbers = new Array(NUMBEROFNUMBERS)
             .fill()
             .map((el, i) =>
-                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS)));
+                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
     }
 
     generatePoints() {
@@ -25,15 +25,28 @@ class Complexity {
         return this;
     };
 
+    renderNumber(number, modifier) {
+        let nd = document.createElement("span");
+        nd.textContent = number;
+        nd.classList.add("result__missing-numbers");
+        nd.classList.add(modifier);
+        return nd;
+    }
+
     action() {
-        this.good.perform(this.numbers).then(value => {
-            console.log(value);
-        });
-
         this.bad.perform(this.numbers).then(value => {
-            console.log(value);
+            let elem = document.querySelector(".result__bad");
+            // console.log(value);
+            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_bad")));
         });
 
+
+        this.good.perform(this.numbers).then(value => {
+            let elem = document.querySelector(".result__good");
+            // console.log(value);
+            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")));
+
+        });
     }
 }
 

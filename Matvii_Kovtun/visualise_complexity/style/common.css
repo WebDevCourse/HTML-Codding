@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
-    background-color: rgba(236, 240, 241,1.0);
+    background-color: rgba(236, 240, 241, 1.0);
+    font-size:23px;
 
 }
 
@@ -28,11 +29,38 @@ body {
 .content__algo_bad {
     outline: crimson 1.5px solid;
 
-
 }
 
 .content__algo_good {
     float: right;
     outline: darkgreen 1.5px solid;
+
+}
+
+.result {
+    text-align: center;
+}
+
+.result__good {
+
+}
+
+.result__bad {
+
+}
+
+.result__missing-numbers {
+    background-color: crimson;
+    margin-left: 3px;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+.result__missing-numbers_bad {
+    background-color: crimson;
+}
+.result__missing-numbers_good {
+    background-color: darkgreen;
 
 }

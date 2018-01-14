@@ -30,7 +30,6 @@ class MyNumber {
         ctx.restore();
 
     }
-
 }
 
 
