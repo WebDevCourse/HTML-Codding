@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .switcher {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                left: -250px;
+            }
+
+            .day-sky {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .day-water {
+                position: relative;
+                top:-1px;
+                left: 0;
+                z-index: 10;
+            }
+
+            .night-sky {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .night-water {
+                position: absolute;
+                top:-1px;
+                left: 0;
+            }
+
+            .sun {
+                position: relative;
+                top: -1400px;
+                z-index: 2;
+            }
+            .moon {
+                position: relative;
+                top: -2600px;
+                z-index: 2;
+            }
+            .switcher:checked ~ .day-sky {
+                z-index: 1;
+            }
+            .switcher ~ .day-sky {
+                z-index: -1;
+            }
+            .switcher:checked ~ .day-water {
+                z-index: 2;
+            }
+            .switcher ~ .day-water {
+                z-index: -2;
+            }
+
+            .switcher:checked ~ .sun {
+                opacity: 1;
+                transform: translate(0px, 0px);
+            }
+            .switcher ~ .sun {
+                opacity: 0;
+                transition: 1.5s;
+                transform: translate(-100px, 100px);
+            }
+
+            .switcher:checked ~ .moon {
+                opacity: 0;
+                transform: translate(150px, -160px);
+            }
+            .switcher ~ .moon {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: all 1.5s;
+            }
+            .switcher {
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <label>
+            <input type="checkbox" class="switcher">
+                <img class="day-sky" src="img/day-sky.svg" alt="">
+                <img class="day-water"src="img/day-water.svg" alt="">
+                <img class="night-sky" src="img/night-sky.svg" alt="">
+                <img class="night-water" src="img/night-water.svg" alt="">
+                <img class="sun" src="img/sun.svg" alt="sun">
+                <img class="moon" src="img/moon.svg" alt="moon">
+        </label>
+    </body>
+</html>
