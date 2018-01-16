@@ -1,4 +1,4 @@
-class Number {
+class MyNumber {
     // TODO: make good undraw function
     constructor(x, y, number) {
         this.x = x;
@@ -8,13 +8,13 @@ class Number {
 
     getPath() {
         const path = new Path2D();
-        path.arc(this.x, this.y, 7.5, 0, Math.PI * 2, true); // Outer circle
+        path.arc(this.x, this.y, 7.5*2, 0, Math.PI * 2, true); // Outer circle
         return path;
     }
 
     draw(ctx) {
         ctx.save();
-        ctx.fillStyle = `rgba(241, 196, 15, 0.6)`;
+        ctx.fillStyle = `rgba(39, 174, 96, 1.0)`;
         ctx.fill(this.getPath());
         ctx.fillStyle = "black";
         ctx.fillText(this.number, this.x - 6, this.y + 3);
@@ -30,8 +30,7 @@ class Number {
         ctx.restore();
 
     }
-
 }
 
 
-export default Number;
+export default MyNumber;
