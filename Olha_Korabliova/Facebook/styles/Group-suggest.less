@@ -1,0 +1,45 @@
+@import "vars";
+@import "Mixins";
+
+.Group-suggest {
+  .appearance;
+  padding: 0 10px 10px;
+  &__title {
+    margin: 10px 0 5px 0;
+    color: @title-grey;
+    font-size: 13px;
+    &-more {
+      float: right;
+      font-weight: lighter;
+      color: @main-blue;
+    }
+  }
+  &__group {
+    margin-bottom: 10px;
+    border: @main-border;
+    border-radius: 3px;
+    &-cover {
+      padding: 0;
+      .cover-photo("../images/group-suggest-cover.jpg", 100px);
+      border-radius: 3px 3px 0 0;
+    }
+    &-name {
+      color: @text-blue;
+      margin: 5px;
+    }
+    &-members {
+      font-size: 12px;
+      color: @title-grey;
+      padding-left: 5px;
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+    &-button {
+      color: @dark-grey;
+      position: relative;
+      float: right;
+      top: -37px;
+      margin-right: 10px;
+    }
+  }
+}

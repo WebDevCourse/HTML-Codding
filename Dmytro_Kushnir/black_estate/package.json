@@ -1,0 +1,32 @@
+{
+  "name": "Webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
+    "install": "^0.10.2",
+    "jquery": "^3.2.1",
+    "luxon": "0.0.20",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^3.0.0-rc.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.2",
+    "webpack": "^3.10.0"
+  }
+}

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-layout.css">
     <link rel="stylesheet" href="styles/main-header.css">
     <link rel="stylesheet" href="styles/button-follow.css">
     <link rel="stylesheet" href="styles/video-content.css">
@@ -40,7 +41,7 @@
     </aside>
 </header>
 
-<main class="main">
+<main class="main-layout">
     <section class="video-content">
         <!--
         <video width="854px" controls autoplay>
@@ -99,27 +100,31 @@
             </button>
 
             <form class="comments__add">
-                <img class="profile-img" alt="Фотографія профілю за умовчанням" src="//s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" width="40" height="40">
-                <input class="comments__typing" type="text" value="Додайте коментар для всіх...">
+                <img class="profile-img" alt="Фотографія профілю за умовчанням"
+                     src="https://yt3.ggpht.com/-T8dULHbUVVw/AAAAAAAAAAI/AAAAAAAAAAA/5D3n-mauN3A/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                     width="40" height="40">
+                <div class="comments_right">
+                    <input class="comments__typing" type="text" name="comment-text">
+                </div>
             </form>
             {{#comments}}
-            <section class="comments-element">
-                <img class="profile-img" src="{{profile-img}}" width="40" height="40">
-                <article class="comments-element__content">
-                    <h5 class="comments-element__name">{{name}}</h5>
-                    <time class="comments-element__time">{{time}}</time>
-                    <p class="comments-element__text">{{comment-text}}﻿</p>
-                    <aside class="comments-element__respond">
-                        <button class="comments-element__answer">відповісти</button>
-                        <span class="comments-element__respond-number">{{number}}</span>
-                        <i class="material-icons comments-element__like">thumb_up</i>
-                        <i class="material-icons comments-element__dislike">thumb_down</i>
-                    </aside>
-                    <button class="comments-element__see-comments">
-                        Переглянути відповідь
-                    </button>
-                </article>
-            </section>
+                <section class="comments-element">
+                    <img class="profile-img" src="{{profile-img}}" width="40" height="40">
+                    <article class="comments-element__content">
+                        <h5 class="comments-element__name">{{name}}</h5>
+                        <time class="comments-element__time">{{time}}</time>
+                        <p class="comments-element__text">{{comment-text}}﻿</p>
+                        <aside class="comments-element__respond">
+                            <button class="comments-element__answer">відповісти</button>
+                            <span class="comments-element__respond-number">{{number}}</span>
+                            <i class="material-icons comments-element__like">thumb_up</i>
+                            <i class="material-icons comments-element__dislike">thumb_down</i>
+                        </aside>
+                        <button class="comments-element__see-comments">
+                            Переглянути відповідь
+                        </button>
+                    </article>
+                </section>
             {{/comments}}
         </section>
     </section>
@@ -129,21 +134,21 @@
         </button>
         <p class="recommended-videos__autoplay-text">АВТОМАТИЧНЕ ВІДТВОРЕННЯ</p>
         {{#next-videos}}
-        <article class="recommended-videos__next-video">
-            <img src="{{url}}" alt="video" width="168px" height="94px">
-            <aside class="recommended-videos__details">
-                <h3 class="recommended-videos__name">{{video-name}}</h3>
+            <article class="recommended-videos__next-video">
+                <img src="{{url}}" alt="video" width="168px" height="94px">
+                <aside class="recommended-videos__details">
+                    <h3 class="recommended-videos__name">{{video-name}}</h3>
 
-                <a class="recommended-videos__channel-name" href="/">{{channel-name}}</a>
-                <p class="recommended-videos__views">{{views}}  переглядів</p>
-            </aside>
-        </article>
+                    <a class="recommended-videos__channel-name" href="/">{{channel-name}}</a>
+                    <p class="recommended-videos__views">{{views}}  переглядів</p>
+                </aside>
+            </article>
         {{/next-videos}}
         <button class="recommended-videos__see-more">
             Показати більше
         </button>
     </aside>
 </main>
-
+<script src="src/comments.js"></script>
 </body>
 </html>

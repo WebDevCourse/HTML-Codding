@@ -1,0 +1,25 @@
+@import "vars";
+@import "Mixins";
+
+.Activity {
+  display: inline-block;
+  &__button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    border: @main-border;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color: @milk;
+    color: @dark-grey;
+    &:hover {
+      background-color: @main-grey;
+    }
+  }
+
+  &__icon1 {
+    .sprite-background("../images/icon-sprite1.png", 20px, 20px);
+  }
+}
+
+.Icon1_edit-pencil {background-position: -42px 49px;}

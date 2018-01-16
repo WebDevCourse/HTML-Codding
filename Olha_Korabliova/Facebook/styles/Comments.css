@@ -1,0 +1,116 @@
+.appearance {
+  margin-top: 10px;
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.Comments {
+  border: #DDDFE2 solid 1px;
+  border-radius: 0 0 3px 3px;
+  background-color: #F6F7F9;
+}
+.Comments__reactions {
+  padding: 5px 10px 5px 10px;
+}
+.Comments__action {
+  color: #4267b2;
+  font-size: 12px;
+}
+.Comments__action:nth-child(2) {
+  float: right;
+  margin-top: 2px;
+}
+.Comments__comments {
+  border-top: #DDDFE2 solid 1px;
+  padding: 10px 0 0 10px;
+  height: 55px;
+}
+.Comments__user-pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  float: left;
+}
+.Comments__add-item {
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: #DDDFE2 solid 1px;
+  padding: 5px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+.Comments__text-area {
+  width: 290px;
+  padding: 0;
+  border: none;
+}
+.Comments__icon1 {
+  float: right;
+  margin: 2px 10px 0 0;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon-sprite1.png");
+  background-size: 500px 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Comments__icon9 {
+  margin-top: -3px;
+  margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon-sprite9.png");
+  background-size: 39.2px 319.2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Comments__time {
+  color: #90949C;
+}
+.Comments__item {
+  border: black solid 1px;
+  padding: 5px 5px 5px 10px;
+}
+.Comments__text {
+  width: 95%;
+  color: #000;
+  word-wrap: break-word;
+  margin: 2px;
+}
+.Icon1_smile-gray {
+  background-position: -114px 151px;
+  opacity: 0.5;
+}
+.Icon1_smile-gray:hover {
+  opacity: 1;
+}
+.Icon1_photo-gray {
+  background-position: -80px 151px;
+  opacity: 0.5;
+}
+.Icon1_photo-gray:hover {
+  opacity: 1;
+}
+.Icon1_gif-gray {
+  background-position: -148px 151px;
+  opacity: 0.5;
+}
+.Icon1_gif-gray:hover {
+  opacity: 1;
+}
+.Icon1_stiker-gray {
+  background-position: -233px 151px;
+  opacity: 0.5;
+}
+.Icon1_stiker-gray:hover {
+  opacity: 1;
+}
+.Icon9_like-blue {
+  width: 16px;
+  height: 16px;
+  background-position: -14px 179px;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" type="text/css" href="styles/style.css">-->
+    <link type="text/css" rel="stylesheet/less" href="styles/task-creation.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/task-list.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/to-do-list.less">
+
+
+    <title>To Do List</title>
+</head>
+<body>
+
+
+<form class="task-creation" name="task-creation" method="post" action=#>
+    <input class="task-creation__input" type="text">
+</form>
+
+<div class="task-list">
+    <div class="task-list__item">
+        <form class="task-element">
+            <input  class="task-element__input" type="checkbox" checked>Task1
+        </form>
+        <button class="task-list__button task-list__button_edit">Edit</button>
+        <button class="task-list__button task-list__button_remove">Remove</button>
+    </div>
+    <div class="task-list__item">
+        <form class="task-element">
+            <input  class="task-element__input" type="checkbox" >Task2
+        </form>
+        <button class="task-list__button task-list__button_edit">Edit</button>
+        <button class="task-list__button task-list__button_remove">Remove</button>
+    </div>
+    <div class="task-list__item">
+        <form class="task-element">
+            <input  class="task-element__input" type="checkbox" checked>Task3
+        </form>
+        <button class="task-list__button task-list__button_edit">Edit</button>
+        <button class="task-list__button task-list__button_remove">Remove</button>
+    </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+<script src="scripts/less.min.js"></script>
+<script src="build/bundle.js"></script>
+
+</body>
+</html>
