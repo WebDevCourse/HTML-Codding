@@ -1,4 +1,4 @@
-//TODO: add good delay between deleting symbols
+//TODO: rename entry point
 
 import MyNumber from "./Number";
 import {getRandom} from "./utils";
@@ -8,23 +8,26 @@ import BadAlgo from "./BadAlgo";
 
 
 class Complexity {
-    constructor(document, goodSelector, badSelector) {
-        this.good = new GoodAlgo(document, goodSelector);
-        this.bad = new BadAlgo(document, badSelector);
-        this.numbers = new Array(NUMBEROFNUMBERS)
-            .fill()
-            .map((el, i) =>
-                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
-        this.clearArea();
+    // TODO: rename Complexity
+    // TODO: pass DOM node, instead of selector
+    constructor(document) {
+        this.good = new GoodAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "good");
+        this.bad = new BadAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "bad");
     }
 
 
     clearArea() {
-        document.querySelector(".result__good").innerHTML = "";
-        document.querySelector(".result__bad").innerHTML = "";
+        this.good.prepareAreas();
+        this.bad.prepareAreas();
+        return this;
+
     }
 
     generatePoints() {
+        this.numbers = new Array(NUMBEROFNUMBERS)
+            .fill()
+            .map((el, i) =>
+                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
         this.numbers.map((el) => {
             el.draw(this.good.context);
             el.draw(this.bad.context);
@@ -41,17 +44,17 @@ class Complexity {
     }
 
     async action() {
-        this.good.perform(this.numbers).then(value => {
-            let elem = document.querySelector(".result__good");
-            // console.log(value);
-            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")));
-        });
-
-        await this.bad.perform(this.numbers).then(value => {
-            let elem = document.querySelector(".result__bad");
-            // console.log(value);
-            value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_bad")));
-        });
+        await Promise
+            .all([
+                this.good.perform(this.numbers).then(value => {
+                    let elem = document.querySelector(".result__good");
+                    value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")))
+                }),
+                this.bad.perform(this.numbers).then(value => {
+                    let elem = document.querySelector(".result__bad");
+                    value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_bad")));
+                })
+            ])
 
 
     }
@@ -60,11 +63,13 @@ class Complexity {
 
 const gameOrder = () => {
     let resetButton = document.querySelector(".start-button");
+    let game = new Complexity(document);
     resetButton.addEventListener("click", () => {
         resetButton.classList.add("start-button_disabled");
-        new Complexity(document, ".content__algo_good", ".content__algo_bad")
+        game.clearArea()
             .generatePoints()
-            .action().then(() => resetButton.classList.remove("start-button_disabled"));
+            .action()
+            .then(() => resetButton.classList.remove("start-button_disabled"));
     }, false);
 
 };
