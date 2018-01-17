@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SolarSystem</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        /*background-image: url("http://res.cloudinary.com/dvhn8lvvz/image/upload/e_grayscale/v1515854933/space-1164579_960_720_exz6rc.png");*/
+         background-image: url("http://res.cloudinary.com/dvhn8lvvz/image/upload/c_scale,w_1920/v1515682529/night-sky-background-14391263141jp_rntkoe.jpg");
+        /*background-repeat: repeat;*/
+        background-size: cover;
+        background-position: top;
+
+    }
+    .galaxy {
+        position: relative;
+    }
+    #sun {
+        height: 240px;
+        position: relative;
+        top:315px;
+        left: 365px;
+    }
+   /* #mercury img {
+        height: 4px;
+    }*/
+
+    #mercury {
+        position: absolute;
+        left:380px;
+        top:330px;
+    }
+    #venus {
+        position: absolute;
+        left:365px;
+        top:315px;
+    }
+    #earth {
+        position: absolute;
+        left:342px;
+        top:292px;
+    }
+    #mars {
+        position: absolute;
+        left:315px;
+        top:265px;
+    }
+    #jupiter {
+        position: absolute;
+        left:275px;
+        top:228px;
+    }
+
+    #jupiter-image {
+        width: 32px;
+    }
+    #saturn {
+        position: absolute;
+        left:202px;
+        top:157px;
+        /*transform: rotate(45deg);*/
+    }
+
+    #saturn-image {
+        width: 80px;
+    }
+
+    #uranus {
+        position: absolute;
+        left:158px;
+        top:112px;
+    }
+    #neptune {
+        position: absolute;
+        left:124px;
+        top:79px;
+    }
+
+    .orbit {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+       /* transform-style: preserve-3d; */
+        animation-name: orbit;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .pos {
+        position: absolute;
+        top: 50%;
+        width: 128px;
+        height: 128px;
+        padding: 0;
+        /*margin-top: -5px;
+        margin-left: -5px;*/
+        /*transform-style: preserve-3d;*/
+       /* animation-name: invert;*/
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+
+    .planet {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        /*background-size: cover;*/
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+
+    #mercury .pos,
+    #mercury .planet,
+    #mercury.orbit {
+        animation-duration: 2.89016s; }
+
+    #venus .pos,
+    #venus .planet,
+    #venus.orbit {
+        animation-duration: 7.38237s; }
+
+    #earth .pos,
+    #earth .planet,
+    #earth.orbit {
+        animation-duration: 12.00021s; }
+
+    #mars .pos,
+    #mars .planet,
+    #mars.orbit {
+        animation-duration: 22.57017s; }
+
+    #jupiter .pos,
+    #jupiter .planet,
+    #jupiter.orbit {
+        animation-duration: 142.35138s; }
+
+    #saturn .pos,
+    #saturn .planet,
+    #saturn.orbit {
+        animation-duration: 353.36998s; }
+
+    #uranus .pos,
+    #uranus .planet,
+    #uranus.orbit {
+        animation-duration: 1008.20215s; }
+
+    #neptune .pos,
+    #neptune .planet,
+    #neptune.orbit {
+        animation-duration: 1977.49584s; }
+
+    #mercury.orbit {
+        width: 192px;
+        height: 192px;
+        /*margin-top: -16em;*/
+       /* margin-left: -16em; */}
+
+    #venus.orbit {
+        width: 224px;
+        height: 224px;
+    }
+
+    #earth.orbit {
+        width: 270px;
+        height: 270px;
+    }
+
+    #mars.orbit {
+        width: 324px;
+        height: 324px;
+    }
+
+    #jupiter.orbit {
+        width: 404px;
+        height: 404px;
+    }
+
+    #saturn.orbit {
+        width: 554px;
+        height: 554px;
+    }
+
+    #uranus.orbit {
+        width: 645px;
+        height: 645px;
+    }
+
+    #neptune.orbit {
+        width: 715px;
+        height: 715px;
+    }
+
+    #mercury .pos {
+       left: 50%;
+        top: -2%; }
+
+    #venus .pos {
+        left: 50%;
+        top: -3%; }
+
+    #earth .pos {
+        left: 50%;
+        top: -2%; }
+
+    #mars .pos {
+        left: 50%;
+        top: -2%; }
+
+    #jupiter .pos {
+        left: 50%;
+        top: -4%; }
+
+    #saturn .pos {
+        left: 50%;
+        top: -3%; }
+
+    #uranus .pos {
+        left: 50%;
+        top: -1%; }
+
+    #neptune .pos {
+        left: 50%;
+        top: -1%; }
+
+    #mercury .planet {
+        background-image: url("img/mercury.png");
+        background-size: 8%;
+        /*animation-name: shadow-mercury;*/ }
+
+    #venus .planet {
+        background-image: url("img/Venus.png");
+        background-size: 12%;
+        /*animation-name: shadow-mercury;*/ }
+
+    #earth .planet {
+        background-image: url("img/Earth.png");
+        background-size: 10%;
+        /*animation-name: shadow-mercury;*/ }
+
+    #earth:after {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 50%;
+        top: -2px;
+        margin-left: -1px;
+        margin-top: -5px;
+        border-radius: 85px;
+        box-sizing: border-box;
+        border-image-outset: 10px;
+        box-shadow: 0px 15px 0px -5px #f4e5e5;
+        animation: orbit 2.2s linear infinite;
+    }
+    #mars .planet {
+        background-image: url("img/Mars.png");
+        background-size: 12%;
+        /*animation-name: shadow-mercury;*/ }
+
+    #uranus .planet {
+        background-image: url("img/Uranus.png");
+        background-size: 10%;
+        /*animation-name: shadow-mercury;*/ }
+
+    #neptune .planet {
+        background-image: url("img/neptune-transparent-300x300.png");
+        background-size: 13%;
+        /*animation-name: shadow-mercury;*/ }
+
+
+
+
+
+    @keyframes orbit {
+        0% {
+            transform: rotateZ(0deg); }
+
+        100% {
+            transform: rotateZ(-360deg); } }
+
+    @keyframes mercury-info {
+        from { transform: rotate(0deg) translateX(46px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(46px) rotate(360deg);}
+    }
+    @keyframes venus-info {
+        from { transform: rotate(0deg) translateX(62px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(62px) rotate(360deg);}
+    }
+    @keyframes earth-info {
+        from { transform: rotate(0deg) translateX(84px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(84px) rotate(360deg);}
+    }
+    @keyframes mars-info {
+        from { transform: rotate(0deg) translateX(112px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(112px) rotate(360deg);}
+    }
+    @keyframes jupiter-info {
+        from { transform: rotate(0deg) translateX(152px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(152px) rotate(360deg);}
+    }
+    @keyframes saturn-info {
+        from { transform: rotate(0deg) translateX(228px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(228px) rotate(360deg);}
+    }
+    @keyframes uranus-info {
+        from { transform: rotate(0deg) translateX(278px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(278px) rotate(360deg);}
+    }
+    @keyframes saturn-info {
+        from { transform: rotate(0deg) translateX(312px) rotate(0deg); }
+        to   { transform: rotate(-360deg) translateX(312px) rotate(360deg);}
+    }
+
+    label {
+        font-size: 16px;
+        color: #dcdcdc;
+        font-family: PT Sans, sans-serif;
+        font-weight: bold;
+    }
+
+    .infos {
+        color: black;
+        background-color: rgba(220, 220, 200, .4);
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        text-align: center;
+        /*text-shadow: 0.5px 0.5px white;*/
+        font-size: 14px;
+        font-weight: bold;
+        font-family: PT Sans, sans-serif;
+        border-radius: 50%;
+    }
+
+    .switcher:checked ~ .infos {
+        display: block;
+    }
+
+    .switcher ~ .infos {
+       display: none;
+    }
+
+    .infos#about_mercury {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 427px;
+        top: 376px;
+        animation: mercury-info 2.89016s infinite linear;
+    }
+    .infos#about_venus {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 377px;
+        animation: venus-info 7.38237s infinite linear;
+    }
+    .infos#about_earth {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: earth-info 12.00021s infinite linear;
+    }
+    .infos#about_mars {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: mars-info 22.57017s infinite linear;
+    }
+    .infos#about_jupiter {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 378px;
+        animation: jupiter-info 142.35138s infinite linear;
+    }
+    .infos#about_saturn {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: saturn-info 353.36998s infinite linear;
+    }
+    .infos#about_uranus {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: uranus-info 1008.20215s infinite linear;
+    }
+    .infos#about_saturn {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 428px;
+        top: 385px;
+        animation: saturn-info 1908.20215s infinite linear;
+    }
+</style>
+<body>
+<div class="galaxy">
+    <img id="sun" src="svg/sun.svg" alt="sun">
+    <div id="mercury" class="orbit">
+       <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+       </div>
+    </div>
+    <div id="venus" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="earth" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="mars" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="jupiter" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <img id="jupiter-image" src="img/Jupiter.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="saturn" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <img id="saturn-image" src="img/Saturn.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="uranus" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="neptune" class="orbit">
+        <div class="pos">
+            <div class="planet">
+                <br>
+            </div>
+        </div>
+    </div>
+    <form action="#">
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_mercury">
+                <p>Mercury<br>170,503km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mercury">Mercury</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_venus">
+                <p>Venus<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_venus">Venus</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_earth">
+                <p>Earth<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_venus">Earth</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_mars">
+                <p>Mars<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Mars</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_jupiter">
+                <p>Jupiter<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Jupiter</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_saturn">
+                <p>Saturn<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_mars">Saturn</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_uranus">
+                <p>Uranus<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_uranus">Uranus</label>
+        </div>
+        <div>
+            <input type="checkbox" class="switcher">
+            <div class="infos" id="about_saturn">
+                <p>Saturn<br>126,074km/h<br>Orbit Velocity</p>
+            </div>
+            <label for="about_saturn">Saturn</label>
+        </div>
+    </form>
+</div>
+</body>
+</html>

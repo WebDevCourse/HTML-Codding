@@ -1,0 +1,10 @@
+ <svg xmlns="http://www.w3.org/2000/svg">
+     
+ <linearGradient id="sun" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="1%" stop-color="#ffd000"/>
+        <stop offset="39%" stop-color="#f9b700" />
+        <stop offset="39%" stop-color="#f9b700"  />
+        <stop offset="100%" stop-color="#e06317"/>
+</linearGradient>
+<circle cx="35" cy="35" r="35" fill="url(#sun)"/>
+</svg> 

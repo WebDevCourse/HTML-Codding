@@ -57,12 +57,14 @@ body {
     display: inline-block;
     animation: move 1s ease-in-out infinite;
     animation-delay: 0.1s;
+    animation-direction: alternate; /* or: normal */
 }
 
 @keyframes move {
     0% {
         transform: translate(-43%, 0);
-        color: rgba(231, 76, 60, 1.0);
+        color:inherit;
+        /*color: rgba(231, 76, 60, 1.0);*/
     }
     50% {
         text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);

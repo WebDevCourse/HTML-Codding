@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <g>
+        <circle class="big-c" cx="600" cy="250" r="200" stroke="#555555" fill="url(#night-sky)" stroke-width="5"/>
+        <linearGradient id="night-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(18,28,58);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(32,69,100);stop-opacity:1" />
+        </linearGradient>
+    </g>
+</svg>

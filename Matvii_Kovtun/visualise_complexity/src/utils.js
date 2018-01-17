@@ -4,7 +4,5 @@ export const getRandom = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 };
 
-export function sleepFor(sleepDuration){
-    var now = new Date().getTime();
-    while(new Date().getTime() < now + sleepDuration){ /* do nothing */ }
-}
+
+export const sleepFor = (sleepDuration) => new Promise((res, rej) => setTimeout(res, sleepDuration));
