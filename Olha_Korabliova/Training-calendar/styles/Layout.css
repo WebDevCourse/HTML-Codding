@@ -1,0 +1,17 @@
+.Layout {
+  margin: 0;
+  padding-left: 224px;
+}
+.Layout__sidebar {
+  background-color: yellowgreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 224px;
+}
+.Layout__content {
+  background-color: cornflowerblue;
+  width: 982px;
+  margin: auto;
+}
