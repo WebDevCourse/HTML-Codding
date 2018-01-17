@@ -1,0 +1,40 @@
+@import "vars";
+@import "Mixins";
+
+.Facebook {
+  margin-right: 170px;
+  &__payload {
+    margin-top: @main-top;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  &__group-content {
+    float: left;
+    width: 780px;
+  }
+  &__news-line {
+    width: 490px;
+    float: left;
+  }
+  &__ad-feed {
+    width: 280px;
+    float: right;
+  }
+  &__recent-activity {
+    color: @title-grey;
+    margin: 15px auto 0;
+    font-size: 11px;
+  }
+}
+.Tool-bar {
+  float: left;
+  width: 180px;
+}
+
+.Cover__photo {
+  border-left: @main-border;
+  border-right: @main-border;
+  .cover-photo("../images/group-cover.jpg", 350px, 778px);
+}

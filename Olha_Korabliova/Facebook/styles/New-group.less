@@ -1,0 +1,28 @@
+@import "vars";
+@import "Mixins";
+
+.New-group {
+  .appearance;
+  padding: 0 10px 10px 10px;
+  display: inline-block;
+  &__title {
+    margin: 10px 0 5px 0;
+    color: @title-grey;
+  }
+  &__text {
+    float: left;
+    font-size: 13px;
+    width: 55%;
+    margin: 0;
+  }
+  &__button {
+    float: right;
+    background-color: @main-blue;
+    border-radius: 3px;
+    padding: 5px 8px 5px 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+}

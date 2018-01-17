@@ -1,0 +1,35 @@
+.task-list {
+  margin-top: 30px;
+}
+.task-list__item {
+  margin: 10px  auto;
+  padding: 10px;
+}
+.task-element {
+  max-width: 50%;
+  display: inline-block;
+  margin-left: 20%;
+}
+.task-element__input {
+  margin-right: 10px;
+}
+.task-list__button {
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-weight: 600;
+}
+.task-list__button_remove {
+  color: #e67a68;
+}
+.task-list__button_edit {
+  color: #324C81;
+  margin-right: 20%;
+}
+.task-element__input {
+  resize: vertical;
+  min-height: 20px;
+  background-color: white;
+}

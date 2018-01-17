@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <g>
+<circle class="moon" cx="650" cy="220" r="50" fill="#d9d8d0"/>
+<circle class="moon moon-c" cx="630" cy="210" r="15" fill="#b9b8b0"/>
+<circle class="moon moon-c" cx="670" cy="200" r="8" fill="#b9b8b0"/>
+<circle class="moon moon-c" cx="650" cy="250" r="8" fill="#b9b8b0"/>
+    </g>
+</svg>
