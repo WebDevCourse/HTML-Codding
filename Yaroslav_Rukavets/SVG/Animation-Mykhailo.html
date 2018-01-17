@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+        .myCl1 {
+            transition: opacity 0.3s linear,
+            transform 0.3s linear;
+
+            width: 200px;
+            height: 200px;
+
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .myCl2 {
+            transition:
+                    opacity 0.3s linear,
+                    transform 0.3s linear;
+            width: 100px;
+            height: 200px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .switcher {
+            display: none;
+        }
+        .switcher:checked ~ .myCl1 {
+            opacity: 1;
+            transform: translate(0, 0) scale(1, 1) ;
+        }
+
+        .switcher ~ .myCl1 {
+            opacity: 0;
+            transform: translate(-50px, -50px) scale(0.5, 0.5) ;
+        }
+
+
+        .switcher:checked ~ .myCl2 {
+            opacity: 0;
+            transform: translate(50px, 100px) scale(2, 2) ;
+        }
+
+
+        .switcher ~ .myCl2 {
+            opacity: 1;
+            transform: translate(0, 0) scale(1, 1);
+        }
+
+    </style>
+</head>
+<body>
+<label >
+    <input type="checkbox" class="switcher">
+    <div class="myCl1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/SupermanRoss.png" alt="">
+    </div>
+
+    <div class="myCl2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <img src="https://i.imgur.com/VQv4rH9.jpg" alt="">
+    </div>
+</label>
+</body>
+</html>
