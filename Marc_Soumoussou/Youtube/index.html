@@ -13,50 +13,47 @@
 </head>
 <body>
 <header class="header">
-    <a class="header__hamburger-menu">
+    <button class="header__hamburger-menu">
         <svg class="user-menu__icons">
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
             </path>
         </svg>
-    </a>
-
+    </button>
     <img class="header__youtube-logo" src="images/youtube-logo.png"/>
-
     <form class="header__search-form">
         <input class="header__search-form_search" type="text" name="search" placeholder="Search">
         <button class="header__search-form_search-button">
+            <svg class="user-menu__icons">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+            </svg>
+        </button>
+    </form>
+    <form class="header__settings">
+        <button class="header__settings header__settings_upload">
             <svg class="user-menu__icons">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
                 </path>
             </svg>
         </button>
-    </form>
-
-    <form class="header__settings">
-        <a class="header__settings header__settings_upload">
+        <button class="header__settings header__settings_apps">
             <svg class="user-menu__icons">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
                 </path>
             </svg>
-        </a>
-        <a class="header__settings header__settings_apps">
+        </button>
+        <button class="header__settings header__settings_options">
             <svg class="user-menu__icons">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
                 </path>
             </svg>
-        </a>
-        <a class="header__settings header__settings_options">
+        </button>
+        <button class="header__settings header__settings_sign-in">
             <svg class="user-menu__icons">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
                 </path>
             </svg>
-        </a>
-        <a class="header__settings header__settings_sign-in">
-            <svg class="user-menu__icons">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
-                </path>
-            </svg>
-        </a>
+        </button>
     </form>
 </header>
 
@@ -64,7 +61,7 @@
     <form class="user-menu__options">
         <a class="home-trending-history" href="#">
             <svg class="user-menu__icons">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8">
                 </path>
             </svg>
             <span class="home-trending-history__content">Home</span>
