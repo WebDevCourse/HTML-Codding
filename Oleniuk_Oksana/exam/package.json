@@ -1,0 +1,10 @@
+{
+  "movie-card":[{
+  "name": "exam",
+    "year": 2017,
+    "rating": 4.0,
+  "description": "Animation, Comedy",
+  "scr":"http://res.cloudinary.com/ucu/image/upload/w_220,h_320/movie_screen_mqdxbb.jpg"
+  }
+    ]
+}

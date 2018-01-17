@@ -1,0 +1,29 @@
+.movie-card{
+position: relative;
+
+}
+
+.movie-card__description{
+    color: #babbc3;
+    font-size: 15px;
+}
+.movie-card__name{
+    color: #494c62;
+}
+.movie-card__year{
+    color: #babbc3;
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: -25px;
+}
+
+.movie-card__rating{
+    border-radius: 3px;
+    background: transparent;
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
