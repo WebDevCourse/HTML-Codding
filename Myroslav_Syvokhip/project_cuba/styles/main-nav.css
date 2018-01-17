@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
+}
+.main-nav {
+  width: 1440px;
+  height: 51px;
+  text-align: center;
+}
+.main-nav__list {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+.main-nav__list-element {
+  float: left;
+  padding: 0 9px;
+  vertical-align: middle;
+}
+.main-nav__list-element_active {
+  border-bottom: 3px solid orange;
+}
+.main-nav__link {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Avenir Next";
+  line-height: 1.36;
+  color: #4e5665;
+  text-decoration: none;
+  padding: 15px 10px 13px;
+}
+.main-nav__separator {
+  border: 0;
+  margin: -1px 0 0 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
