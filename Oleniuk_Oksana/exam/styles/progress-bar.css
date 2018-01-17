@@ -1,0 +1,14 @@
+.progress-bar{
+
+}
+.progress-bar__image{
+    background: url("http://res.cloudinary.com/ucu/image/upload/w_30,h_20/14-Progress-Bar_mwlwtx.png");
+    height: 40px;
+    width: 100px;
+    margin: auto;
+}
+
+.progress-bar__name{
+    text-align: center;
+    color: #babbc3;
+}

@@ -1,68 +1,76 @@
-/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
-@font-face {
-  font-family: "Master Works - Demo";
-  src: url("../fonts/mw_demo.ttf"); }
-/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
-@font-face {
-  font-family: "Master Works - Demo";
-  src: url("../fonts/mw_demo.ttf"); }
-.calendar-block__calendar-grid {
-  margin-left: 8.5%;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(7, 10% [col-start]);
-  grid-template-rows: repeat(5, 10% [row-start]);
-  grid-column-gap: 3%;
-  grid-row-gap: 7px;
-  font-family: "Master Works - Demo"; }
-  .calendar-block__calendar-grid_header {
-    grid-template-rows: repeat(1, 10% [row-start]); }
-.calendar-block__week-day {
-  width: 90%;
-  height: 60%;
-  margin: 3%;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: normal;
-  text-align: center;
-  font-family: inherit; }
-.calendar-block__day {
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 3px;
-  color: #393939;
-  width: 90%;
-  height: 60%;
-  margin: 3%;
-  padding: 10px;
-  font-size: 30px;
-  border-radius: 3px; }
-  .calendar-block__day:active {
-    background-color: white; }
-  .calendar-block__day:hover {
-    cursor: pointer;
-    background-color: #FBFF57;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 3px 3px 10px #979797;
-    font-weight: bold; }
-  .calendar-block__day:link {
-    background-color: white; }
-  .calendar-block__day:visited {
-    background-color: white; }
-  .calendar-block__day_hidden {
-    visibility: hidden; }
-.calendar-block__navigation {
-  width: 15px;
-  height: 25px;
-  cursor: pointer; }
-  .calendar-block__navigation_left {
-    position: absolute;
-    left: 2%;
-    top: 50%; }
-  .calendar-block__navigation_right {
-    position: absolute;
-    right: 2%;
-    top: 50%; }
+/*
+Error: Invalid CSS after "... repeat(7, 10% ": expected ")", was "[col-start]);"
+        on line 9 of calendar-block.scss
 
-/*# sourceMappingURL=calendar-block.css.map */
+4: .calendar-block{
+5:   &__calendar-grid{
+6:     margin-left: 8.5%;
+7:     margin-right: auto;
+8:     display: grid;
+9:     grid-template-columns: repeat(7, 10% [col-start]);
+10:     grid-template-rows: repeat(5,10%[row-start]);
+11:     grid-column-gap: 3%;
+12:     grid-row-gap: 7px;
+13:     font-family: $font;
+14: 
+
+Backtrace:
+calendar-block.scss:9
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:711:in `assert_tok'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:535:in `funcall'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:514:in `ident'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_not'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_div'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_minus'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_plus'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `times_div_or_mod'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `plus_or_minus'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `relational'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `eq_or_neq'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `and_expr'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `or_expr'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:488:in `space'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:434:in `interpolation'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:359:in `expr'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:702:in `assert_expr'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+C:/Ruby23-x64/bin/scss:23:in `load'
+C:/Ruby23-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"... repeat(7, 10% \": expected \")\", was \"[col-start]);\"\A         on line 9 of calendar-block.scss\A \A 4: .calendar-block{\A 5:   &__calendar-grid{\A 6:     margin-left: 8.5%;\A 7:     margin-right: auto;\A 8:     display: grid;\A 9:     grid-template-columns: repeat(7, 10% [col-start]);\A 10:     grid-template-rows: repeat(5,10%[row-start]);\A 11:     grid-column-gap: 3%;\A 12:     grid-row-gap: 7px;\A 13:     font-family: $font;\A 14: "; }

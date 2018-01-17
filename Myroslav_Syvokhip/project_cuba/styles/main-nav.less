@@ -1,0 +1,44 @@
+@import "_variables";
+
+.main-nav {
+  width: 1440px;
+  height: 51px;
+  text-align: center;
+
+  &__list {
+    width: 800px;
+    margin:0 auto;
+    list-style:none;
+
+  }
+
+  &__list-element {
+    float: left;
+    padding: 0 9px;
+    vertical-align: middle;
+  }
+
+  &__list-element_active {
+    border-bottom: 3px solid orange;
+  }
+
+  &__link {
+    display:block;
+    text-align:center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Avenir Next";
+    line-height: 1.36;
+    color: #4e5665;
+    text-decoration: none;
+    padding: 15px 10px 13px;
+  }
+
+  &__separator {
+    border: 0;
+    margin: -1px 0 0 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
