@@ -1,0 +1,28 @@
+.navigation {
+  margin-top: 50px;
+}
+.navigation-item {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #c6c2c3;
+  padding-left: 10px;
+  height: 45px;
+  font-size: 15px;
+}
+.navigation-item_active {
+  border-left: 5px solid #ef2f4f;
+  padding-left: 5px;
+}
+.navigation-item__img {
+  height: 35px;
+  width: 35px;
+  object-fit: none;
+  margin-right: 30px;
+}
+.navigation-item__figure {
+  display: inline-block;
+  margin: 0;
+}

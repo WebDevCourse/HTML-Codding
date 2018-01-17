@@ -1,0 +1,35 @@
+.task {
+  font-size: 13px;
+  margin: 2px 0 0 2px ;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 4px;
+  border-radius: 3px;
+  max-width: 100%;
+  max-height: 27%;
+  overflow: hidden;
+  line-height: 19px;
+}
+.task_sport {
+  background-color: #fce3d6;
+  color: #f9c6ab;
+  border-left: 3px solid #f9c6ab;
+}
+.task_music {
+  background-color: #e5fcd6;
+  color: #3cb26c;
+  border-left: 3px solid #3cb26c;
+}
+.task_home {
+  background-color: #dbe7ff;
+  color: #6e91d8;
+  border-left: 3px solid #6e91d8;
+}
+.task_usual {
+  background-color: #fca253;
+  color: white;
+  width: 100%;
+  box-shadow: 3px 9px 7px -1px #e8e0da;
+}
