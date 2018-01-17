@@ -1,0 +1,63 @@
+body {
+    min-width: 960px;
+}
+.grid{margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    zoom: 1;
+
+}
+.cell{
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cell_1{
+    width: 60px;
+}
+.cell_2{
+width: 140px;
+}
+.cell_3{
+    width: 220px;
+}
+.cell_4{
+width:300px ;
+}
+.cell_5{
+width: 380px;
+}
+.cell_6{
+    width:460px;
+}
+.cell_7{
+width: 540px;
+}
+.cell_8{
+width: 620px;
+}
+.cell_9{
+width:700px ;
+}
+.cell_10{
+width: 780px;
+}
+.cell_11{
+    width: 860px;
+}
+.cell_12{
+    width: 940px;
+
+}
+.cell__clear{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.cell_1
+

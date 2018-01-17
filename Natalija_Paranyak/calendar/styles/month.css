@@ -1,0 +1,9 @@
+.month-name {
+  width: 30px;
+  color: #8c8c8c;
+  font-weight: 600;
+}
+.month {
+  display: grid;
+  grid-template-rows: 40px repeat(5, 105px);
+}

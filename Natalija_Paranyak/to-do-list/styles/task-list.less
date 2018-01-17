@@ -2,14 +2,14 @@
   margin-top: 30px;
 }
 .task-list__item{
-  display: flex;
   margin: 10px  auto;
-  justify-content: center;
+  padding:10px;
 }
 
 .task-element{
-  margin-right:65px;
-  max-width: 75%;
+  max-width: 50%;
+  display: inline-block;
+  margin-left: 20%;
 }
 
 .task-element__input{
@@ -21,8 +21,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  float: right;
   font-weight: 600;
-
 }
 
 .task-list__button_remove{
@@ -31,4 +31,11 @@
 
 .task-list__button_edit{
   color: #324C81;
+  margin-right: 20%;
+}
+
+.task-element__input{
+  resize:vertical;
+  min-height: 20px;
+  background-color: white;
 }

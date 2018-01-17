@@ -7,9 +7,9 @@ $(window).on('load', function () {
 });
 
 $(window).on('load', function () {
-    $('#go-js-sort').click(function () {
+    $('#go-src-sort').click(function () {
         $('html,body').animate({
-            scrollTop: $("#js-sort").offset().top
+            scrollTop: $("#src-sort").offset().top
         }, 900);
     });
 });

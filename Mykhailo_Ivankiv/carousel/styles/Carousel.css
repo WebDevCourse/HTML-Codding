@@ -1,0 +1,27 @@
+.Carousel {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Carousel__frame {
+    position: relative;
+    transition: left 1s;
+    left: 0;
+}
+
+.Carousel__img {
+    height: 300px;
+    position: absolute;
+    width: 400px;
+}
+
+.Carousel__next {
+    z-index: 1;
+    position: relative;
+}
+.Carousel__prev {
+    z-index: 1;
+    position: relative;
+}
