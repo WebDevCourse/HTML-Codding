@@ -1,0 +1,18 @@
+.nav{
+/*display: inline-block;*/
+    height: 60px;
+    margin-top: 30px;
+    background-color: #f8f8f8;
+}
+.nav__item{
+    color: #80818a;
+    text-decoration:none;
+    font-size: 17px;
+    margin-left: 15px;
+
+}
+.nav__item:hover{
+    color: #ff0079;
+    text-decoration: underline #ff0079;
+
+}

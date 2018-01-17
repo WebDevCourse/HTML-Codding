@@ -3,8 +3,8 @@ import {K, NUMBEROFNUMBERS} from './consts';
 import Algo from './Algo';
 
 class BadAlgo extends Algo {
-    constructor(document, selector) {
-        super(document, selector);
+    constructor(algoDOMNode,resDOMNode, modifier) {
+        super(algoDOMNode, resDOMNode, modifier);
     }
 
     async perform(numbers) {
