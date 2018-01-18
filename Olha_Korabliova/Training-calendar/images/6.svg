@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Ico/6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Ico/6" stroke="#A8B2B9" stroke-width="2">
+            <g id="Group-3" transform="translate(1.000000, 0.500000)">
+                <path d="M7,13.4178618 L7,9.42046936" id="Stroke-253"></path>
+                <path d="M4,14.4172099 L10,14.4172099" id="Stroke-254"></path>
+                <path d="M7,9.42046936 L7,9.42046936 C4.791,9.42046936 3,7.6306369 3,5.42307692 L3,1.42568449 C3,0.87304498 3.448,0.426336375 4,0.426336375 L10,0.426336375 C10.552,0.426336375 11,0.87304498 11,1.42568449 L11,5.42307692 C11,7.6306369 9.209,9.42046936 7,9.42046936 Z" id="Stroke-255"></path>
+                <path d="M3,5.42307692 L2,5.42307692 C0.896,5.42307692 0,4.52766102 0,3.4243807 C0,2.32110039 0.896,1.42568449 2,1.42568449 L3,1.42568449" id="Stroke-256"></path>
+                <path d="M11,1.42568449 L12,1.42568449 C13.104,1.42568449 14,2.32110039 14,3.4243807 C14,4.52766102 13.104,5.42307692 12,5.42307692 L11,5.42307692" id="Stroke-257"></path>
+            </g>
+        </g>
+    </g>
+</svg>
