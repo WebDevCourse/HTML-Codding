@@ -1,4 +1,6 @@
 .Logo {
-  background-color: red;
-  min-height: 100px;
+  width: 114px;
+  margin: auto;
+  display: block;
+  padding-bottom: 30px;
 }
