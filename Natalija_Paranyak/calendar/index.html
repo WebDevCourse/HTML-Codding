@@ -15,6 +15,17 @@
     <link type="text/css" rel="stylesheet/less" href="styles/side-bar.less">
     <link type="text/css" rel="stylesheet/less" href="styles/logo.less">
     <link type="text/css" rel="stylesheet/less" href="styles/navigation.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/user.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/calendar-button.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/calendar-name.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/search.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/calendar-header.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/button-img.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/calendar-item.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/navigation-item.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/day-name.less">
+
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <title>Calendar</title>
@@ -23,22 +34,22 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 <script src="scripts/less.min.js"></script>
 <div class="side-bar">
-    <header><h1 class="side-bar__header"> The Logo</h1></header>
-    <figure class="logo">
-        <img src="http://res.cloudinary.com/dycaygf8l/image/upload/h_100,w_100,c_thumb,g_face,r_max/v1516179612/18_10_TMPU_Kostya_tatu_ra551u.png" alt="Костя Боровский"  class="logo__item">
-        <figcaption class="logo__caption">Костя Боровський</figcaption>
+    <header><img class="logo" src="images/logo.png" width="140px"></header>
+    <figure class="user">
+        <img src="http://res.cloudinary.com/dycaygf8l/image/upload/h_100,w_100,c_thumb,g_face,r_max/v1516179612/18_10_TMPU_Kostya_tatu_ra551u.png" alt="Костя Боровский"  class="user__img">
+        <figcaption class="user__caption">Костя Боровський</figcaption>
     </figure>
     <nav class="navigation">
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/1.svg" class="navigation-item__img"></figure>Overview</a>
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/2.svg"  class="navigation-item__img"></figure>Workout</a>
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/3.svg" class="navigation-item__img"></figure>Messanges</a>
-        <a href="#" class="navigation-item navigation-item_active"><figure class="navigation-item__figure"><img src="images/4.svg" class="navigation-item__img"></figure>Calendar</a>
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/5.svg"  class="navigation-item__img"></figure>Goals</a>
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/6.svg" class="navigation-item__img"></figure>Other</a>
-        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/7.svg"  class="navigation-item__img"></figure>Archive</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/1.svg" class="navigation-item__figure__img"></figure>OVERVIEW</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/2.svg"  class="navigation-item__figure__img"></figure>WORKOUT</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/3.svg" class="navigation-item__figure__img"></figure>MESSAGES</a>
+        <a href="#" class="navigation-item navigation-item_active"><figure class="navigation-item__figure"><img src="images/4.svg" class="navigation-item__figure__img"></figure>CALENDAR</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/5.svg"  class="navigation-item__figure__img"></figure>GOALS</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/6.svg" class="navigation-item__figure__img"></figure>OTHER</a>
+        <a href="#" class="navigation-item "><figure class="navigation-item__figure"><img src="images/7.svg"  class="navigation-item__figure__img"></figure>ARCHIVE</a>
     </nav>
 </div>
-<div class="calendar-item">
+<div class="calendar">
     <div class="calendar-header">
         <div class="calendar-buttons">
             <button class="calendar-button">Week</button><button class="calendar-button calendar-button_active">Month</button>
@@ -48,12 +59,12 @@
             <p><span class="month-name">July</span> <span class="year-date">2015</span></p>
             <button class="calendar-name__button"><img class="button-img" src="images/next.jpg"></button>
         </div>
-        <form class="calendar-form">
-            <input type="text" placeholder="What are you looking for?" class="calendar-input"><input type="image" src="images/scheme-b-btn-search.png" height="12px"
-                                                                                                     class="calendar-search">
+        <form class="search">
+            <input type="text" placeholder="What are you looking for?" class="search__input"><input type="image" src="images/scheme-b-btn-search.png" height="12px"
+                                                                                                    class="search__submit">
         </form>
     </div>
-    <div class="calendar">
+    <div class="calendar-item">
         <time datetime="2015" class="year">
             <time datetime="2015-07" class="month">
                 <div class="week week_days">
@@ -70,7 +81,7 @@
                     <time datetime="2015-06-30" class="day day_other-month">30</time>
                     <time datetime="2015-07-01" class="day">1</time>
                     <time datetime="2015-07-02" class="day">2
-                        <p class="task task_usual">Можна я піду?</p>
+                        <p class="task task_first task_usual">Можна я піду?</p>
                     </time>
                     <time datetime="2015-07-03" class="day">3</time>
                     <time datetime="2015-07-04" class="day">4</time>
@@ -78,7 +89,7 @@
                 </time>
                 <time datetime="2015-W28" class="week">
                     <time datetime="2015-07-06" class="day">6
-                        <p class="task task_sport"> Sport</p>
+                        <p class="task task_first task_sport"> Sport</p>
                         <p class="task task_music"> Music</p>
                     </time>
                     <time datetime="2015-07-07" class="day">7</time>
@@ -86,7 +97,7 @@
                     <time datetime="2015-07-09" class="day">9</time>
                     <time datetime="2015-07-10" class="day">10</time>
                     <time datetime="2015-07-11" class="day">11
-                        <p class="task task_music"> Апуті</p>
+                        <p class="task task_first task_music"> Апуті</p>
                     </time>
                     <time datetime="2015-07-12" class="day">12</time>
                 </time>
@@ -94,12 +105,12 @@
                     <time datetime="2015-07-13" class="day">13</time>
                     <time datetime="2015-07-14" class="day">14</time>
                     <time datetime="2015-07-15" class="day">15
-                        <p class="task task_sport"> Buy</p>
+                        <p class="task task_first task_sport"> Buy</p>
                         <p class="task task_home"> 5km run</p>
                     </time>
                     <time datetime="2015-07-16" class="day"><p class="day_active">16</p></time>
                     <time datetime="2015-07-17" class="day">17
-                        <p class="task task_usual"> Perfect</p>
+                        <p class="task task_first task_usual"> Perfect</p>
                     </time>
                     <time datetime="2015-07-18" class="day">18</time>
                     <time datetime="2015-07-19" class="day">19</time>
@@ -111,7 +122,7 @@
                     <time datetime="2015-07-22" class="day">22</time>
                     <time datetime="2015-07-23" class="day">23</time>
                     <time datetime="2015-07-24" class="day">24
-                        <p class="task task_home"> This work is</p>
+                        <p class="task task_first task_home"> This work is</p>
                         <p class="task task_music"> Perfect</p>
                     </time>
                     <time datetime="2015-07-25" class="day">25</time>
@@ -130,6 +141,7 @@
         </time>
     </div>
 </div>
+
 <!--<script src="build/bundle.js"></script>-->
 
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
