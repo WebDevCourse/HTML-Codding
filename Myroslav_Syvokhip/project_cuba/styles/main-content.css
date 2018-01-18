@@ -1,4 +1,4 @@
-.main-content-section__article-title {
+.article__title {
   font-size: 32px;
   line-height: 1.19;
   color: #4e5665;
@@ -8,20 +8,20 @@
   padding-bottom: 40px;
   margin: 0;
 }
-.main-content-section__article-paragraph {
+.article__paragraph {
   font-family: 'Didact Gothic', sans-serif;
   width: 960px;
-  height: 84px;
   line-height: 1.75;
   font-size: 16px;
   margin: 0 auto;
   color: #505050;
+  overflow: hidden;
 }
-.main-content-section__article-paragraph_link {
+.article__paragraph_link {
   color: #ecb84c;
   text-decoration: none;
 }
-.main-content-section__separator {
+.article__separator {
   display: block;
   border: 0;
   width: 1170px;

@@ -1,7 +1,7 @@
 .header {
-  width: 1440px;
-  height: 700px;
-  background-image: url("http://www.wendyperrin.com/wp-content/uploads/2016/04/vintage-cars-old-havana-cuba-cr-michael-petit.jpg");
+  width: 1545px;
+  margin: 0 auto;
+  background-image: url("http://res.cloudinary.com/do9osx65u/image/upload/c_scale,q_100,w_1600/v1516200046/GDP_Germany_Slideshow_5_ces_jjdyle.jpg");
 
   &__title {
     display: block;
@@ -16,21 +16,61 @@
   }
 
   &__border {
-    position: absolute;
-    width: 1356px;
-    height: 616px;
-    border: solid 2px #ecb84c;
-    text-align: center;
-    margin: 0 auto;
-    top: 40px;
-    left: 90px;
+    &_top {
+      position: absolute;
+      top: 0;
+      margin-top: 40px;
+      margin-left: 52px;
+      width: 1442px;
+      border-top: solid 3px #ecb84c;
+    }
+
+    &_left {
+      position: absolute;
+      top: 0;
+      margin-top: 40px;
+      margin-left: 50px;
+      height: 620px;
+      border-left: solid 3px #ecb84c;
+    }
+
+    &_right {
+      position: absolute;
+      top: 0;
+      margin-left: 1492px;
+      margin-top: 40px;
+      height: 620px;
+      border-right: solid 3px #ecb84c;
+    }
+
+    &_bottom-left {
+      position: absolute;
+      top: 0;
+      margin-top: 657px;
+      margin-left: 52px;
+      width: 400px;
+      border-top: solid 3px #ecb84c;
+    }
+
+    &_bottom-right {
+      position: absolute;
+      top: 0;
+      margin-top: 657px;
+      margin-left: 1093px;
+      width: 400px;
+      border-top: solid 3px #ecb84c;
+    }
+
   }
 
   &__border-text{
+    display: block;
+    position: relative;
     font-size: 24px;
     color: #ffffff;
-    padding-top: 157px;
+    padding-top: 176px;
     text-align: center;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
   }
 }
