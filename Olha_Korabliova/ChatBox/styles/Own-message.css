@@ -2,7 +2,8 @@
   background-color: #2979ff;
   float: right;
   clear: both;
-  max-width: 150px;
+  max-width: 167px;
+  box-sizing: border-box;
   word-wrap: break-word;
   padding: 5px 12px 6px 12px;
   text-align: left;

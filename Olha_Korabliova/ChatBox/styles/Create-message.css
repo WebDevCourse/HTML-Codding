@@ -16,7 +16,7 @@
   display: block;
 }
 .Create-message__icon {
-  display: inline-block;
+  float: left;
 }
 .Create-message__icon_picture {
   background: url("../images/Picture.svg") no-repeat;
