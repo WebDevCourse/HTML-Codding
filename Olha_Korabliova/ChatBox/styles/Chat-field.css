@@ -1,0 +1,7 @@
+.Chat-field {
+  position: absolute;
+  bottom: 62px;
+  top: 32px;
+  overflow: auto;
+  padding: 8px 0;
+}

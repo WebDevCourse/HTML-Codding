@@ -1,0 +1,25 @@
+.Own-message {
+  background-color: #2979ff;
+  float: right;
+  clear: both;
+  max-width: 167px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 5px 12px 6px 12px;
+  text-align: left;
+  color: #fff;
+  margin-right: 16px;
+  margin-bottom: 1px;
+  border-radius: 15px;
+}
+.Own-message_top {
+  border-radius: 15px 15px 0 15px;
+  margin-top: 8px;
+}
+.Own-message_middle {
+  border-radius: 15px 0 0 15px;
+}
+.Own-message_bottom {
+  border-radius: 15px 0 15px 15px;
+  margin-bottom: 8px;
+}
