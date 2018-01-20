@@ -1,0 +1,32 @@
+.Friend-message {
+  float: left;
+  margin: 8px 0 8px 16px;
+}
+.Friend-message__pic {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+}
+.Friend-message__message {
+  background-color: #f3f3f3;
+  max-width: 160px;
+  word-wrap: break-word;
+  padding: 5px 12px 6px 12px;
+  text-align: left;
+  color: #353535;
+  border-radius: 15px;
+  margin-bottom: 1px;
+  float: left;
+  margin-left: 36px;
+}
+.Friend-message__message_top {
+  border-radius: 15px 15px 15px 0;
+}
+.Friend-message__message_middle {
+  border-radius: 0 15px 15px 0;
+}
+.Friend-message__message_bottom {
+  border-radius: 0 15px 15px 15px;
+}

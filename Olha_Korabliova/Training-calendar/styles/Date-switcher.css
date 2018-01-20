@@ -1,0 +1,24 @@
+.Date-switcher {
+  display: inline;
+  position: relative;
+  left: 204px;
+}
+.Date-switcher__time {
+  font-size: 17px;
+  line-height: 45px;
+}
+.Date-switcher__arrow {
+  width: 17px;
+  height: 17px;
+  opacity: 0.5;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon-sprite5.png");
+  background-size: 18.4px 210.4px;
+}
+.Date-switcher__arrow_left {
+  background-position: 0 194px;
+}
+.Date-switcher__arrow_right {
+  background-position: 0 177px;
+}

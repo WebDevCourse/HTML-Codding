@@ -1,0 +1,187 @@
+.bx {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #d9d8d0;
+    position: absolute;
+    right: 649px;
+    top: 170px;
+    box-shadow: inset -10px 2px 0 0 #899098;
+}
+
+.bx1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #b9b8b0;
+    position: absolute;
+    right: 711px;
+    top: 193px;
+    box-shadow: inset 4px -2px 0 0px #535457;
+}
+
+.bx2 {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #b9b8b0;
+    position: absolute;
+    right: 699px;
+    top: 243px;
+    box-shadow: inset 4px -2px 0 0px #535457;
+}
+
+.bx3 {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #b9b8b0;
+    position: absolute;
+    right: 679px;
+    top: 190px;
+    box-shadow: inset 4px -2px 0 0px #535457;
+}
+
+
+
+
+.Simulation__moon {
+    opacity: 0;
+}
+
+.Simulation__craters {
+    opacity: 0;
+}
+
+.switcher {
+    position: absolute;
+    left: 560px;
+    top: 600px;
+    width: 64px;
+    height: 34px;
+    opacity: 0;
+}
+
+.switcher:checked ~ .Simulation .Simulation__background {
+    fill: #F1EDE3;
+    transition: 0.7s;
+}
+.switcher ~ .Simulation .Simulation__background {
+    fill: #080D17;
+    transition: 0.7s;
+}
+
+.switcher:checked ~ .Simulation .Simulation__text {
+    fill: #555555;
+    transition: 0.7s;
+}
+.switcher ~ .Simulation .Simulation__text {
+    fill: #E9E5D5;
+    transition: 0.7s;
+}
+
+.switcher:checked ~ .Simulation .switcher__rectangle {
+    fill: #DA8508;
+    transition: 0.7s;
+}
+.switcher ~ .Simulation .switcher__rectangle {
+    fill: #1C3958;
+    transition: 0.7s;
+}
+
+.switcher:checked ~ .Simulation .switcher__circle {
+    transform: translate(0px, 0px);
+}
+.switcher ~ .Simulation .switcher__circle {
+    transition: 0.3s;
+    transform: translate(30px, 0);
+}
+
+
+.switcher:checked ~ .Simulation .Simulation__big-circle {
+    fill: url(#day-sky);
+    stroke: #555555;
+    transition: 0.9s;
+}
+.switcher ~ .Simulation .Simulation__big-circle {
+    fill: url(#night-sky);
+    stroke: #E9E5D5;
+    transition: 0.9s;
+}
+
+.switcher:checked ~ .Simulation path {
+    fill: url(#day-water);
+}
+.switcher ~ .Simulation path {
+    fill: url(#night-water);
+}
+
+.switcher:checked ~ .Simulation .Simulation__sun {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.switcher ~ .Simulation .Simulation__sun {
+    opacity: 0;
+    transition: 1.5s;
+    transform: translate(-50px, 60px);
+}
+
+.switcher:checked ~ .bx {
+    opacity: 0;
+    transform: translate(150px, -160px);
+}
+.switcher ~ .bx {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1.5s;
+}
+
+
+
+
+
+
+.switcher:checked ~ .bx1 {
+    opacity: 0;
+    transform: translate(150px, -160px);
+}
+.switcher ~ .bx1 {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1.5s;
+}
+
+.switcher:checked ~ .bx2 {
+    opacity: 0;
+    transform: translate(150px, -160px);
+}
+.switcher ~ .bx2 {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1.5s;
+}
+
+.switcher:checked ~ .bx3 {
+    opacity: 0;
+    transform: translate(150px, -160px);
+}
+.switcher ~ .bx3 {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1.5s;
+}
+
+
+
+
+
+
+.switcher:checked ~ .Simulation .Simulation__stars {
+    opacity: 0;
+    transform: translate(250px, -200px);
+}
+.switcher ~ .Simulation .Simulation__stars {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1.5s;
+}

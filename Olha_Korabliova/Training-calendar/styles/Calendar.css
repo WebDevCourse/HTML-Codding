@@ -1,0 +1,49 @@
+.Calendar {
+  margin-top: 35px;
+  overflow: hidden;
+  width: 100%;
+  border: #efefef 1px solid;
+  border-right: 0;
+}
+.Calendar__day {
+  float: left;
+  width: 140.28571429px;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #cfd5da;
+  font-size: 10px;
+}
+.Calendar__date {
+  width: 140.28571429px;
+  height: 128.57142857px;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: white;
+  border: #efefef 1px solid;
+  border-left: 0;
+  border-bottom: 0;
+  float: left;
+}
+.Calendar__date_not-available {
+  background-color: #f8f7f8;
+  opacity: 0.66;
+  color: #8a888a;
+}
+.Calendar__number {
+  float: right;
+  margin: 10px;
+  font-size: 14px;
+  color: #8a888a;
+}
+.Calendar__number_active {
+  background-color: #ed5454;
+  width: 15px;
+  padding: 7px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px;
+  color: white;
+}

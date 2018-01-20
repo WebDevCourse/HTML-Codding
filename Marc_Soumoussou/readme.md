@@ -12,7 +12,7 @@
  - [x] Add variable for padding
  - [x] css --> less
  - [x] Add icons
- - [ ] Learn the difference between margin, padding and border.
+ - [x] Learn the difference between margin, padding and border.
  - [x] Finish Youtube Header
  - [x] Finish Youtube User Menu
  - [x] Change colors of `header`, `usermenu` and `mainsection`

@@ -1,0 +1,47 @@
+.header-aside-tools {
+  float: right;
+  vertical-align: middle;
+}
+.header-aside-tools__button {
+  width: 12px;
+  background: no-repeat;
+  color: transparent;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.75;
+}
+.header-aside-tools__button_add {
+  height: 12px;
+  background: url("../images/Plus.svg") no-repeat;
+  margin-right: 6px;
+}
+.header-aside-tools__button_add:hover {
+  opacity: 1;
+}
+.header-aside-tools__button_video-chat {
+  height: 8px;
+  background: url("../images/Video.svg") no-repeat;
+  margin-right: 7px;
+}
+.header-aside-tools__button_video-chat:hover {
+  opacity: 1;
+}
+.header-aside-tools__button_options {
+  height: 12px;
+  background: url("../images/Cog.svg") no-repeat;
+  margin-right: 1px;
+}
+.header-aside-tools__button_options:hover {
+  opacity: 1;
+}
+.header-aside-tools__button_close {
+  width: 18px;
+  height: 18px;
+  background: url("../images/Close.svg") no-repeat;
+  margin-right: 6px;
+}
+.header-aside-tools__button_close:hover {
+  opacity: 1;
+}

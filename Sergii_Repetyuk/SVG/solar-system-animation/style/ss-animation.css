@@ -5,7 +5,7 @@
 body { background-image: url("stars.jpg")}
 svg { width: 500px; height: 500px; }
 circle { stroke: none; fill: transparent; }
-.orbit {stroke :red}
+.orbit {}
 
 @keyframes orbit {
   0% { transform: rotate(0); }
@@ -56,14 +56,14 @@ circle { stroke: none; fill: transparent; }
 .asteroid31 {animation: orbit 7s linear 4ms infinite;}
 
 
-  .solar {fill: #f1c40f;}
-  .mercury-circle {fill: #7f8c8d;}
-  .venus-circle {fill: #ecf0f1;}
-  .earth-circle  {fill: #2980b9}
-  .mars-circle {fill: #e74c3c;}
-  .jupiter-circle {fill: #e67e22;}
-  .uranus-circle {fill: #3498db;}
-  .saturn-circle {fill: #ecf0f1;}
-  .neptune-circle {fill: #2980b9;}
+  .solar {fill: url('pictures/Earth.jpg') ;}
+  .mercury-circle {fill: #88878C;}
+  .venus-circle {fill: #AB6918;}
+  .earth-circle  {fill: #4D548F;}
+  .mars-circle {fill: #BF9F73;}
+  .jupiter-circle {fill: #463C30;}
+  .uranus-circle {fill: #B59D90;}
+  .saturn-circle {fill: #91AFB1;}
+  .neptune-circle {fill: #293EA4;}
   .asteroid-circle {fill: #8b9cac; }
 

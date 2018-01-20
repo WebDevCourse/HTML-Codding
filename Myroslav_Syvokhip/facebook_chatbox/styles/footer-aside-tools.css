@@ -1,0 +1,35 @@
+.footer-aside-tools {
+  float: left;
+  vertical-align: middle;
+  margin-left: 16px;
+  margin-top: 9px;
+}
+.footer-aside-tools__button {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+  color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 7px;
+  padding: 0;
+}
+.footer-aside-tools__button_pictures {
+  background: url("../images/Picture.svg") no-repeat;
+}
+.footer-aside-tools__button_gifs {
+  width: 21px;
+  background: url("../images/Gif.svg") no-repeat;
+}
+.footer-aside-tools__button_smiles {
+  background: url("../images/Smile.svg") no-repeat;
+}
+.footer-aside-tools__button_calendar {
+  height: 18px;
+  background: url("../images/Calendar.svg") no-repeat;
+}
+.footer-aside-tools__button_camera {
+  width: 21px;
+  height: 17px;
+  background: url("../images/Camera.svg") no-repeat;
+}

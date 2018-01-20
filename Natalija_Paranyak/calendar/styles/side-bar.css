@@ -1,0 +1,15 @@
+.side-bar {
+  position: fixed;
+  width: 230px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 13px 0px 52px -2px rgba(0, 0, 0, 0.15);
+}
+.side-bar__header {
+  font-size: 22px;
+  text-align: center;
+  color: #ef2f4f;
+  font-weight: 600;
+  margin-top: 70px;
+}

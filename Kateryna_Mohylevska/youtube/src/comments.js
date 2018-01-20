@@ -1,8 +1,6 @@
 const commentInput = document.querySelector(".comments__typing");
 const commentRight = document.querySelector(".comments_right");
 
-
-
 commentInput.addEventListener("click", async (ev) => {
     let youtubeConfidence = "<p class='comments__agreement'>Виконуючи цю дію, ви створюєте і приймаєте\n" +
         "                        <a href='#' class='comments__condition'>Умови використання YouTube</a>\n" +

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function f() {
+            a = parseInt(document.getElementById('a').value);
+            d = parseInt(document.getElementById("d").value);
+            n = parseInt(document.getElementById("n").value);
+
+            document.getElementsByName("answer")[0].placeholder = a;
+
+            const val_arr = [];
+            for (let i = 0; i < n; i++) {
+                if (i === 0) {
+                    val_arr[0] = a;
+                }
+                else {
+                    console.log(i);
+                    val_arr[i] = val_arr[i - 1] + d;
+                }
+            }
+            const answ = val_arr.toString();
+            const sum = val_arr.reduce((a, b) => a + b, 0);
+            document.getElementsByName("answer")[0].placeholder = answ;
+            document.getElementsByName("sum")[0].placeholder = sum;
+        }
+    </script>
+</head>
+<body>
+
+<form action="" onsubmit="f();">
+    a: <input id="a" type="text" value="">
+    d: <input id="d" type="text" value="">
+    n: <input id="n" type="text" value="">
+    <input type="submit" value="Submit">
+</form>
+<br>
+<input type="text" name="answer" placeholder="">
+<input type="text" name="sum" placeholder="">
+
+</body>
+</html>

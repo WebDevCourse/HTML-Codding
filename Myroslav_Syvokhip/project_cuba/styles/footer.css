@@ -1,0 +1,66 @@
+.footer-section__title {
+  font-size: 15px;
+  line-height: 1.33;
+  color: #4e5665;
+  text-align: left;
+  padding-top: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.footer-section__agency-title {
+  color: #37c491;
+  font-size: 34px;
+  font-weight: 500;
+}
+.footer-section__list-element {
+  font-size: 14px;
+  line-height: 1.36;
+  color: #4e5665;
+  padding-top: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+.footer-section__list-element_without-underline {
+  text-decoration: none;
+  color: #4e5665;
+}
+.footer-section__select {
+  width: 140px;
+}
+.footer-section__select_img {
+  background-image: url("https://www.commondreams.org/sites/default/files/views-article/flag_0.jpg");
+  padding-left: 15px;
+}
+.footer-section__list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-nav-section {
+  width: 80%;
+  background-color: #f8f8f8;
+  box-shadow: inset 0 4px 5px -5px #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footer {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  box-shadow: inset 0 4px 5px -5px #333;
+}
+.footer__rights {
+  display: block;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #4e5665;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
