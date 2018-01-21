@@ -1,0 +1,50 @@
+.header-aside-tools {
+  float: right;
+  vertical-align: middle;
+  &__button {
+    width: 12px;
+    background: no-repeat;
+    color: transparent;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.75;
+
+    &_add {
+      height: 12px;
+      background: url("../images/Plus.svg") no-repeat;
+      margin-right: 6px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    &_video-chat {
+      height: 8px;
+      background: url("../images/Video.svg") no-repeat;
+      margin-right: 7px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    &_options {
+      height:12px;
+      background: url("../images/Cog.svg") no-repeat;
+      margin-right: 1px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    &_close {
+      width: 18px;
+      height: 18px;
+      background: url("../images/Close.svg") no-repeat;
+      margin-right: 6px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.View-switcher__item {
+  background-color: #fcfbfc;
+  border-radius: 5px 0 0 5px;
+  border: #efefef solid 1px;
+  font-size: 14px;
+  height: 45px;
+  float: left;
+  width: 102px;
+  color: #a8b2b9;
+}
+.View-switcher__item_active {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(243, 0, 0, 0.1);
+  border: solid 1px #fff;
+  border-radius: 0 5px 5px 0;
+  color: #ed5454;
+}

@@ -1,0 +1,53 @@
+.hover-section__title {
+  font-size: 32px;
+  line-height: 1.19;
+  color: #4e5665;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.hover-section__instruction {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffd700;
+  margin: 0;
+}
+.hover-section__image {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.hover-section__paragraph {
+  font-family: 'Didact Gothic', sans-serif;
+  width: 960px;
+  line-height: 1.75;
+  font-size: 16px;
+  margin: 0 auto;
+  color: #505050;
+  overflow: hidden;
+}
+.hover-section__hover-text {
+  display: block;
+  position: absolute;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 14px;
+  color: #505050;
+  font-weight: 600;
+  margin-left: 907px;
+  margin-top: -278px;
+  border-bottom: 2px solid orange;
+  visibility: hidden;
+}
+.hover-section__hover-pointer {
+  display: block;
+  position: absolute;
+  padding-left: 853px;
+  margin-top: -239px;
+  z-index: 9999;
+}
+.cadillac-hover-sec__hover-section:hover .cadillac-hover-sec__hover-text {
+  visibility: visible;
+}

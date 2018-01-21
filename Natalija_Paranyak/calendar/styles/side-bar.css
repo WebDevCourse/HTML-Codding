@@ -1,7 +1,6 @@
 .side-bar {
-  position: absolute;
-  height: 100%;
-  width: 200px;
+  position: fixed;
+  width: 230px;
   top: 0;
   bottom: 0;
   background-color: white;
@@ -12,5 +11,5 @@
   text-align: center;
   color: #ef2f4f;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 70px;
 }

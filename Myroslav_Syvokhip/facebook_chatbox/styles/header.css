@@ -1,0 +1,36 @@
+.header {
+  float: left;
+  display: inline-block;
+  width: 292px;
+  height: 32px;
+  border-radius: 4px 4px 0 0;
+  background-color: #2979ff;
+  line-height: 32px;
+}
+.header__user-status {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #69f0ae;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+.header__username {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 120px;
+  font-family: OpenSans, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__username:hover {
+  text-decoration: underline;
+}
