@@ -1,0 +1,66 @@
+.header {
+  width: 1545px;
+  margin: 0 auto;
+  background-image: url("http://res.cloudinary.com/do9osx65u/image/upload/c_scale,q_100,w_1600/v1516200046/GDP_Germany_Slideshow_5_ces_jjdyle.jpg");
+}
+.header__title {
+  display: block;
+  height: 230px;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 235px;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.header__border_top {
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+  margin-left: 52px;
+  width: 1442px;
+  border-top: solid 3px #ecb84c;
+}
+.header__border_left {
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 620px;
+  border-left: solid 3px #ecb84c;
+}
+.header__border_right {
+  position: absolute;
+  top: 0;
+  margin-left: 1492px;
+  margin-top: 40px;
+  height: 620px;
+  border-right: solid 3px #ecb84c;
+}
+.header__border_bottom-left {
+  position: absolute;
+  top: 0;
+  margin-top: 657px;
+  margin-left: 52px;
+  width: 400px;
+  border-top: solid 3px #ecb84c;
+}
+.header__border_bottom-right {
+  position: absolute;
+  top: 0;
+  margin-top: 657px;
+  margin-left: 1093px;
+  width: 400px;
+  border-top: solid 3px #ecb84c;
+}
+.header__border-text {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  color: #ffffff;
+  padding-top: 176px;
+  text-align: center;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}

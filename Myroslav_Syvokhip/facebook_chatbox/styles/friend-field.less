@@ -1,0 +1,44 @@
+.friend-field {
+  font-family: OpenSans, sans-serif;
+  float: left;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  &_first-block {
+    margin-top: 17px;
+  }
+
+  &__user-photo {
+    width: 28px;
+    float: left;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  &__message {
+    max-width: 155px;
+    float: left;
+    background-color: #f3f3f3;
+    text-align: left;
+    color: #353535;
+    border-radius: 15px;
+    padding: 5px 12px 6px 12px;
+    word-wrap: break-word;
+    margin-left: 8px;
+
+    &_multiple-top {
+      border-bottom-left-radius: 0;
+      margin-bottom: 1px;
+    }
+
+    &_multiple-bottom {
+      border-top-left-radius: 0;
+      margin-left: 36px;
+    }
+  }
+}

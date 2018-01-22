@@ -1,0 +1,85 @@
+.header{
+    height: 450px;
+    background: url("http://res.cloudinary.com/ucu/image/upload/h_450/Peran-Produser-Dalam-Produksi-Film-1_x9qa5v.jpg")}
+
+.header__button{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: right;
+
+
+}
+.header__button_search{
+    border: transparent;
+
+
+    background-color: transparent;
+}
+.header__button_transparent{
+    border: transparent;
+    color: #ffffff;
+
+    width: 110px;
+    height: 40px;
+    background-color: transparent;
+
+}
+.header__button_transparent_border{
+    border: 1px solid white;
+    color: #ffffff;
+    border-radius: 2px;
+
+    width: 110px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top:58%;
+    left: 25%;
+}
+.header__button_pink{
+    border: transparent;
+    color: #ffffff;
+    width: 110px;
+    height: 40px;
+    border-radius: 2px;
+    /*border: 1px #ff0079 solid;*/
+    background-color: #ff0079;
+}
+.header__button_pink_movie{
+    position: absolute;
+    top: 58%;
+    border: transparent;
+    color: #ffffff;
+    width: 110px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ff0079;
+}
+.header__name-middle{
+    color: #ffffff;
+    font-size: 20px;
+}
+.header__button_transparent_add{
+    border: transparent;
+    color: #ffffff;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top:58%;
+    left: 37%;
+}
+.header__name_big{
+    position: absolute;
+top:40%;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+.header_description{
+    display: flex;
+    position: absolute;
+    top:50%;}
+.header__description_item{
+    margin-right: 15px;
+    color: #ffffff;
+}

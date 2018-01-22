@@ -1,0 +1,26 @@
+.gallery {
+  padding-bottom: 50px;
+}
+.gallery__title {
+  font-size: 32px;
+  line-height: 1.19;
+  color: #4e5665;
+  text-align: center;
+  padding-top: 60px;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+.gallery__image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.gallery__paragraph {
+  font-family: 'Didact Gothic', sans-serif;
+  width: 960px;
+  line-height: 1.75;
+  font-size: 16px;
+  margin: 0 auto;
+  color: #505050;
+  overflow: hidden;
+}

@@ -1,0 +1,38 @@
+@import "_variables";
+
+.navigation {
+
+  &__list {
+    list-style:none;
+    text-align:center;
+    margin:0;
+    padding:0;
+  }
+
+  &__list-element {
+    padding: 0 9px;
+    display:inline;
+  }
+
+  &__link {
+    display:inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Avenir Next";
+    line-height: 1.36;
+    color: #4e5665;
+    text-decoration: none;
+    padding: 15px 10px 13px;
+    &_active {
+      border-bottom: 3px solid orange;
+    }
+  }
+
+  &__separator {
+    border: 0;
+    margin: -1px 0 0 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

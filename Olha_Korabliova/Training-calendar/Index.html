@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Logo.css"/>
+    <link rel="stylesheet" href="styles/Add-button.css"/>
+    <link rel="stylesheet" href="styles/Calendar.css"/>
+    <link rel="stylesheet" href="styles/View-switcher.css"/>
+    <link rel="stylesheet" href="styles/Date-switcher.css"/>
+    <link rel="stylesheet" href="styles/Event.css"/>
+    <link rel="stylesheet" href="styles/Search.css"/>
+    <link rel="stylesheet" href="styles/User-info.css"/>
+    <link rel="stylesheet" href="styles/Navigation.css"/>
+    <link rel="stylesheet" href="styles/Layout.css"/>
+    <title>Document</title>
+</head>
+<body class="Layout">
+<aside class="Layout__sidebar">
+    <img class="Logo" src="images/logo.png">
+    <div class="User-info">
+        <!--User-info-->
+        <img class="User-info__pic" src="images/user.png" alt="User-pic"/>
+        <figcaption class="User-info__name">Super Hero</figcaption>
+    </div>
+    <div class="Navigation">
+        <!--Navigation-->
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_overview"></span>
+            OVERVIEW
+        </a>
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_messages"></span>
+            MESSAGES
+        </a>
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_workout"></span>
+            WORKOUT
+        </a>
+        <a class="Navigation__item Navigation__item_active">
+            <span class="Navigation__background Navigation__background_calendar"></span>
+            CALENDAR
+        </a>
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_goals"></span>
+            GOALS
+        </a>
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_achievements"></span>
+            ACHIEVEMENTS
+        </a>
+        <a class="Navigation__item">
+            <span class="Navigation__background Navigation__background_measurements"></span>
+            MEASUREMENTS
+        </a>
+    </div>
+</aside>
+<main class="Layout__content">
+    <div>
+        <!--View-switcher-->
+        <form class="View-switcher" action="#">
+            <button class="View-switcher__item">Week</button>
+            <button class="View-switcher__item View-switcher__item_active">Month</button>
+        </form>
+    </div>
+    <!--<div class="Search">-->
+        <!--Search-->
+        <form class="Search" action="#">
+            <input class="Search__input" placeholder="What are you looking for?">
+            <span class="Search__icon"></span>
+        </form>
+    <!--</div>-->
+    <div class="Date-switcher">
+        <a href="#"><span class="Date-switcher__arrow Date-switcher__arrow_left"></span></a>
+        <span class="Date-switcher__time">June 2017</span>
+        <a href="#"><span class="Date-switcher__arrow Date-switcher__arrow_right"></span></a>
+    </div>
+
+    <div class="Calendar">
+        <span class="Calendar__day">MON</span>
+        <span class="Calendar__day">TUE</span>
+        <span class="Calendar__day">WED</span>
+        <span class="Calendar__day">THU</span>
+        <span class="Calendar__day">FRI</span>
+        <span class="Calendar__day">SAT</span>
+        <span class="Calendar__day">SUN</span>
+
+        <div class="Calendar__date">
+            <span class="Calendar__number">1</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">2</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">3</span>
+
+            <div class="Event Event_active">Cycling</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">4</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">5</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">6</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">7</span>
+
+            <div class="Event Event_green">Triple Treat</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">8</span>
+
+            <div class="Event Event_orange">2km Run</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">9</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">10</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">11</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">12</span>
+            <div class="Event Event_blue">5km Run</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">13</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">14</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">15</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number Calendar__number_active">16</span>
+
+            <div class="Event Event_green">Triple Treat</div>
+            <div class="Event Event_blue">Endurance Run</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">17</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">18</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">19</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">20</span>
+
+            <div class="Event Event_orange">Cycling</div>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">21</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">22</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">23</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">24</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">25</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">26</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">27</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">28</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">29</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">30</span>
+        </div>
+        <div class="Calendar__date">
+            <span class="Calendar__number">31</span>
+        </div>
+        <div class="Calendar__date Calendar__date_not-available">
+            <span class="Calendar__number">1</span>
+        </div>
+        <div class="Calendar__date Calendar__date_not-available">
+            <span class="Calendar__number">2</span>
+        </div>
+        <div class="Calendar__date Calendar__date_not-available">
+            <span class="Calendar__number">3</span>
+        </div>
+        <div class="Calendar__date Calendar__date_not-available">
+            <span class="Calendar__number">4</span>
+        </div>
+    </div>
+    <!--<div class="Add-button">Add-button</div>-->
+</main>
+</body>
+</html>

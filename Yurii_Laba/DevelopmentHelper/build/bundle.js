@@ -617,7 +617,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    // Force a string conversion as this will be done by the append regardless and
-	    // the regex test will do this transparently behind the scenes, causing issues if
+	    // the regex test.html will do this transparently behind the scenes, causing issues if
 	    // an object's to string has escaped characters in it.
 	    string = '' + string;
 	  }
