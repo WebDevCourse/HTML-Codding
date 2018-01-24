@@ -1,0 +1,28 @@
+.cadillac-hover-sec__title {
+  font-size: 32px;
+  line-height: 1.19;
+  color: #4e5665;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.cadillac-hover-sec__small {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffd700;
+  margin: 0;
+}
+.cadillac-hover-sec__image {
+  display: block;
+  margin: 0 auto;
+}
+.cadillac-hover-sec__paragraph {
+  font-family: 'Didact Gothic', sans-serif;
+  width: 960px;
+  line-height: 1.75;
+  font-size: 16px;
+  margin: 0 auto;
+  color: #505050;
+}

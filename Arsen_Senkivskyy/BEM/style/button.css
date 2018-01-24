@@ -1,0 +1,12 @@
+.button {
+  margin: 12px;
+  border-radius: 4px;
+  border: 1px solid ;
+  padding: 51px 20px;
+}
+.button_active {
+  background: red;
+}
+.button_disabled {
+  color: #ccc;
+}

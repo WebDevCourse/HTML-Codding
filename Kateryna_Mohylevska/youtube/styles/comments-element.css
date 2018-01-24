@@ -9,6 +9,7 @@
     font-size: 13px;
     color: rgba(17, 17, 17, 0.6); }
   .comments-element__text {
+    clear: both;
     font-size: 14px;
     margin: 3px 0; }
   .comments-element__respond {

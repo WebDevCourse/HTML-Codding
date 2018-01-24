@@ -1,0 +1,50 @@
+.Navigation {
+  margin-top: 10px;
+}
+.Navigation__item {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  line-height: 56px;
+  color: #a8b2b9;
+  padding-left: 20px;
+}
+.Navigation__item_active {
+  border-left: #ed5454 5px solid;
+  padding-left: 15px;
+}
+.Navigation__background {
+  padding-right: 10px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Navigation__background_overview {
+  background: url("../images/1.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_messages {
+  background: url("../images/2.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_workout {
+  background: url("../images/3.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_calendar {
+  background: url("../images/4.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_goals {
+  background: url("../images/5.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_achievements {
+  background: url("../images/6.svg") no-repeat;
+  background-size: 16px 16px;
+}
+.Navigation__background_measurements {
+  background: url("../images/7.svg") no-repeat;
+  background-size: 16px 16px;
+}

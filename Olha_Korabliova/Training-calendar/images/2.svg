@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Ico/2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Ico/2" stroke="#A8B2B9" stroke-width="2">
+            <g id="Group-5" transform="translate(1.000000, 2.500000)">
+                <path d="M13,10.7314211 L1,10.7314211 C0.448,10.7314211 0,10.2837132 0,9.73207301 L0,1.73728814 C0,1.18564798 0.448,0.737940026 1,0.737940026 L13,0.737940026 C13.553,0.737940026 14,1.18564798 14,1.73728814 L14,9.73207301 C14,10.2837132 13.553,10.7314211 13,10.7314211 Z" id="Stroke-124"></path>
+                <polyline id="Stroke-125" points="13 1.73728814 7 6.73402868 1 1.73728814"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link type="text/css" rel="stylesheet/less" href="styles/common.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/chat.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/chat-box.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/chat-info.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/new-message.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/chat-options.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/create-message.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/user.less">
+    <link type="text/css" rel="stylesheet/less" href="styles/message.less">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Facebook Chat Box</title>
+</head>
+<body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+<script src="scripts/less.min.js"></script>
+
+<section class="chat-box">
+    <div class="chat-info">
+        <div class="user">
+            <div class="user__status">Activity</div>
+            <p class="user__name">Kristaps Elsins</p>
+        </div>
+        <div class="chat-options">
+            <button class="chat-options__item chat-options__item_add">Add</button>
+            <button class="chat-options__item chat-options__item_video">Add video</button>
+            <button class="chat-options__item chat-options__item_cog">Configurations</button>
+            <button class="chat-options__item chat-options__item_close">Close</button>
+        </div>
+    </div>
+    <main class="chat">
+        <div class="message message_friend">
+            <img class="message__friend-photo"
+                 src="http://res.cloudinary.com/dycaygf8l/image/upload/h_28,w_28,c_thumb,g_face,r_max/v1516179612/18_10_TMPU_Kostya_tatu_ra551u.png"
+                 alt="Your-Friend">
+            <p class="message__friend-text message__small-text message__friend-text_first">Yo, can you update views?</p>
+            <p class="message__friend-text message__small-text message__friend-text_last">I can't see updates views yet.</p>
+        </div>
+        <div class="message message_you">
+            <p class="message__your-text message__your-text_first">Hi, as I noted in Email last week - I'm on vacation.</p>
+            <p class="message__your-text message__small-text message__your-text_last">I will be back next month</p>
+        </div>
+    </main>
+    <div class="new-message">
+        <form class="create-message">
+            <input class="create-message__text" type="text" placeholder="Type a message...">
+        </form>
+        <div class="chat-options chat-options_new-message">
+            <button class="chat-options__item chat-options__item_picture">Add Picture</button>
+            <button class="chat-options__item chat-options__item_gif">Add Gif</button>
+            <button class="chat-options__item chat-options__item_smile">Add Smile/Sticker</button>
+            <button class="chat-options__item chat-options__item_calendar">Calendar</button>
+            <button class="chat-options__item chat-options__item_camera">Add photo from camera</button>
+        </div>
+    </div>
+</section>
+
+<script src="build/bundle.js"></script>
+
+</body>
+</html>
