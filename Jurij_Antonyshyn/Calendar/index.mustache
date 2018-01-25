@@ -6,7 +6,105 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calendar</title>
-    <link rel="stylesheet" href="style/calendar.css">
+    <!--<link rel="stylesheet" href="Style/Calendar.css">-->
+    <style>
+        .Layout {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .Layout__aside {
+             width: 224px;
+             height: 947px;
+             display: flex;
+             flex-direction: column;
+             background-color: #ffffff;
+         }
+
+        .Layout__main {
+             width: 1097.8px;
+             height: 947px;
+             display: flex;
+             flex-direction: column;
+             background-color: #f8f7f8;
+         }
+
+
+        .Header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .Navigation__copyright {
+            margin-top: 232px;
+        }
+
+        .Toggler__week {
+            width: 102px;
+            height: 45px;
+            margin-right: 0;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px 0 rgba(243, 0, 0, 0.1);
+            border: solid 1px #ffffff;
+        }
+
+        .Toggler__month {
+            width: 102px;
+            height: 45px;
+            margin-left: 0;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px 0 rgba(243, 0, 0, 0.1);
+            border: solid 1px #ffffff;
+        }
+
+        .Search {
+            float: right;
+        }
+
+        .Calendar {
+            width: 993px;
+            display: flex;
+            margin-left: 59.8px;
+            flex-direction: column;
+            background-color: #00b300;
+        }
+
+        .Calendar__weekside {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+         }
+
+        .Calendar__weekside-day {
+            width: 139.8px;
+            height: 13px;
+            text-align: center;
+        }
+
+        .Calendar__main {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+
+         }
+
+        .Calendar__cell {
+            width: 139.8px;
+            height: 122px;
+            border: solid 1px #efefef;
+
+        }
+
+        .Calendar__cell-date {
+            float: right;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
 <main class="Layout">
@@ -57,9 +155,9 @@
                 <button class="Toggler__month">Month</button>
             </div>
             <p class="Header__title">June 2017</p>
-        </section>
-        <section class="Search">
-            <search>What are you looking for?</search>
+             <div class="Search">
+                 <input>What are you looking for?</input>
+             </div>
         </section>
         <section class="Calendar">
             <div class="Calendar__weekside">
@@ -71,6 +169,7 @@
                 <p class="Calendar__weekside-day">sat</p>
                 <p class="Calendar__weekside-day">sun</p>
             </div>
+            <div class="Calendar__main">
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">1</time>
             </div>
@@ -175,6 +274,7 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">4</time>
+            </div>
             </div>
         </section>
         <section class="Event"></section>
