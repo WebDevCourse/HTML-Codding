@@ -1,0 +1,39 @@
+.Event {
+  display: inline-block;
+  width: 115px;
+  padding: 7px 10px;
+  border-radius: 2px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  text-align: left;
+  margin-top: 15px;
+
+  &_pased {
+    color:#fff;
+    width: 135px;
+    background-color: #fd9b5b;
+    box-shadow: 6px 3px 7px 4px rgba(189, 159, 189, 0.15);
+    position: relative;
+    z-index: 3;
+  }
+
+  &_coming_green {
+    border-left: solid 4px #58cb7d;
+    color: #58cb7d;
+    background-color: rgba(88, 203, 125, 0.3);
+  }
+
+  &_coming_orange {
+    border-left: solid 4px rgba(253, 155, 91, 1) ;
+    color: rgba(253, 155, 91, 1);
+    background-color: rgba(253, 155, 91, 0.3);
+  }
+
+  &_coming_blue {
+    border-left: solid 4px #346ff1;
+    color: #346ff1;
+    background-color:rgba(52, 111, 241, 0.3);
+  }
+}
