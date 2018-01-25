@@ -1,0 +1,77 @@
+.message {
+  max-width: 225px;
+  word-break: break-all;
+  &_friend {
+    padding-top: 15px;
+  }
+
+  &_you {
+    padding-top: 15px;
+    margin-left: 101px;
+    margin-right: 16px;
+    max-width: 175px;
+    overflow: hidden; //щоб контент не схлопувався
+  }
+
+  &__small-text {
+    border-radius: 100px;
+  }
+
+  &__friend-photo {
+    margin-left: 16px;
+    margin-right: 8px;
+    float: left;
+  }
+
+  &__friend-text {
+    display: table;
+    min-height: 17px;
+    font-size: 12px;
+    color: #353535;
+    border-radius: 14px;
+    background-color: #f3f3f3;
+    padding: 7px 12px 4px 12px;
+    margin: 0 0 1px 52px;
+    //padding: 5px 12px 6px 12px; //не гарно
+
+    &_first {
+      border-bottom-left-radius: 0;
+    }
+
+    &_middle {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    &_last {
+      border-top-left-radius: 0;
+    }
+  }
+
+  &__your-text {
+    display: inline-block;
+    font-size: 12px;
+    //font-weight: 600;//погано
+    color: #ffffff;
+    border-radius: 14px;
+    background-color: #2979ff;
+    padding: 7px 12px 6px 13px;
+    margin: 0 0 1px 0;
+    float: right;
+    clear: both;
+
+    &_first {
+      border-bottom-right-radius: 0;
+    }
+
+    &_middle {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &_last {
+      border-top-right-radius: 0;
+    }
+  }
+
+}

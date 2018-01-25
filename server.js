@@ -20,8 +20,7 @@ const handleCSS = async (req, res) => {
                 (e, output) => e ? rej(e) : res(output)
             )
         });
-
-        res.set({"Content-Type": "text/styles; charset=UTF-8"});
+        res.header("Content-type", "text/css");
         res.send(less.css);
 
     } catch (err) {

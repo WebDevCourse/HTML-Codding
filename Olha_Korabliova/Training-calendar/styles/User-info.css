@@ -1,4 +1,15 @@
 .User-info {
-  background-color: green;
-  min-height: 100px;
+  width: 114px;
+  margin: auto;
+}
+.User-info__pic {
+  position: relative;
+  left: 17px;
+  width: 87px;
+  height: 87px;
+}
+.User-info__name {
+  color: rgba(41, 37, 41, 0.55);
+  text-align: center;
+  font-size: 14px;
 }
