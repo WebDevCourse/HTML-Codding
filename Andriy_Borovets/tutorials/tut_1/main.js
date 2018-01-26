@@ -13,6 +13,10 @@ class Display{
         this.button = document.createElement("button");
         this.button.className += "calc";
         this.button.innerHTML = "print";
+        this.text = document.createElement("text");
+        this.text.classList.add("warning");
+        this.text.innerHTML = " ! you have to fill all the gaps";
+        this.text.style.display = "None";
         this.arr = document.createElement("p");
         this.arr.className += "arr";
         this.sum = document.createElement("p");
@@ -25,20 +29,25 @@ class Display{
         this.section.innerHTML += "n:";
         this.section.appendChild(this.n);
         this.section.appendChild(this.button);
+        this.section.appendChild(this.text);
         this.section.appendChild(this.arr);
         this.section.appendChild(this.sum);
-        //this.display();
     }
     genText() {
+        let text = this.parentNode.getElementsByClassName("warning")[0];
+        text.style.display = "None";
         let a = parseFloat(this.parentNode.getElementsByClassName("a")[0].value);
         let d = parseFloat(this.parentNode.getElementsByClassName("d")[0].value);
         let n = parseFloat(this.parentNode.getElementsByClassName("n")[0].value);
-        if (isNaN(a) || isNaN(d) || isNaN(n)){
-            alert("you have to fill all the gaps!");
-            return ;
-        }
         let arr = this.parentNode.getElementsByClassName("arr")[0];
         let sum = this.parentNode.getElementsByClassName("sum")[0];
+        if (isNaN(a) || isNaN(d) || isNaN(n)){
+             text.style.display = "block";
+             arr.innerHTML = "";
+             sum.innerHTML = "";
+            return ;
+        }
+
         let arr_str = [];
         for(let i=1;i<=n;i++){
             let x = a + (i-1)*d;
@@ -47,8 +56,6 @@ class Display{
         arr.innerHTML = "a = [" +  arr_str + "]";
         let an = a + (d*(n-1));
         sum.innerHTML = "sum = " + (((a + an)/2) * n);
-
-
     }
     display(){
         document.body.appendChild(this.section);
@@ -73,7 +80,6 @@ class Display{
                             });
                             let button = event.currentTarget.parentElement.getElementsByClassName("calc")[0];
                             button.dispatchEvent(evt);
-                            //document.getElementsByClassName("calc")[0].click();
                         }
                     }
                 });
