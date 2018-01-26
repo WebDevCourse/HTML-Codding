@@ -2,26 +2,29 @@ class Display{
     constructor(){
         this.section = document.createElement("section");
         this.a = document.createElement("input");
+        this.d = document.createElement("input");
+        this.n = document.createElement("input");
+        this.button = document.createElement("button");
+        this.text = document.createElement("text");
+        this.arr = document.createElement("p");
+        this.sum = document.createElement("p");
+        this.genPage();
+    }
+    genPage(){
         this.a.className += "a";
         this.a.classList.add("var");
-        this.d = document.createElement("input");
         this.d.className += "d";
         this.d.classList.add("var");
-        this.n = document.createElement("input");
         this.n.className += "n";
         this.n.classList.add("var");
-        this.button = document.createElement("button");
         this.button.className += "calc";
         this.button.innerHTML = "print";
-        this.text = document.createElement("text");
         this.text.classList.add("warning");
-        this.text.innerHTML = " ! you have to fill all the gaps";
+        this.text.innerHTML = "  you have to fill all the gaps!";
         this.text.style.display = "None";
-        this.arr = document.createElement("p");
         this.arr.className += "arr";
-        this.sum = document.createElement("p");
         this.sum.className += "sum";
-        this.button.addEventListener("click",this.genText);
+        this.button.addEventListener("click",this.genArrSum);
         this.section.innerHTML += "a:";
         this.section.appendChild(this.a);
         this.section.innerHTML += "d:";
@@ -33,7 +36,7 @@ class Display{
         this.section.appendChild(this.arr);
         this.section.appendChild(this.sum);
     }
-    genText() {
+    genArrSum() {
         let text = this.parentNode.getElementsByClassName("warning")[0];
         text.style.display = "None";
         let a = parseFloat(this.parentNode.getElementsByClassName("a")[0].value);
@@ -47,18 +50,24 @@ class Display{
              sum.innerHTML = "";
             return ;
         }
-
-        let arr_str = [];
+        let arr_str = "a = [";
         for(let i=1;i<=n;i++){
             let x = a + (i-1)*d;
-            arr_str.push(x);
+            arr_str += x.toString();
+            if(i === n){
+                continue;
+            }
+            arr_str += ", ";
         }
-        arr.innerHTML = "a = [" +  arr_str + "]";
+        arr_str+="]";
+        //arr.innerHTML = "a = [" +  arr_str + "]";
+        arr.innerHTML = arr_str;
         let an = a + (d*(n-1));
         sum.innerHTML = "sum = " + (((a + an)/2) * n);
     }
     display(){
         document.body.appendChild(this.section);
+        //document.getElementsByClassName("container")[0].appendChild(this.section);
         let elems = document.getElementsByClassName("var");
         for (let i = 0, len = elems.length; i < len; i++) {
             elems[i]
@@ -86,11 +95,11 @@ class Display{
         }
     }
 }
-let x = new Display();
-let y = new Display();
-let z = new Display();
-let o = new Display();
-x.display();
-y.display();
-z.display();
-o.display();
+let x1 = new Display();
+let x2 = new Display();
+let x3 = new Display();
+let x4 = new Display();
+x1.display();
+x2.display();
+x3.display();
+x4.display();
