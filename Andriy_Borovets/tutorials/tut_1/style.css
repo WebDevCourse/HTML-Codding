@@ -1,0 +1,25 @@
+.var{
+    width: 50px;
+    margin: 2px;
+}
+.warning{
+    color: red;
+    font-size: 12px;
+}
+
+section{
+    //margin-right: 100px;
+    //flex-grow: 1;
+}
+button{
+    margin-left: 3px;
+    height: 21px;
+    width: 50px;
+    background-color: #efefef;
+    border: 1px #9b9b9b solid;
+}
+/*
+.container{
+    display: flex;
+}
+*/
