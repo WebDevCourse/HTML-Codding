@@ -6,7 +6,274 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calendar</title>
-    <link rel="stylesheet" href="style/calendar.css">
+    <!--<link rel="stylesheet" href="Style/Calendar.css">-->
+    <style>
+        .Layout {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .Layout__aside {
+             width: 224px;
+             height: 947px;
+             display: flex;
+             flex-direction: column;
+             background-color: #ffffff;
+         }
+
+        .Layout__main {
+             width: 1097.8px;
+             height: 947px;
+             display: flex;
+             flex-direction: column;
+             background-color: #f8f7f8;
+         }
+
+        .Logo{
+            display: block;
+            color: #ed5454;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .Profile__pic {
+            width: 87px;
+            height: 87px;
+            margin-top: 39.3px;
+            margin-left: 60px;
+        }
+
+        .Profile__name {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            color: rgba(41, 37, 41, 0.55);
+            margin-top: 10px;
+        }
+
+        .Navigation__element {
+            display: flex;
+            flex-direction: row;
+            margin-left: 22px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .Navigation__element-icon {
+            width: 14px;
+            height: 14px;
+            padding-top: 7px;
+        }
+
+        .Navigation__element-text {
+            margin-left: 24px;
+            width:100%;
+            text-decoration: none;
+
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #a8b2b9;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .Navigation__copyright {
+            margin-top: 230px;
+            margin-bottom: 50px;
+            font-family: Montserrat;
+            font-size: 10px;
+            letter-spacing: -0.2px;
+            text-align: center;
+            color: rgba(41, 37, 41, 0.23);
+        }
+
+        .Header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 59px;
+        }
+
+        .Toggler {
+            display: flex;
+            flex-direction: row;
+            width: 204px;
+            height: 45px;
+            padding: 14px 28px;
+            margin-top: 0;
+        }
+
+        .Toggler__week {
+            width: 100px;
+            height: 45px;
+            border: solid 1px  #efefef;
+            font-family: Montserrat;
+            border-radius: 5px 0 0 5px;
+            font-size: 14px;
+            background-color: transparent;
+            color: #a8b2b9;
+        }
+
+        .Toggler__month {
+            width: 102px;
+            height: 45px;
+            background-color: #FFF;
+            box-shadow: 8px 8px 16px 0 rgba(243, 0, 0, 0.2);
+            border: solid 1px  #ffffff;
+            border-radius:0 5px 5px 0;
+            font-family: Montserrat;
+            font-size: 14px;
+            letter-spacing: -0.1px;
+            text-align: center;
+            color: #ed5454;
+        }
+
+        .Header__title {
+            margin-top: 25px;
+            font-family: 'Montserrat',sans-serif;
+            font-size: 16px;
+            letter-spacing: -0.1px;
+            text-align: center;
+            color: #292529;
+        }
+
+        .Search {
+            border-radius: 25px;
+            background-color: #ffffff;
+            box-shadow: 0 3px 11px 0 rgba(189, 159, 189, 0.11);
+            width: 230px;
+            height: 40px;
+            margin-top: 15px;
+            margin-right: 53px;
+
+
+        }
+        .Search__input {
+             border-radius: 25px;
+             border: none;
+             width: 160px;
+             height: 15px;
+             font-family: Montserrat;
+             font-size: 12px;
+             letter-spacing: -0.1px;
+             text-align: left;
+             color: #a8b2b9;
+             padding-left: 25px;
+             padding-top: 12px;
+             padding-right: 5px;
+         }
+
+        .Calendar {
+            width: 993px;
+            display: flex;
+            margin-left: 59.8px;
+            flex-direction: column;
+            background-color:;
+        }
+
+        .Calendar__weekside {
+            display: flex;
+            border:solid 1px  #efefef;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+         }
+
+        .Calendar__weekside-day {
+            width: 139.8px;
+            height: 13px;
+            text-align: center;
+            font-size: 10px;
+            color: #a8b2b9;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .Calendar__main {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+
+         }
+
+        .Calendar__cell {
+            width: 139.8px;
+            height: 122px;
+            border: solid 1px #efefef;
+
+        }
+
+        .Calendar__cell-date {
+            float: right;
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            color:#8a888a;
+            font-family: 'Montserrat', sans-serif;
+            text-align: right;
+            letter-spacing: -0.2px;
+        }
+
+        .Calendar__cell-date-marked {
+            background-color: #ed5454;
+            background-position: center;
+            color:#fff;
+            width: 24px;
+            height: 24px;
+            margin-right: 17px;
+            margin-top: 17px;
+            padding-top: 2px;
+            padding-bottom: 0;
+            border-radius: 12px;
+            text-align: center;
+
+
+        }
+
+        .Calendar__cell-event {
+            display: inline-block;
+            width: 115px;
+            padding: 7px 10px;
+            border-radius: 2px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: -0.2px;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .Calendar__cell-event-green {
+            border-left: solid 4px #58cb7d;
+            color: #58cb7d;
+            background-color: rgba(88, 203, 125, 0.3);
+        }
+
+        .Calendar__cell-event-blue {
+            border-left: solid 4px #346ff1;
+            color: #346ff1;
+            background-color:rgba(52, 111, 241, 0.3);
+        }
+
+        .Calendar__cell-event-orange {
+            border-left: solid 4px rgba(253, 155, 91, 1);
+            color: rgba(253, 155, 91, 1);
+            background-color: rgba(253, 155, 91, 0.3);
+        }
+
+        .Calendar__cell-event-orange-disable {
+            color:#fff;
+            background-color: #fd9b5b;
+            box-shadow: 6px 3px 7px 4px rgba(189, 159, 189, 0.15);
+        }
+
+    </style>
 </head>
 <body>
 <main class="Layout">
@@ -15,36 +282,36 @@
             <p class="Logo__title">the logo</p>
         </section>
         <section class="Profile">
-            <img src="" alt="" class="Profile__pic">
+            <img class="Profile__pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3xKI5_b3YOKwuNMhegp-i_CROo8Q-6K02tSie4Tcjs8xF_7D" alt="" class="Profile__pic">
             <p class="Profile__name">M. Naminovskiy</p>
         </section>
         <section class="Navigation">
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Overview.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Overview</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Messages.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Messages</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Workout.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Workout</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Calendar.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Calendar</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Goals.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Goals</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Achivements.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Achivements</p>
             </div>
             <div class="Navigation__element">
-                <img src="" alt="" class="Navigation__element-icon">
+                <img src="../Img/Measurements.svg" alt="" class="Navigation__element-icon">
                 <p class="Navigation__element-text">Measurements</p>
             </div>
             <p class="Navigation__copyright">®Smooozy.com, 2017</p>
@@ -56,10 +323,10 @@
                 <button class="Toggler__week">Week</button>
                 <button class="Toggler__month">Month</button>
             </div>
-            <p class="Header__title">June 2017</p>
-        </section>
-        <section class="Search">
-            <search>What are you looking for?</search>
+            <p class="Header__title">< June 2017 ></p>
+             <div class="Search">
+                 <input class="Search__input" type="text" placeholder="What are you looking for?">
+             </div>
         </section>
         <section class="Calendar">
             <div class="Calendar__weekside">
@@ -71,6 +338,7 @@
                 <p class="Calendar__weekside-day">sat</p>
                 <p class="Calendar__weekside-day">sun</p>
             </div>
+            <div class="Calendar__main">
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">1</time>
             </div>
@@ -79,6 +347,9 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">3</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange Calendar__cell-event-orange-disable">
+                        Cycling
+                    </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">4</time>
@@ -91,9 +362,15 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">7</time>
+                <span class="Calendar__cell-event Calendar__cell-event-green">
+                        Triple Treat
+                    </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">8</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange">
+                        2km Run
+                    </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">9</time>
@@ -106,6 +383,9 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">12</time>
+                <span class="Calendar__cell-event Calendar__cell-event-blue">
+                            5km Run
+                        </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">13</time>
@@ -117,7 +397,13 @@
                 <time class="Calendar__cell-date">15</time>
             </div>
             <div class="Calendar__cell">
-                <time class="Calendar__cell-date">16</time>
+                <time class="Calendar__cell-date Calendar__cell-date-marked">16</time>
+                <span class="Calendar__cell-event Calendar__cell-event-green">
+                        Trieple Treat
+                        </span>
+                <span class="Calendar__cell-event Calendar__cell-event-blue">
+                        Endurance Run
+                    </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">17</time>
@@ -130,6 +416,9 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">20</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange">
+                        Cycling
+                     </span>
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">21</time>
@@ -175,6 +464,7 @@
             </div>
             <div class="Calendar__cell">
                 <time class="Calendar__cell-date">4</time>
+            </div>
             </div>
         </section>
         <section class="Event"></section>
