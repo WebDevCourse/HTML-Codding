@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Switcher.css">
+    <link rel="stylesheet" href="style/Search.css">
+    <link rel="stylesheet" href="style/Calendar.css">
+    <link rel="stylesheet" href="style/Event.css">
+</head>
+<body>
+    <div class="Calendar">
+        <div class="Calendar__header">
+            <div class="Calendar__time-period-switcher">
+                <div class="Switcher">
+                    <button class="Switcher Switcher_off">Week</button>
+                    <button class="Switcher Switcher_on">Month</button>
+                </div>
+            </div>
+            <div class="Calendar__month-switcher">
+                <button class="Calendar__previous-month">Previous</button>
+                <h2 class="Calendar__current-month">July 2017</h2>
+                <button class="Calendar__next-month">Next</button>
+            </div>
+            <form action="search" class="Search">
+                <input class="Search__input" placeholder="What are you looking for?">
+                <button class="Search__button">Search</button>
+            </form>
+        </div>
+        <div class="Calendar__body">
+            <div class="Calendar__days">
+                <h3 class="Calendar__days-item">Mon</h3>
+                <h3 class="Calendar__days-item">Tue</h3>
+                <h3 class="Calendar__days-item">Wed</h3>
+                <h3 class="Calendar__days-item">Thu</h3>
+                <h3 class="Calendar__days-item">Fri</h3>
+                <h3 class="Calendar__days-item">Sut</h3>
+                <h3 class="Calendar__days-item">Sun</h3>
+            </div>
+            <div class="Calendar__dates">
+                <time class="Calendar__date">1</time>
+                <time class="Calendar__date">2</time>
+                <time class="Calendar__date">3<br>
+                    <span class="Event Event_pased">
+                        Cycling
+                    </span>
+                </time>
+                <time class="Calendar__date">4</time>
+                <time class="Calendar__date">5</time>
+                <time class="Calendar__date">6</time>
+                <time class="Calendar__date">7<br>
+                    <span class="Event Event_coming_green">
+                        Triple Treat
+                    </span>
+                </time>
+                <time class="Calendar__date">8<br>
+                    <span class="Event Event_coming_orange">
+                        2km Run
+                    </span>
+                </time>
+                <time class="Calendar__date">9</time>
+                <time class="Calendar__date">10</time>
+                <time class="Calendar__date">11</time>
+                <time class="Calendar__date">
+                    12 <br>
+                    <span class="Event Event_coming_blue">
+                            5km Run
+                        </span>
+                </time>
+                <time class="Calendar__date">13</time>
+                <time class="Calendar__date">14</time>
+                <time class="Calendar__date">15</time>
+                <time class="Calendar__date">
+                    <div class="Calendar__date_active">16</div>
+                    <span class="Event Event_coming_green">
+                        Trieple Treat
+                        </span></br>
+                    <span class="Event Event_coming_blue">
+                        Endurance Run
+                    </span>
+                </time>
+                <time class="Calendar__date">17</time>
+                <time class="Calendar__date">18</time>
+                <time class="Calendar__date">19</time>
+                <time class="Calendar__date">20</br>
+                    <span class="Event Event_coming_orange">
+                        Cycling
+                     </span>
+                </time>
+                <time class="Calendar__date">21</time>
+                <time class="Calendar__date">22</time>
+                <time class="Calendar__date">23</time>
+                <time class="Calendar__date">24</time>
+                <time class="Calendar__date">25</time>
+                <time class="Calendar__date">26</time>
+                <time class="Calendar__date">27</time>
+                <time class="Calendar__date">28</time>
+                <time class="Calendar__date">29</time>
+                <time class="Calendar__date">30</time>
+                <time class="Calendar__date">31</time>
+                <time class="Calendar__date_disable">1</time>
+                <time class="Calendar__date_disable">2</time>
+                <time class="Calendar__date_disable">3</time>
+                <time class="Calendar__date_disable">4</time>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

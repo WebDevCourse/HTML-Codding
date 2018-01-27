@@ -1,0 +1,28 @@
+{
+  "main-section": [
+    {
+      "id": 1,
+      "video-content-section__title": "Recommended",
+      "video-preview": "images/pukich.jpg",
+      "description": "SilverName. Шмары вы чё офигели? Ну что голубчик, до бм*ился?!",
+      "channel-name": "Лучшее с SilverName",
+      "date-views": "86K views &middot 16 hours ago﻿"
+    },
+    {
+      "id": 2,
+      "video-content-section__title": "Recommended",
+      "video-preview": "images/pukich.jpg",
+      "description": "SilverName. Шмары вы чё офигели? Ну что голубчик, до бм*ился?!",
+      "channel-name": "Лучшее с SilverName",
+      "date-views": "86K views &middot 16 hours ago﻿"
+    },
+    {
+      "id": 3,
+      "video-content-section__title": "Recommended",
+      "video-preview": "images/pukich.jpg",
+      "description": "SilverName. Шмары вы чё офигели? Ну что голубчик, до бм*ился?!",
+      "channel-name": "Лучшее с SilverName",
+      "date-views": "86K views &middot 16 hours ago﻿"
+    }
+  ]
+}
