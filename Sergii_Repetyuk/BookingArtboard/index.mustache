@@ -12,33 +12,29 @@
     <link rel="stylesheet" href="style/Page-selection.css">
     <link rel="stylesheet" href="style/Search-option-menu.css">
     <link rel="stylesheet" href="style/Shortcut-menu.css">
+    <link rel="stylesheet" href="style/Footer.css">
+    <link rel="stylesheet" href="style/User-navigation.css">
+    <link rel="stylesheet" href="style/Search-destination.css">
+
 </head>
 <body>
 <div class="wrapper">
     <aside class="Layout__header">
         <div class="Logo"></div>
-        <div class="header-wrapper">
-            <div class="Search-option-menu">
-                <form  class="Search">
-                    <img src="" alt="">
-                    <input class="Search-anywhere" type="search" placeholder="Anywhere">
-                </form>
-                <form class="Search">
-                    <img src="" alt="">
-                    <input class="Search-anytime" type="search" placeholder="Anytime">
-                </form>
-                <form class="Search">
-                    <img src="" alt="">
-                    <input class="Search-guests" type="search" placeholder="1 guest">
-                </form>
-            </div>
-            <div class="Shortcut-menu">
-                <a class="Shortcut-menu__become-a-host" href=""> Become a Host</a>
-                <a class="Shortcut-menu__help" href=""> Help</a>
-                <a class="Shortcut-menu__sign-up" href=""> Sign Up</a>
-                <a class="Shortcut-menu__log-in" href=""> Log In</a>
-            </div>
-        </div>
+        <form class="Search-destination" action="">
+            <img class="Search-destination__icon" src="">
+            <input class="Search-destination__input" type="search" placeholder="Anywhere">
+            <img class="Search-destination__icon" src="">
+            <input class="Search-destination__input" type="search" placeholder="Anytime">
+            <img class="Search-destination__icon" src="">
+            <input class="Search-destination__input" type="search" placeholder="1 guest">
+        </form>
+        <nav class="User-navigation">
+            <a class="User-navigation__item" href="">Become a host</a>
+            <a class="User-navigation__item" href="">Help</a>
+            <a class="User-navigation__item" href="">Sign in</a>
+            <a class="User-navigation__item" href="">Log in</a>
+        </nav>
         <div class="Page-selection">
             <a class="Page-selection__for-you" href="">FOR YOU</a>
             <a class="Page-selection__homes" href="">HOMES</a>
@@ -230,51 +226,66 @@
             </div>
         </aside>
     </main>
-    <aside class="Layout__footer">
-        Language
-        Payment-currency
-        <div class="Site-map">
-            <div class="Airbnb">
-                Airbnb
-                About us
-                Careers
-                Press
-                Policies
-                Help
-                Diversity & Belonging
+    <footer class="Layout__footer">
+        <section class="Footer">
+            <section class="Select-boxes">
+                <div class="Language">
+                    <select class="Language__select">
+                        <option value="1">English</option>
+                        <option value="2">Ukrainian</option>
+                        <option value="3">Polski</option>
+                        <option value="4">Espanol</option>
+                        <option value="5">Italian</option>
+                        <option value="6">Japanese</option>
+                    </select>
+                </div>
+                <div class="Payment-currency">
+                    <select class="Payment-currency__select">
+                        <option value="1">INR</option>
+                        <option value="2">USD</option>
+                        <option value="3">EUR</option>
+                        <option value="4">UAH</option>
+                    </select>
+                </div>
+            </section>
+            <aside class="Additional-info">
+                <div class="Additional-info__item">
+                    <p class="Additional-info__item_title">Airbnb</p>
+                    <a class="Additional-info__item_link" href="">About us</a>
+                    <a class="Additional-info__item_link" href="">Careers</a>
+                    <a class="Additional-info__item_link" href="">Press</a>
+                    <a class="Additional-info__item_link" href="">Policies</a>
+                    <a class="Additional-info__item_link" href="">Help</a>
+                    <a class="Additional-info__item_link" href="">Diversity & Belonging</a>
+                </div>
+                <div class="Additional-info__item">
+                    <p class="Additional-info__item_title">Discover</p>
+                    <a class="Additional-info__item_link" href="">Trust & Safety</a>
+                    <a class="Additional-info__item_link" href="">Travel Credit</a>
+                    <a class="Additional-info__item_link" href="">Gidt Cards</a>
+                    <a class="Additional-info__item_link" href="">Airbnb Citizen</a>
+                    <a class="Additional-info__item_link" href="">Business Travel</a>
+                    <a class="Additional-info__item_link" href="">Guidebooks</a>
+                    <a class="Additional-info__item_link" href="">Airbnbmag</a>
+                </div>
+                <div class="Additional-info__item">
+                    <p class="Additional-info__item_title">Hosting</p>
+                    <a class="Additional-info__item_link" href="">Why Host</a>
+                    <a class="Additional-info__item_link" href="">Hospitality</a>
+                    <a class="Additional-info__item_link" href="">Responsible Hosting</a>
+                    <a class="Additional-info__item_link" href="">Community Center</a>
+                </div>
+            </aside>
+            <div class="Divider"></div>
+            <div class="Copyright">Airbnb, Inc.</div>
+            <div class="Terms-Privacy-SiteMap">
+                <a class="Terms-Privacy-SiteMap__item" href="">Terms</a>
+                <a class="Terms-Privacy-SiteMap__item" href="">Privacy</a>
+                <a class="Terms-Privacy-SiteMap__item" href="">Site Map</a>
             </div>
-            <div class="Discover">
-                Discover
-                Trust & Safety
-                Travel Credit
-                Gidt Cards
-                Airbnb Citizen
-                Business Travel
-                Guidebooks
-                Airbnbmag
-            </div>
-            <div class="Hosting">
-                Hosting
-                Why Host
-                Hospitality
-                Responsible Hosting
-                Community Center
-            </div>
-        </div>
-        <div class="Footer">
-            Logo
-            Airbnb, Inc.
-
-            Terms
-            Privacy
-            Site Map
-            <div class="Social-networks">
-                Facebook
-                Twitter
-                Instagram
-            </div>
-        </div>
-    </aside>
+            <div class="Social-network-icons"></div>
+        </section>
+    </footer>
 </div>
 </body>
 </html>
