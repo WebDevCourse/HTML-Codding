@@ -7,118 +7,233 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="style/Layout.css">
-        <link rel="stylesheet" href="style/Search-destination.css">
+        <link rel="stylesheet" href="style/Search.css">
         <link rel="stylesheet" href="style/User-navigation.css">
-        <link rel="stylesheet" href="style/Site-navigation.css">
         <link rel="stylesheet" href="style/Hero-article.css">
         <link rel="stylesheet" href="style/Footer.css">
+        <link rel="stylesheet" href="style/Main-title.css">
+        <link rel="stylesheet" href="style/Advertisement.css">
     </head>
     <body class="Layout">
         <header class="Layout__header">
-            <form class="Search-destination" action="">
-                <img class="Search-destination__icon" src="">
-                <input class="Search-destination__input" type="search" placeholder="Anywhere">
-                <img class="Search-destination__icon" src="">
-                <input class="Search-destination__input" type="search" placeholder="Anytime">
-                <img class="Search-destination__icon" src="">
-                <input class="Search-destination__input" type="search" placeholder="1 guest">
-            </form>
+            <section class="Main-title">
+                <p class="Main-title__name">Airbnb</p>
+                <p class="Main-title__text">Book unique homes and experience a city like a local.</p>
+            </section>
             <nav class="User-navigation">
                 <a class="User-navigation__item" href="">Become a host</a>
                 <a class="User-navigation__item" href="">Help</a>
                 <a class="User-navigation__item" href="">Sign in</a>
                 <a class="User-navigation__item" href="">Log in</a>
             </nav>
-            <nav class="Site-navigation">
-                <a class="Site-navigation__item Site-navigation__item_for-you" href="">FOR YOU</a>
-                <a class="Site-navigation__item" href="">HOMES</a>
-                <a class="Site-navigation__item" href="">EXPERIENCES</a>
-                <a class="Site-navigation__item" href="">PLACES</a>
-            </nav>
+            <form class="Search" action="">
+                <input class="Search__input" type="search" placeholder="Try 'Osaka'">
+                <button class="Search__button">Search</button>
+            </form>
 
         </header>
         <main class="Layout__payload">
 
-            <article class="Hero-article Hero-article_booked">
-                <title class="Hero-article__title">Just Booked</title>
+            <article class="Hero-article">
+                <h1 class="article-title">Explore Airbnb</h1>
                 <figure class="Hero-article__item">
                     <img class="Hero-article__item_picture" src="" alt="">
-                    <p></p>
+                    <span></span>
                 </figure>
                 <figure class="Hero-article__item">
                     <img class="Hero-article__item_picture" src="" alt="">
-                    <p></p>
+                    <span></span>
                 </figure>
                 <figure class="Hero-article__item">
                     <img class="Hero-article__item_picture" src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img class="Hero-article__item_picture" src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img class="Hero-article__item_picture" src="" alt="">
-                    <p></p>
+                    <span></span>
                 </figure>
             </article>
 
+            <article class="Hero-article">
+                <h1 class="article-title">Experiences</h1>
+                <aside class="Advertisement">
+                    <figure class="Image-with-price">
+                        <img class="Image-with-price__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517018126/Sewells_Sea_safari_6-e1478281581938_j7qey5.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Step behind the scenes of Havana’s theater</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517017955/sunset_front_i2gofl.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Dance your way into Cuban culture with a</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194,x_541,y_0/v1517018487/992a309f49513599bcfef05cb3b2a8a9_hvht3w.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$13,361 Hunt for truffles in the countryside</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_184/v1517018705/DUUv4ErXcAE-jzk_boqib6.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$23,204 Meet Kenyan innovators with a Nairobi...</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                </aside>
+            </article>
 
-            <article class="Hero-article Hero-article_destination">
-                <title class="Hero-article__title">Featured destinations</title>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
+            <article class="Hero-article">
+                <h1 class="article-title">Homes</h1>
+                <aside class="Advertisement">
+                    <figure class="Image-with-price">
+                        <img class="Image-with-price__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517018126/Sewells_Sea_safari_6-e1478281581938_j7qey5.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Step behind the scenes of Havana’s theater</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517017955/sunset_front_i2gofl.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Dance your way into Cuban culture with a</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194,x_541,y_0/v1517018487/992a309f49513599bcfef05cb3b2a8a9_hvht3w.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$13,361 Hunt for truffles in the countryside</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                </aside>
             </article>
 
 
-            <article class="Hero-article Hero-article_experiences">
-                <title class="Hero-article__title">Experiences</title>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
-                <figure class="Hero-article__item">
-                    <img src="" alt="">
-                    <p></p>
-                </figure>
+            <article class="Hero-article">
+                <h1 class="article-title">Featured destinations</h1>
+                <aside class="Advertisement">
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_scale,h_238,w_159/v1517009655/1_jfdupn.jpg" alt="">
+                        <figcaption class="Featured__description">Los Angeles</figcaption>
+                    </figure>
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_scale,h_238,w_159/v1517010003/121058be5e7a9fe2f66bcdec02caca80_c4audl.jpg" alt="">
+                        <figcaption class="Featured__description">Florence</figcaption>
+                    </figure>
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_scale,h_238,w_159/v1517010114/50727012d6a5ab309646188981f9cf59--paris-drawing-paris-balcony_h1ejgt.jpg" alt="">
+                        <figcaption class="Featured__description">Paris</figcaption>
+                    </figure>
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_238,w_159/v1517010666/1-bourbon-street-red-diane-millsap_jc7uyz.jpg" alt="">
+                        <figcaption class="Featured__description">Amsterdam</figcaption>
+                    </figure>
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_scale,h_238,w_159/v1517010444/kr_LO22_oadq25.jpg" alt="">
+                        <figcaption class="Featured__description">Seoul</figcaption>
+                    </figure>
+                    <figure class="Featured">
+                        <img class="Featured__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_scale,h_238,w_159/v1517011174/brickell-stage-university-of-miami-architecture-school-design-installations_dezeen_2364_col_9-852x1044_jj123k.jpg" alt="">
+                        <figcaption class="Featured__description">Miami</figcaption>
+                    </figure>
+                </aside>
             </article>
 
 
-            <article class="Hero-article Hero-article_places">
+            <article class="Hero-article">
+                <h1 class="article-title">Experiences in New York</h1>
+                <aside class="Advertisement">
+                    <figure class="Image-with-price">
+                        <img class="Image-with-price__image" src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517018126/Sewells_Sea_safari_6-e1478281581938_j7qey5.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Step behind the scenes of Havana’s theater</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517017955/sunset_front_i2gofl.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$7956 Dance your way into Cuban culture with a</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194,x_541,y_0/v1517018487/992a309f49513599bcfef05cb3b2a8a9_hvht3w.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$13,361 Hunt for truffles in the countryside</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_184/v1517018705/DUUv4ErXcAE-jzk_boqib6.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$23,204 Meet Kenyan innovators with a Nairobi...</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                    <figure class="Image-with-price">
+                        <img src="http://res.cloudinary.com/dxwohbbol/image/upload/c_fill,h_290,w_194/v1517018787/8a1d9f2f6dfa3990c22579015e1cef41--sea-paintings-acrylic-paintings_w64ej2.jpg" alt="">
+                        <figcaption class="Image-with-price__description">$18,232 Explore Miami’s Latin flavors with food...</figcaption>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="Image-with-price__reviews">84 reviews</span>
+                    </figure>
+                </aside>
+            </article>
+
+
+            <article class="Hero-article">
                 <title class="Hero-article__title">Places in London</title>
                 <figure class="Hero-article__item">
                     <img src="" alt="">
