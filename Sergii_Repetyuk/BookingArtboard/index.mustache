@@ -19,31 +19,35 @@
     <link rel="stylesheet" href="style/Logo.css">
     <link rel="stylesheet" href="style/grid1190.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body class="container_14">
-    <aside class="">
+    <aside class="Header">
         <div class="Logo"></div>
-        <form class="Search-destination" action="">
-            <img class="Search-destination__icon" src="">
-            <input class="Search-destination__input" type="search" placeholder="Anywhere">
-            <img class="Search-destination__icon" src="">
-            <input class="Search-destination__input" type="search" placeholder="Anytime">
-            <img class="Search-destination__icon" src="">
-            <input class="Search-destination__input" type="search" placeholder="1 guest">
-        </form>
-        <nav class="User-navigation">
-            <a class="User-navigation__item" href="">Become a host</a>
-            <a class="User-navigation__item" href="">Help</a>
-            <a class="User-navigation__item" href="">Sign in</a>
-            <a class="User-navigation__item" href="">Log in</a>
-        </nav>
-        <div class="Page-selection">
-            <a class="Page-selection__for-you" href="">FOR YOU</a>
-            <a class="Page-selection__homes" href="">HOMES</a>
-            <a class="Page-selection__experiences" href="">EXPERIENCES</a>
-            <a class="Page-selection__places" href="">PLACES</a>
+        <div class="grid grid_14 clearfix">
+            <form class="Search-destination grid grid_9 alpha omega" action="">
+                <img class="Search-destination__icon" src="">
+                <input class="Search-destination__input" type="search" placeholder="Anywhere">
+                <img class="Search-destination__icon" src="">
+                <input class="Search-destination__input" type="search" placeholder="Anytime">
+                <img class="Search-destination__icon" src="">
+                <input class="Search-destination__input" type="search" placeholder="1 guest">
+            </form>
+            <nav class="User-navigation grid grid_5 prefix_4 alpha omega">
+                <a class="User-navigation__item" href="">Become a host</a>
+                <a class="User-navigation__item" href="">Help</a>
+                <a class="User-navigation__item" href="">Sign in</a>
+                <a class="User-navigation__item" href="">Log in</a>
+            </nav>
         </div>
+        <div class="grid grid_14">
+            <div class="Page-selection grid grid_6">
+                <a class="Page-selection__for-you" href="">FOR YOU</a>
+                <a class="Page-selection__homes" href="">HOMES</a>
+                <a class="Page-selection__experiences" href="">EXPERIENCES</a>
+                <a class="Page-selection__places" href="">PLACES</a>
+            </div>
+        </div>
+        <div class="Divider"></div>
     </aside>
     <main class="grid grid_14">
         <aside class="Advertisement grid grid_14 clearfix">
@@ -184,7 +188,6 @@
                 <span class="Image-with-price__reviews">84 reviews</span>
             </figure>
         </article>
-        See all
         <article class="Advertisement grid grid_14 clearfix">
             <h1 class="article-title prefix_1">Places in London</h1>
             <div class="Image-container grid_2 suffix_1 prefix_1">
@@ -225,63 +228,66 @@
         </article>
     </main>
     <div class="Divider"></div>
-    <footer class="Footer grid grid_14">
-        <section class="Select-boxes grid grid_3 prefix_1 suffix_3">
-            <div class="Language">
-                <select class="Language__select">
-                    <option value="1">English</option>
-                    <option value="2">Ukrainian</option>
-                    <option value="3">Polski</option>
-                    <option value="4">Espanol</option>
-                    <option value="5">Italian</option>
-                    <option value="6">Japanese</option>
-                </select>
+    <footer class="Footer">
+        <div class="grid grid_14 clearfix">
+            <section class="Select-boxes grid grid_3 prefix_1 suffix_3">
+                <div class="Language">
+                    <select class="Language__select">
+                        <option value="1">English</option>
+                        <option value="2">Ukrainian</option>
+                        <option value="3">Polski</option>
+                        <option value="4">Espanol</option>
+                        <option value="5">Italian</option>
+                        <option value="6">Japanese</option>
+                    </select>
+                </div>
+                <div class="Payment-currency">
+                    <select class="Payment-currency__select">
+                        <option value="1">INR</option>
+                        <option value="2">USD</option>
+                        <option value="3">EUR</option>
+                        <option value="4">UAH</option>
+                    </select>
+                </div>
+            </section>
+            <article class="Additional-info grid grid_9">
+                <div class="Additional-info__item grid grid_2 alpha">
+                    <p class="Additional-info__item_title">Airbnb</p>
+                    <a class="Additional-info__item_link" href="">About us</a>
+                    <a class="Additional-info__item_link" href="">Careers</a>
+                    <a class="Additional-info__item_link" href="">Press</a>
+                    <a class="Additional-info__item_link" href="">Policies</a>
+                    <a class="Additional-info__item_link" href="">Help</a>
+                    <a class="Additional-info__item_link" href="">Diversity & Belonging</a>
+                </div>
+                <div class="Additional-info__item grid grid_2 prefix_1">
+                    <p class="Additional-info__item_title">Discover</p>
+                    <a class="Additional-info__item_link" href="">Trust & Safety</a>
+                    <a class="Additional-info__item_link" href="">Travel Credit</a>
+                    <a class="Additional-info__item_link" href="">Gidt Cards</a>
+                    <a class="Additional-info__item_link" href="">Airbnb Citizen</a>
+                    <a class="Additional-info__item_link" href="">Business Travel</a>
+                    <a class="Additional-info__item_link" href="">Guidebooks</a>
+                    <a class="Additional-info__item_link" href="">Airbnbmag</a>
+                </div>
+                <div class="Additional-info__item grid grid_2 prefix_1">
+                    <p class="Additional-info__item_title">Hosting</p>
+                    <a class="Additional-info__item_link" href="">Why Host</a>
+                    <a class="Additional-info__item_link" href="">Hospitality</a>
+                    <a class="Additional-info__item_link" href="">Responsible Hosting</a>
+                    <a class="Additional-info__item_link" href="">Community Center</a>
+                </div>
+            </article>
+        </div>
+        <div class="Divider"></div>
+        <div class="Extra grid_14 clearfix">
+            <div class="Copyright grid_2 prefix_1 suffix_5">Airbnb, Inc.</div>
+            <div class="Terms-Privacy-SiteMap grid grid_9">
+                <a class="Terms-Privacy-SiteMap__item grid_2 prefix_3 alpha omega" href="">Terms</a>
+                <a class="Terms-Privacy-SiteMap__item grid_2 alpha omega" href="">Privacy</a>
+                <a class="Terms-Privacy-SiteMap__item grid_2 alpha omega" href="">Site Map</a>
             </div>
-            <div class="Payment-currency">
-                <select class="Payment-currency__select">
-                    <option value="1">INR</option>
-                    <option value="2">USD</option>
-                    <option value="3">EUR</option>
-                    <option value="4">UAH</option>
-                </select>
-            </div>
-        </section>
-        <article class="Additional-info grid grid_9">
-            <div class="Additional-info__item grid grid_2 alpha">
-                <p class="Additional-info__item_title">Airbnb</p>
-                <a class="Additional-info__item_link" href="">About us</a>
-                <a class="Additional-info__item_link" href="">Careers</a>
-                <a class="Additional-info__item_link" href="">Press</a>
-                <a class="Additional-info__item_link" href="">Policies</a>
-                <a class="Additional-info__item_link" href="">Help</a>
-                <a class="Additional-info__item_link" href="">Diversity & Belonging</a>
-            </div>
-            <div class="Additional-info__item grid grid_2 prefix_1">
-                <p class="Additional-info__item_title">Discover</p>
-                <a class="Additional-info__item_link" href="">Trust & Safety</a>
-                <a class="Additional-info__item_link" href="">Travel Credit</a>
-                <a class="Additional-info__item_link" href="">Gidt Cards</a>
-                <a class="Additional-info__item_link" href="">Airbnb Citizen</a>
-                <a class="Additional-info__item_link" href="">Business Travel</a>
-                <a class="Additional-info__item_link" href="">Guidebooks</a>
-                <a class="Additional-info__item_link" href="">Airbnbmag</a>
-            </div>
-            <div class="Additional-info__item grid grid_2 prefix_1">
-                <p class="Additional-info__item_title">Hosting</p>
-                <a class="Additional-info__item_link" href="">Why Host</a>
-                <a class="Additional-info__item_link" href="">Hospitality</a>
-                <a class="Additional-info__item_link" href="">Responsible Hosting</a>
-                <a class="Additional-info__item_link" href="">Community Center</a>
-            </div>
-        </article>
-        <div class="grid grid_14">
-            <div class="Copyright grid_2">Airbnb, Inc.</div>
-            <div class="Terms-Privacy-SiteMap grid_6">
-                <a class="Terms-Privacy-SiteMap__item grid_2" href="">Terms</a>
-                <a class="Terms-Privacy-SiteMap__item grid_2" href="">Privacy</a>
-                <a class="Terms-Privacy-SiteMap__item grid_2" href="">Site Map</a>
-            </div>
-            <div class="Social-network-icons"></div>
+            <div class="Social-network-icons grid grid_6"></div>
         </div>
     </footer>
 </body>
