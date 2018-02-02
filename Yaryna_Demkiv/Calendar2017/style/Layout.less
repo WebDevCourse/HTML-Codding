@@ -6,11 +6,17 @@
     top: 0;
     bottom: 0;
     position: fixed;
-    max-height: 100%;
+    height: 100%;
     background-color: #ffffff;
     box-shadow: -8px 0 42px 0 rgba(42, 34, 64, 0.14);
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    padding-right: 20px;
+  }
+
+   ::-webkit-scrollbar{
+    width: 2px;
   }
 
   &__main {
@@ -19,20 +25,23 @@
     right:0px;
     bottom: 0px;
     left: 224px;
-    max-height: 100%;
+    height: 100%;
     background-color: #fcfbfc;
+    overflow-y: scroll;
   }
 
   &__copyright{
-    position: fixed;
+    /*position: fixed;
     left: 52px;
     bottom: 46px;
-    z-index: -3;
+    z-index: -3;*/
     font-family: Montserrat, sans-serif;
     font-size: 10px;
     letter-spacing: -0.2px;
     text-align: center;
     color: rgba(41, 37, 41, 0.23);
+    margin-top: 100px;
+    padding-bottom: 50px;
   }
 }
 
