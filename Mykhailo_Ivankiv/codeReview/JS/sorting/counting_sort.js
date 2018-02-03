@@ -6,7 +6,7 @@ const incrementArrayByIndex = (arr, index) => {
     return arr;
 };
 
-const extractArray = (accum, el, index) => { //TODO: rename function;
+const extractArray = (accum, el, index) => {
     accum = el > 0 ? accum.concat( new Array( el ).fill(index)) : accum;
     return accum;
 };
