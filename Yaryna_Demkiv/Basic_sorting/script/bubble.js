@@ -21,7 +21,6 @@ var myData = [11, 5, 3, 8, 7];
 var n = myData.length;
 var k = 0;
 var k1 = 0;
-
 var myData2 = bubbleSort(myData);
 
 alert (myData);

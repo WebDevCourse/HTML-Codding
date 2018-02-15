@@ -3,40 +3,48 @@
 <head>
     <script>
         function f() {
-            a = parseInt(document.getElementById('a').value);
-            d = parseInt(document.getElementById("d").value);
-            n = parseInt(document.getElementById("n").value);
-
-            document.getElementsByName("answer")[0].placeholder = a;
-
+            if (document.getElementById('a').value === '' || document.getElementById("d").value === ''
+                || document.getElementById("n").value === '') {
+                document.getElementById('answer').innerHTML = '';
+                document.getElementById('sum').innerHTML = '';
+                return false;
+            }
+            let a = parseFloat(document.getElementById('a').value);
+            let d = parseFloat(document.getElementById("d").value);
+            let n = parseInt(document.getElementById("n").value);
             const val_arr = [];
             for (let i = 0; i < n; i++) {
                 if (i === 0) {
                     val_arr[0] = a;
                 }
                 else {
-                    console.log(i);
                     val_arr[i] = val_arr[i - 1] + d;
                 }
             }
             const answ = val_arr.toString();
             const sum = val_arr.reduce((a, b) => a + b, 0);
-            document.getElementsByName("answer")[0].placeholder = answ;
-            document.getElementsByName("sum")[0].placeholder = sum;
+            document.getElementById('answer').innerHTML = "a = [" + answ + "]";
+            document.getElementById('sum').innerHTML = "sum = " + sum;
+            return false;
+        }
+        function duplicate() {
+            document.getElementById('b').innerHTML += document.getElementById('b').innerHTML;
         }
     </script>
 </head>
-<body>
+<body id="b">
+<div id='to_copy'>
+    <form action="" onsubmit="return f();">
+        a: <input id="a" type="text" title="first_arg" value="1">
+        d: <input id="d" type="text" title="second_arg" value="2">
+        n: <input id="n" type="text" title="third_arg" value="5">
+        <input id="submit_button" type="submit" value="Submit">
+    </form>
+</div>
+    <p id="answer"></p>
+    <p id="sum"></p>
 
-<form action="" onsubmit="f();">
-    a: <input id="a" type="text" value="">
-    d: <input id="d" type="text" value="">
-    n: <input id="n" type="text" value="">
-    <input type="submit" value="Submit">
-</form>
-<br>
-<input type="text" name="answer" placeholder="">
-<input type="text" name="sum" placeholder="">
+<button onclick='duplicate();'></button>
 
 </body>
 </html>

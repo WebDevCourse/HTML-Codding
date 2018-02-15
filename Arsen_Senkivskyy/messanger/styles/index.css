@@ -1,0 +1,144 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+.messenger-frame {
+  width: 100%;
+  border: 1px solid #dcd2d2;
+  height: 100%; }
+  .messenger-frame__header {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    background-color: #2979ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .messenger-frame__chat-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7px; }
+  .messenger-frame__mark {
+    border-radius: 3px;
+    margin-left: 13px;
+    margin-top: 5px;
+    margin-right: 8px;
+    width: 6px;
+    height: 6px; }
+    .messenger-frame__mark_active {
+      background-color: #69f0ae; }
+    .messenger-frame__mark_offline {
+      background-color: grey; }
+  .messenger-frame__person-name {
+    font-family: Open Sans, serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; }
+  .messenger-frame__header-buttons {
+    display: flex;
+    padding-right: 7px;
+    justify-content: space-between;
+    width: 90px;
+    align-items: center; }
+    .messenger-frame__header-buttons a:last-of-type {
+      padding-top: 5px; }
+    .messenger-frame__header-buttons a:nth-child(2) {
+      margin-bottom: 4px; }
+  .messenger-frame__message-box {
+    overflow-y: auto;
+    padding-top: 17px;
+    height: calc(100% - 85px - 31px); }
+  .messenger-frame__message {
+    display: flex; }
+    .messenger-frame__message_tome {
+      margin-bottom: 1px;
+      justify-content: flex-start; }
+      .messenger-frame__message_tome_allign {
+        margin-left: 35px; }
+        .messenger-frame__message_tome_allign:last-child {
+          margin-bottom: 10px; }
+    .messenger-frame__message_from-me {
+      margin-bottom: 1px;
+      justify-content: flex-end; }
+  .messenger-frame__content {
+    margin: 0;
+    padding: 5px 8px 7px;
+    text-align: left;
+    font-family: Open Sans, serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #353535; }
+    .messenger-frame__content_tome {
+      background-color: #f3f3f3;
+      border-radius: 14px;
+      margin-left: 6px;
+      margin-right: 60px;
+      height: 30%; }
+      .messenger-frame__content_tome_first {
+        border-radius: 17px 17px 17px 0; }
+      .messenger-frame__content_tome_middle {
+        border-radius: 0 17px 17px 0; }
+      .messenger-frame__content_tome_last {
+        border-radius: 0 17px 17px 17px; }
+    .messenger-frame__content_from-me {
+      margin-right: 13px;
+      margin-left: 100px;
+      background-color: #2979ff;
+      border-radius: 14px;
+      height: 30%;
+      text-align: center;
+      color: #ffffff; }
+      .messenger-frame__content_from-me_first {
+        border-radius: 17px 17px 0 17px; }
+      .messenger-frame__content_from-me_last {
+        border-radius: 17px 0 17px 17px; }
+      .messenger-frame__content_from-me_middle {
+        border-radius: 17px 0 0 17px; }
+  .messenger-frame__time-delimiter {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: flex;
+    justify-content: center;
+    color: #828282;
+    font-size: 10px;
+    font-family: OpenSans-Bold, serif; }
+  .messenger-frame__space-between-messages {
+    margin-top: 18px; }
+  .messenger-frame__footer {
+    height: 65.5px;
+    bottom: 0; }
+  .messenger-frame__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 11px;
+    width: 122px; }
+  .messenger-frame__messanger-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    margin-left: 7px; }
+  .messenger-frame__enter-message {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px; }
+  .messenger-frame__message-to-send {
+    padding-top: 8px;
+    width: 94%;
+    left: -9999px;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    padding-left: 15px; }
+
+.container {
+  width: 292px;
+  height: 384px; }
+
+/*# sourceMappingURL=index.css.map */

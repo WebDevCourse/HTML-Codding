@@ -1,0 +1,130 @@
+.hideableInfo {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    background-color: #fff;
+    order: 99;
+}
+
+.hideableInfo.popover {
+    width: 300px;
+    position: absolute;
+    left: 12px;
+    bottom: 40px;
+    box-shadow: 0 2px 4px 0 rgba(87, 71, 81, 0.5);
+    box-shadow: 0 2px 4px 0 var(--maroon-50pc);
+    z-index: 1000;
+}
+
+.hideableInfo .anchor {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(87, 71, 81, 0.5);
+    box-shadow: 0 0 2px 0 var(--maroon-50pc);
+}
+
+.hideableInfo .anchor.top {
+    left: 259px;
+    top: -9px;
+}
+
+.hideableInfo .anchor.bottom {
+    left: 20px;
+    bottom: -3px;
+}
+
+.hideableInfo .anchor::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 24px;
+    height: 12px;
+    transform: rotate(-45deg);
+}
+
+.hideableInfo .anchor.top:after {
+    left: -1px;
+    top: 4px;
+}
+
+.hideableInfo .anchor.bottom:after {
+    left: -8px;
+    top: -2px;
+}
+
+.hideableInfo.popover .anchor {
+    display: block;
+}
+
+.hideableInfo .infoBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #bcb5b9;
+    color: var(--warm-gray);
+}
+
+.hideableInfo.popover .infoBody {
+    color: #574751;
+    color: var(--maroon);
+}
+
+.hideableInfo .infoText {
+    margin-bottom: 12px;
+}
+
+.hideableInfo.noControls .infoText {
+    margin-bottom: 0;
+}
+
+.hideableInfo .infoText a {
+    white-space: nowrap;
+    color: #c8cf2d;
+    color: var(--light-green);
+}
+
+.hideableInfo .infoHideButton {
+    align-self: flex-end;
+    line-height: 18px;
+    font-size: 15px;
+    color: #bcb5b9;
+    color: var(--warm-gray);
+}
+
+.hideableInfo.noControls .infoHideButton {
+    display: none;
+}
+
+.hideableInfo .infoHideButton > div {
+    display: flex;
+    align-items: center;
+}
+
+.hideableInfo .infoHideButton img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #bcb5b9;
+    background-color: var(--warm-gray);
+}
+
+.hideableInfo .infoHideButton:active {
+    color: rgba(87, 70, 80, 0.5);
+    color: var(--maroon-50pc);
+}
+
+.hideableInfo .infoHideButton:active img {
+    background-color: rgba(87, 70, 80, 0.5);
+    background-color: var(--maroon-50pc);
+}
