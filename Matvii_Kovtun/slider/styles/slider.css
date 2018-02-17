@@ -1,0 +1,46 @@
+.slider {
+    padding-top: 40px;
+    position: relative;
+    margin: auto;
+    height:35vh;
+
+}
+
+.slider__image {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+}
+
+.slider__caption {
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+}
+
+.slider__button{
+    cursor: pointer;
+    opacity:0.5;
+    position: absolute;
+    top:55%;
+    color: transparent;
+    width:40px;
+    height:30px;
+    border-radius: 8px;
+    border: none;
+    background: no-repeat;
+}
+
+.slider__button_prev {
+    left:1%;
+    background-image: url("../images/ic_keyboard_arrow_left_black_24px.svg");
+
+}
+
+.slider__button_next {
+    right:1%;
+    background-image: url("../images/ic_keyboard_arrow_right_black_24px.svg");
+
+}

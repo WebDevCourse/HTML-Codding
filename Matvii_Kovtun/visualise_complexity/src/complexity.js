@@ -11,14 +11,16 @@ class Complexity {
     // TODO: rename Complexity
     // TODO: pass DOM node, instead of selector
     constructor(document) {
-        this.good = new GoodAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "good");
-        this.bad = new BadAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "bad");
+        this.algorithms = [
+            new GoodAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "good"),
+            new BadAlgo(document.querySelector(".page__content"), document.querySelector(".result"), "bad"),
+        ];
     }
 
-
     clearArea() {
-        this.good.prepareAreas();
-        this.bad.prepareAreas();
+        this.algorithms.map((el) => {
+            el.prepareAreas();
+        });
         return this;
 
     }
@@ -27,10 +29,12 @@ class Complexity {
         this.numbers = new Array(NUMBEROFNUMBERS)
             .fill()
             .map((el, i) =>
-                new MyNumber(getRandom(MARGINFROMSIDES, this.good.width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.good.height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
+                new MyNumber(getRandom(MARGINFROMSIDES, this.algorithms[0].width - MARGINFROMSIDES), getRandom(MARGINFROMSIDES, this.algorithms[0].height - MARGINFROMSIDES), getRandom(1, NUMBEROFNUMBERS + 1)));
         this.numbers.map((el) => {
-            el.draw(this.good.context);
-            el.draw(this.bad.context);
+            this.algorithms.map((elem) => {
+                console.log(elem.context);
+                el.draw(elem.context);
+            })
         });
         return this;
     };
@@ -44,19 +48,14 @@ class Complexity {
     }
 
     async action() {
+        let elem = document.querySelector(".result__good");
         await Promise
-            .all([
-                this.good.perform(this.numbers).then(value => {
-                    let elem = document.querySelector(".result__good");
-                    value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_good")))
-                }),
-                this.bad.perform(this.numbers).then(value => {
-                    let elem = document.querySelector(".result__bad");
-                    value.map((el) => elem.appendChild(this.renderNumber(el, "result__missing-numbers_bad")));
-                })
-            ])
-
-
+            .all(this.algorithms.map(el => el.perform(this.numbers)
+                .then(value =>
+                    value
+                        .map(el => this.renderNumber(el, "result__missing-numbers_good"))
+                        .map(el => elem.appendChild(el))
+                )))
     }
 }
 

@@ -1,0 +1,13 @@
+.header {
+    width:100%;
+
+}
+
+
+.header__pic {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 80vh;
+    width:inherit;
+
+}
