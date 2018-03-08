@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook_messanger</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link href='https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans' rel='stylesheet'>
+</head>
+
+<body>
+<div class="container">
+    <div class="messenger-frame">
+        <header class="messenger-frame__header">
+            <section class="messenger-frame__chat-name">
+                <section class="messenger-frame__mark messenger-frame__mark_active"></section>
+                <span class="messenger-frame__person-name">Kristaps Elsins</span>
+            </section>
+            <div class="messenger-frame__header-buttons">
+                <a href="#">
+                    <img src="pics/Plus.svg">
+                </a>
+                <a href="#">
+                    <img id="video-img" src="pics/Video.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Cog.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Close.svg"></a>
+            </div>
+        </header>
+
+        <main class="messenger-frame__message-box">
+            <section class="messenger-frame__message messenger-frame__message_tome">
+                <img src="pics/avatar.jpg" class="messenger-frame__messanger-avatar">
+                <p class="messenger-frame__content messenger-frame__content_tome">Yo, Can you update views?</p>
+            </section>
+            <section class="messenger-frame__time-delimiter">FRI 11:30AM
+                <time datetime="2018-01-19 11:30"></time>
+            </section>
+            <section class="messenger-frame__message messenger-frame__message_tome">
+                <img src="pics/avatar.jpg" class="messenger-frame__messanger-avatar">
+                <p class="messenger-frame__content messenger-frame__content_tome">I can't see updated views yet</p>
+            </section>
+
+
+            <section class="messenger-frame__space-between-messages">
+                <section class="messenger-frame__message messenger-frame__message_from-me">
+                    <p class="messenger-frame__content messenger-frame__content_from-me messenger-frame__content_from-me_first">
+                        Hi, as i noted in Email last week -i'm on vacation.</p>
+                </section>
+
+                <section class="messenger-frame__message messenger-frame__message_from-me">
+                    <p class="messenger-frame__content messenger-frame__content_from-me messenger-frame__content_from-me_last">
+                        I will be back next week.</p>
+                </section>
+            </section>
+
+            <section class="messenger-frame__space-between-messages">
+                <section class="messenger-frame__message messenger-frame__message_tome">
+                    <img src="pics/avatar.jpg" class="messenger-frame__messanger-avatar">
+                    <p class="messenger-frame__content messenger-frame__content_tome messenger-frame__content_tome_first">
+                        Ahh sorry, missed that!</p>
+                </section>
+                <section class="messenger-frame__message messenger-frame__message_tome messenger-frame__message_tome_allign">
+                    <p class="messenger-frame__content messenger-frame__content_tome messenger-frame__content_tome_middle">
+                        Let's talk next week</p>
+                </section>
+                <section class="messenger-frame__message messenger-frame__message_tome messenger-frame__message_tome_allign">
+                    <p class="messenger-frame__content messenger-frame__content_tome messenger-frame__content_tome_middle">
+                        Let's talk next week</p>
+                </section>
+                <section class="messenger-frame__message messenger-frame__message_tome messenger-frame__message_tome_allign">
+                    <p class="messenger-frame__content messenger-frame__content_tome messenger-frame__content_tome_last">
+                        Let's talk next week</p>
+                </section>
+            </section>
+        </main>
+        <footer class="messenger-frame__footer">
+            <form class="message_send" target="#" method="post">
+                <input class="messenger-frame__message-to-send" name="message-to-send" type="text"
+                       placeholder="Type a message here..."/>
+                <input type="submit" class="messenger-frame__enter-message"
+                       tabindex="-1"/></form>
+            <section class="messenger-frame__buttons">
+                <a href="#">
+                    <img src="pics/Picture.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Gif.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Smile.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Calendar.svg">
+                </a>
+                <a href="#">
+                    <img src="pics/Camera.svg">
+                </a>
+            </section>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

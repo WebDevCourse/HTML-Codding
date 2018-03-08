@@ -2,28 +2,33 @@ var A = [1, 4, 8, 11, 16];
 var B = [2, 5, 9];
 var C = [1,4,8,11,16,2,5,9];
 
-//function mySort (X) {
-   // var unsorted = Array.from(X);
-    //console.log(unsorted);
+function mySort (X) {
+    var unsorted = Array.from(X);
+    console.log(unsorted);
     //console.log(unsorted.length);
-    //if (unsorted.length  <2) {
-      //  console.log("NoMerge")
-        //return unsorted;
-    //}
-    //else {
-      //  console.log("StartMerge")
-       // rez1 = mySort(unsorted.slice(0,1 + Math.round((unsorted.length)/2)));
-       // rez2 = mySort(unsorted.slice(Math.round((unsorted.length)/2),1 + unsorted.length-1));
-        //console.log("Merge");
-        //console.log(rez1);
-        //console.log(rez2);
+    if (unsorted.length  <2) {
+        console.log("NoMerge")
+        return unsorted;
+    }
+    else {
+        //return [0]
+        console.log("StartMerge_FirstArray");
+        var rez1 = mySort(unsorted.slice(0, Math.round((unsorted.length)/2)));
+        console.log("rez1");
+        console.log(rez1);
+        console.log("StartMerge_SecondArray");
+        var rez2 = mySort(unsorted.slice(Math.round((unsorted.length)/2), unsorted.length));
+        console.log("Merge");
+        console.log(rez1);
+        console.log(rez2);
         //alert("1");
-        //return merge(rez1, rez2);
+        var rez3 = merge(rez1, rez2);
+        return rez3
 
-    //}
+    }
 
 
-//}
+}
 
 function merge (argument1, argument2) {
     var arr1 = Array.from(argument1);
@@ -63,5 +68,5 @@ function merge (argument1, argument2) {
 
 var myData = merge (A, B);
 //var myData = merge (AA, BB);
-//var myData = mySort(C);
+var myData = mySort(C);
 alert(myData);

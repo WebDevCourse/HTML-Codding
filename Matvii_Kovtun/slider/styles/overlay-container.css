@@ -1,0 +1,22 @@
+.overlay-container {
+    margin-top: 50px;
+    position: relative;
+    height: 225px;
+}
+
+.overlay-container__background {
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    background-color: crimson;
+    position: absolute;
+}
+
+.overlay-container__foreground {
+    position: absolute;
+    max-width: 290px;
+    margin: auto;
+    left:0;
+    right:0;
+}
