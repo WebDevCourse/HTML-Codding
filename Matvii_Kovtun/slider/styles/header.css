@@ -1,13 +1,15 @@
 .header {
-    width:100%;
+    width: 100%;
+    height: 80vh;
+    background: url("../images/raw_image/imageedit_3_9766008347.jpg") no-repeat center center;
+}
+
+.header__info {
+    padding-top: 20px;
 
 }
 
-
-.header__pic {
-    object-fit: none; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    height: 80vh;
-    width:inherit;
-
+.header__logo {
+    width: 7vw;
+    margin-left: 20px;
 }

@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/overlay-container.css">
     <link rel="stylesheet" href="styles/header.css">
+    <!-- 1. Link to jQuery (1.8 or later), -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
     <title>Slider</title>
 </head>
 <body>
-<aside class="header">
-    <img src="./images/raw_image/imageedit_3_9766008347.jpg" alt="" class="header__pic">
-</aside>
+<header class="header">
+    <div class="header__info">
+        <img src="./images/raw_image/DSC00499.jpg" alt="" class="header__logo">
+    </div>
+</header>
 
 <section class="slider">
     <img src="http://wowslider.com/sliders/demo-77/data1/images/road220058.jpg" alt="" class="slider__image">
@@ -36,8 +45,17 @@ reiciendis rerum similique vero vitae, voluptas?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, fugiat.
     </div>
     <a href="https://google.com"><img class="overlay-container__foreground"
-                              src="./images/raw_image/DSC00486.jpg"></a>
+                                      src="./images/raw_image/DSC00486.jpg"></a>
 </section>
+
+
+<div class="fotorama">
+    <img src="http://s.fotorama.io/1.jpg">
+    <img src="http://s.fotorama.io/2.jpg">
+</div>
+
+
+
 <script src="src/index.js"></script>
 
 </body>
